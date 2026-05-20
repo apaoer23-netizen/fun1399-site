@@ -1,0 +1,20 @@
+# Netlify deploy files
+.netlify/
+netlify.toml
+
+# Backup files
+*.bak
+*.backup
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node modules (if any)
+node_modules/
+
+# Deploy log
+deploy-backup-log.md
