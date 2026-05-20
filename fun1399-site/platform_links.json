@@ -1,0 +1,44 @@
+{
+  "platforms": {
+    "jucity": {
+      "name": "鉅城娛樂城",
+      "url": "https://fun1399.ofa177.net/",
+      "aliases": ["鉅城", "鉅城娛樂"]
+    },
+    "mbm": {
+      "name": "MBM娛樂城",
+      "url": "https://fun1399.mbm88.net/",
+      "aliases": ["MBM", "mbm"]
+    },
+    "utown": {
+      "name": "優塔娛樂城",
+      "url": "https://u.town/3006",
+      "aliases": ["優塔", "UTown", "utown"]
+    },
+    "hg": {
+      "name": "HG娛樂城",
+      "url": "https://www.leyo.tw/r?p=685e99859c687",
+      "aliases": ["HG", "hg"]
+    },
+    "gm1688": {
+      "name": "大老爺娛樂城",
+      "url": "https://fun1399.gm1688.net/",
+      "aliases": ["大老爺", "GM1688", "gm1688"]
+    },
+    "3a": {
+      "name": "3A娛樂城",
+      "url": "https://fun1399.3a1788.bet/",
+      "aliases": ["3A", "3a"]
+    }
+  },
+  "default_url": "https://fun1399.ofa177.net/",
+  "cta_buttons": [
+    "立即註冊",
+    "立即遊玩",
+    "立即領取",
+    "前往平台",
+    "查看優惠",
+    "立即體驗",
+    "開始遊戲"
+  ]
+}

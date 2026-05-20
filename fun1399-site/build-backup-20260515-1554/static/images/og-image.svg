@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a5f7a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+  
+  <!-- 裝飾圓圈 -->
+  <circle cx="100" cy="100" r="150" fill="rgba(255,255,255,0.1)" />
+  <circle cx="1100" cy="530" r="200" fill="rgba(255,255,255,0.1)" />
+  
+  <!-- 標題 -->
+  <text x="600" y="250" font-family="Microsoft JhengHei, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">娛樂城玩家俱樂部</text>
+  
+  <!-- 副標題 -->
+  <text x="600" y="350" font-family="Microsoft JhengHei, sans-serif" font-size="48" fill="white" text-anchor="middle">2026娛樂城推薦｜百家樂攻略</text>
+  
+  <!-- 說明文字 -->
+  <text x="600" y="450" font-family="Microsoft JhengHei, sans-serif" font-size="32" fill="rgba(255,255,255,0.9)" text-anchor="middle">嚴選6大信譽平台 · 公正評測 · 獨家優惠</text>
+  
+  <!-- 底部網址 -->
+  <text x="600" y="560" font-family="Arial, sans-serif" font-size="28" fill="rgba(255,255,255,0.7)" text-anchor="middle">fun1399.com</text>
+</svg>

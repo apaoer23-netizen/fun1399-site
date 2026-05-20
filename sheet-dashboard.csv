@@ -1,0 +1,60 @@
+統計項目,數值,公式說明
+總案例數,10,=COUNTA(Cases!A:A)
+本月新增,10,=COUNTIF(Cases!B:B,">="&DATE(YEAR(TODAY()),MONTH(TODAY()),1))
+待審核數,10,=COUNTIF(Cases!R:R,"待審核")
+已採用數,0,=COUNTIF(Cases!R:R,"已採用")
+已發布數,0,=COUNTIF(Cases!R:R,"已發布")
+高SEO價值案例,8,=COUNTIF(Cases!P:P,"極高")+COUNTIF(Cases!P:P,"高")
+中SEO價值案例,2,=COUNTIF(Cases!P:P,"中")
+低SEO價值案例,0,=COUNTIF(Cases!P:P,"低")
+有報案案例,4,=COUNTIF(Cases!N:N,"是")
+無報案案例,4,=COUNTIF(Cases!N:N,"否")
+追回成功案例,0,=COUNTIF(Cases!O:O,"是")
+進行中案例,1,=COUNTIF(Cases!O:O,"進行中")
+,,,
+【各類型分佈】,,
+TYPE-A 不出金,2,=COUNTIF(Cases!F:F,"TYPE-A")
+TYPE-B 假客服,2,=COUNTIF(Cases!F:F,"TYPE-B")
+TYPE-C 假代理,1,=COUNTIF(Cases!F:F,"TYPE-C")
+TYPE-D 代操,1,=COUNTIF(Cases!F:F,"TYPE-D")
+TYPE-E 假優惠,1,=COUNTIF(Cases!F:F,"TYPE-E")
+TYPE-F USDT詐騙,1,=COUNTIF(Cases!F:F,"TYPE-F")
+TYPE-G 愛情詐騙,1,=COUNTIF(Cases!F:F,"TYPE-G")
+TYPE-H 仿站,1,=COUNTIF(Cases!F:F,"TYPE-H")
+TYPE-I 帳號凍結,1,=COUNTIF(Cases!F:F,"TYPE-I")
+TYPE-J 操控遊戲,0,=COUNTIF(Cases!F:F,"TYPE-J")
+TYPE-K 惡意程式,0,=COUNTIF(Cases!F:F,"TYPE-K")
+TYPE-Z 其他,0,=COUNTIF(Cases!F:F,"TYPE-Z")
+,,,
+【假網址統計】,,
+假網址總數,8,=COUNTA(FakeURLs!A:A)
+仍活躍,6,=COUNTIF(FakeURLs!G:G,"仍活躍")
+已關閉,2,=COUNTIF(FakeURLs!G:G,"已關閉")
+已通報165,1,=COUNTIF(FakeURLs!H:H,"是")
+,,,
+【假LINE統計】,,
+假LINE總數,8,=COUNTA(FakeLINE!A:A)
+仍活躍,5,=COUNTIF(FakeLINE!I:I,"仍活躍")
+已停用,3,=COUNTIF(FakeLINE!I:I,"已停用")
+,,,
+【金額分佈】,,
+1萬以下,0,=COUNTIF(Cases!I:I,"1萬以下")
+1-5萬,3,=COUNTIF(Cases!I:I,"1-5萬")
+5-10萬,4,=COUNTIF(Cases!I:I,"5-10萬")
+10-30萬,3,=COUNTIF(Cases!I:I,"10-30萬")
+30萬以上,1,=COUNTIF(Cases!I:I,"30萬以上")
+未公開,1,=COUNTIF(Cases!I:I,"未公開")
+,,,
+【法律風險分佈】,,
+高風險,0,=COUNTIF(Cases!Q:Q,"高")
+中風險,5,=COUNTIF(Cases!Q:Q,"中")
+低風險,5,=COUNTIF(Cases!Q:Q,"低")
+,,,
+【素材來源分佈】,,
+PTT八卦版,2,=COUNTIF(Cases!C:C,"PTT八卦版")
+PTT生活消費版,1,=COUNTIF(Cases!C:C,"PTT生活消費版")
+Dcard博弈版,2,=COUNTIF(Cases!C:C,"Dcard博弈版")
+Dcard閒聊版,1,=COUNTIF(Cases!C:C,"Dcard閒聊版")
+FB社團,2,=COUNTIF(Cases!C:C,"FB社團")
+Threads,1,=COUNTIF(Cases!C:C,"Threads")
+YouTube留言,1,=COUNTIF(Cases!C:C,"YouTube留言")

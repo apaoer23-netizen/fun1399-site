@@ -1,0 +1,13 @@
+FUN1399 專案備查清單 - 2026-05-20
+================================
+
+1. 原始碼壓縮: fun1399-source-2026-05-20.tar.gz
+2. Netlify 設定: fun1399-netlify-config-2026-05-20.toml
+3. Netlify 狀態: fun1399-netlify-state-2026-05-20.json
+4. SEO robots: fun1399-robots-2026-05-20.txt
+5. SEO sitemap: fun1399-sitemap-2026-05-20.xml
+6. Deploy 記錄: fun1399-deploy-history-2026-05-20.md
+7. 本清單檔案: fun1399-backup-manifest-2026-05-20.txt
+
+備份總大小: 39M
+原始碼大小: 39M

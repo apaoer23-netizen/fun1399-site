@@ -1,0 +1,16 @@
+# Netlify 重導向規則：將 .html 請求導向無副檔名 URL
+
+# 首頁重導向（防止 .html 版本）
+/index.html / 301
+
+# 文章頁重導向
+/articles/*.html /articles/:splat 301
+
+# 評測頁重導向
+/reviews/*.html /reviews/:splat 301
+
+# 其他頁面重導向
+/recommend/*.html /recommend/:splat 301
+/pillars/*.html /pillars/:splat 301
+/promotions/*.html /promotions/:splat 301
+/*.html /:splat 301

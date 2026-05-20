@@ -1,0 +1,6 @@
+[] ❌ FAIL: 步驟 2/5 失敗: 首頁 index.html 未包含今日文章
+[] ❌ FAIL: 步驟 3/5 失敗: 文章列表頁未包含今日文章
+[2026-05-11 10:11:03] ❌ FAIL: 步驟 5/6 失敗: https://fun1399.com/articles/casino-license-verification-2026.html → HTTP 000000 (預期 200)
+[2026-05-15 14:35:47] ❌ FAIL: 步驟 6/6 失敗: sitemap.xml 缺少今日文章 URL → usdt-casino-scam-2026
+[2026-05-18 10:09:21] ❌ FAIL: 步驟 6/6 失敗: sitemap.xml 缺少今日文章 URL → casino-agent-scam-2026
+[2026-05-20 10:17:54] ❌ FAIL: 步驟 6/6 失敗: sitemap.xml 缺少今日文章 URL → mbm-casino-review-may-2026

@@ -1,0 +1,73 @@
+{
+  "fixed_pages": 8,
+  "fixed_ctas": 16,
+  "details": [
+    {
+      "file": "articles/casino-recommendation-2026.html",
+      "platforms": [
+        "鉅城娛樂城",
+        "MBM娛樂城",
+        "優塔娛樂城",
+        "HG娛樂城",
+        "大老爺娛樂城"
+      ],
+      "fixed_ctas": 4
+    },
+    {
+      "file": "reviews/mbm.html",
+      "platforms": [
+        "MBM娛樂城"
+      ],
+      "fixed_ctas": 1
+    },
+    {
+      "file": "reviews/gm1688.html",
+      "platforms": [
+        "大老爺娛樂城"
+      ],
+      "fixed_ctas": 1
+    },
+    {
+      "file": "reviews/utown.html",
+      "platforms": [
+        "優塔娛樂城"
+      ],
+      "fixed_ctas": 1
+    },
+    {
+      "file": "reviews/3a.html",
+      "platforms": [
+        "3A娛樂城"
+      ],
+      "fixed_ctas": 1
+    },
+    {
+      "file": "reviews/hg.html",
+      "platforms": [
+        "HG娛樂城"
+      ],
+      "fixed_ctas": 1
+    },
+    {
+      "file": "recommend/2026.html",
+      "platforms": [
+        "鉅城娛樂城",
+        "MBM娛樂城",
+        "優塔娛樂城",
+        "HG娛樂城",
+        "大老爺娛樂城",
+        "3A娛樂城"
+      ],
+      "fixed_ctas": 5
+    },
+    {
+      "file": "includes/sidebar.html",
+      "platforms": [
+        "鉅城娛樂城",
+        "MBM娛樂城",
+        "優塔娛樂城"
+      ],
+      "fixed_ctas": 2
+    }
+  ]
+}

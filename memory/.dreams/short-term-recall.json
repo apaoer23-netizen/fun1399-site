@@ -1,0 +1,863 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-20T03:38:36.862Z",
+  "entries": {
+    "memory:memory/2026-05-12.md:1:30": {
+      "key": "memory:memory/2026-05-12.md:1:30",
+      "path": "memory/2026-05-12.md",
+      "startLine": 1,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "# Memory - 2026-05-12 ## 任務狀態變更（Hans 21:42 指示） ### 主要任務變更為「fun1399 全站封面圖重製計畫」 - [21:42] Hans 指示凍結所有自動發文、部署、首頁更新、sitemap 更新 - [21:46] 5/13 HG 導流文 + 5/15 USDT 流量文標記為「待審核未上線」 - [21:55] cover-redesign-plan.md 確認成功建立 ### 已凍結項目 - ❌ 自動發文、排程發文 - ❌ 正式部署流程 - ❌ 首頁最新文章排序更新 - ❌ sitemap 更新（除非僅同步既有文章圖片引用） - ❌ 新增文章（5/13 HG、5/15 USDT 不上線） ### 已建立文件 - ✅ /logs/cover-redesign-plan.md — 95篇文章完整分析（92KB） - ✅ /logs/cover-update-log.md — 封面更新日誌模板 - ✅ cover-update-map.md — 全站封面狀態對照表 ### 5/13 HG + 5/15 USDT 文章狀態 - hg-casino-promotions-may-2026.html：本地存在，**未加入首頁、未加入 sitemap、未部署** - usdt-scam-guide-2026.html：本地存在，**未加入首頁、未加入 sitemap、未部署** - 首頁 index.html：**未修改**（先前編輯失敗） - sitemap.xml：**未修改** ### 新工作流程（Hans 指定） 1.",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.2683706313371657,
+      "maxScore": 0.4644798189401626,
+      "firstRecalledAt": "2026-05-17T04:52:49.162Z",
+      "lastRecalledAt": "2026-05-20T03:38:36.862Z",
+      "queryHashes": [
+        "e1562cbc4900",
+        "aeee2c6624fb",
+        "2984ff3184f2"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "5/13",
+        "5/15",
+        "cover-redesign-plan.md",
+        "logs/cover-redesign-plan.md",
+        "logs/cover-update-log.md",
+        "cover-update-map.md",
+        "usdt-scam-guide-2026.html",
+        "index.html"
+      ]
+    },
+    "memory:memory/2026-03-30.md:139:154": {
+      "key": "memory:memory/2026-03-30.md:139:154",
+      "path": "memory/2026-03-30.md",
+      "startLine": 139,
+      "endLine": 154,
+      "source": "memory",
+      "snippet": "| /reviews/index.html | ~8KB | ~26KB | 新增6個完整卡片、比較表、選擇指南 | | /recommend/2026.html | ~8KB | ~20KB | 新增詳細推薦分析、比較表、選擇建議 | ### 部署資訊 - Deploy ID: 69cb1aceb13fe25dba93ac37 - 網站網址: https://fun1399.com - 部署時間: 2026-03-30 21:00 - 狀態: 已上線 ### 已驗證連結 - https://fun1399.com/reviews/gm1688 - https://fun1399.com/reviews/3a - https://fun1399.com/reviews/ - https://fun1399.com/recommend/2026",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.732813650369644,
+      "maxScore": 0.4503767132759094,
+      "firstRecalledAt": "2026-05-17T04:52:49.162Z",
+      "lastRecalledAt": "2026-05-18T06:42:16.591Z",
+      "queryHashes": [
+        "e1562cbc4900",
+        "aeee2c6624fb",
+        "48336677ab13",
+        "2892e02c73c9"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "reviews/index.html",
+        "recommend/2026.html",
+        "fun1399.com",
+        "fun1399.com/reviews/gm1688",
+        "fun1399.com/reviews/3a",
+        "fun1399.com/reviews",
+        "fun1399.com/recommend/2026",
+        "reviews"
+      ]
+    },
+    "memory:memory/2026-05-08.md:463:482": {
+      "key": "memory:memory/2026-05-08.md:463:482",
+      "path": "memory/2026-05-08.md",
+      "startLine": 463,
+      "endLine": 482,
+      "source": "memory",
+      "snippet": "- ✅ 已生成封面圖路徑：`/static/images/casino-dcard-2026-cover.png` 與 `/static/images/fast-withdrawal-cover.png` - ⏳ 封面圖生成：Gemini API 503 UNAVAILABLE（高需求量），改用 Pollinations.ai 備案 - ⏳ 兩篇文章內容仍需大幅擴充（目前實際文字約 300 字，目標 1500+） **優化重點**： - 新增 PTT vs Dcard 差異比較表格 - 新增 10 個 FAQ 問答 - 新增 3 個真實情境案例（新手踩雷、出金卡關、倖存者偏差） - 新增論壇討論局限性分析 - 新增出金檢查清單 - 新增各平台出金速度比較表 - 新增 7 個影響出金速度因素 - 新增 5 種卡審核情況 - 新增 3 個出金失敗案例 - 延伸閱讀增加至 8 篇內鏈 --- *記錄時間：2026-05-08 23:21（Asia/Taipei）*",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8663234204053878,
+      "maxScore": 0.4444422900676727,
+      "firstRecalledAt": "2026-05-17T04:52:49.162Z",
+      "lastRecalledAt": "2026-05-17T04:55:36.165Z",
+      "queryHashes": [
+        "e1562cbc4900",
+        "aeee2c6624fb"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "pollinations.ai",
+        "asia/taipei",
+        "生成",
+        "封面",
+        "路徑",
+        "static",
+        "images",
+        "casino"
+      ]
+    },
+    "memory:memory/2026-04-27.md:164:207": {
+      "key": "memory:memory/2026-04-27.md:164:207",
+      "path": "memory/2026-04-27.md",
+      "startLine": 164,
+      "endLine": 207,
+      "source": "memory",
+      "snippet": "## 2026-04-27 18:03 更新：Sitemap 更新正式部署完成 ### Deploy ID - `69ef3484d626d44607581a15` - Published: 2026-04-27T10:03:49.342Z (UTC) - 狀態: ready ### 正式站驗證 - Sitemap URL: https://fun1399.com/sitemap.xml - URL 總數: **79** ✅ - /author 與 /responsible-gaming 已移除 ✅ - 無 .html 結尾 ✅ --- ## 2026-04-27 18:04 更新：Cron 排程除錯 + 文章補救 ### 排程故障根因 | 檢查項目 | 結果 | |----------|------| | 系統時間 | ✅ 2026-04-27 18:04 CST | | 系統時區 | ✅ Asia/Taipei | | 系統 cron 服務 | ✅ active (running) | | 系統 crontab | ⚠️ 僅有 backup.sh（無發文排程） | | OpenClaw Cron | ❌ **不存在**（4/23 移除後未重建） | **根因**：4/23 移除舊 Cron（Job ID: 5539df74...）後，未建立新 Cron，導致週五（4/24）與週一（4/27）皆未自動發文。 ### Cron 重建 | 項目 | 內容 | |------|------| | Job ID | `ceda6b75-372f-4464-bbaf-6e",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.2505294561386107,
+      "maxScore": 0.43128753304481504,
+      "firstRecalledAt": "2026-05-17T04:52:49.162Z",
+      "lastRecalledAt": "2026-05-18T06:42:16.591Z",
+      "queryHashes": [
+        "e1562cbc4900",
+        "48336677ab13",
+        "2892e02c73c9"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "backup",
+        "2026-04-27t10",
+        "49.342z",
+        "fun1399.com/sitemap.xml",
+        "responsible-gaming",
+        "asia/taipei",
+        "backup.sh",
+        "4/23"
+      ]
+    },
+    "memory:memory/2026-05-12.md:26:53": {
+      "key": "memory:memory/2026-05-12.md:26:53",
+      "path": "memory/2026-05-12.md",
+      "startLine": 26,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "- sitemap.xml：**未修改** ### 新工作流程（Hans 指定） 1. Hans 提供新封面圖 2. 只執行：轉 webp → 更新文章內引用 → 更新 og:image/twitter:image/JSON-LD → 更新最後修改時間 → 更新首頁/分類頁縮圖引用 → 手機版檢查 → 建立 preview 3. 記錄到 cover-update-log.md 4. **等 Hans 明確說「確認可以部署」才能部署** ## fun1399.com 网站维护（已完成，已凍結） ### fake-line-official-account 封面图替换 - [22:20] Hans 提供新封面图 (file_56---192828b0-305f-4b37-92b9-0c0e5b4f0fc5.jpg) - [22:20] 封面图已替换为 jpg 格式，HTML 路径已更新 - [22:20] 手机版 CSS 已自动套用 .article-hero-image 响应式样式 - [22:20] 部署完成 Deploy ID: 6a01f7411af7f60c6973b8ea - 正式站已生效：https://fun1399.com/articles/fake-line-official-account.html ### 5/11 封面图替换（回顾） - [21:32] Hans 催促封面图任务进度 - [21:32] 封面图替换 + 手机版 CSS 修正已完成并部署 - Deploy ID: 6a01f2519d4b002ca93656b0 ## Hans 流量",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.2691534221172331,
+      "maxScore": 0.4583007305860519,
+      "firstRecalledAt": "2026-05-17T04:52:49.162Z",
+      "lastRecalledAt": "2026-05-18T06:42:16.591Z",
+      "queryHashes": [
+        "e1562cbc4900",
+        "aeee2c6624fb",
+        "2892e02c73c9"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "sitemap.xml",
+        "image/twitter",
+        "image/json-ld",
+        "更新首頁/分類頁縮圖引用",
+        "cover-update-log.md",
+        "fun1399.com",
+        "fake-line-official-account",
+        "file-56"
+      ]
+    },
+    "memory:memory/2026-05-15.md:243:285": {
+      "key": "memory:memory/2026-05-15.md:243:285",
+      "path": "memory/2026-05-15.md",
+      "startLine": 243,
+      "endLine": 285,
+      "source": "memory",
+      "snippet": "- ⚠️ 尚有少量舊格式卡片未完全轉換（需手動檢查） ### 待完成 - [ ] 修正 articles/index.html 剩餘舊格式卡片 - [ ] 建立 preview deploy - [ ] 提供 preview URL - [ ] 截圖驗證（手機版 + Featured區塊） --- ## 21:13 - Preview v1 Deploy - **Deploy ID**: `6a072053523d8200caf8bd8e` - **Preview URL**: `https://6a072053523d8200caf8bd8e--statuesque-pithivier-bc9060.netlify.app` - **修改範圍**: index.html + articles/index.html + style.css + casino-scam-alert.html + casino-scam-complete-guide.html - **部署大小**: 18.5M，HTML 105 個 ### 問題回報（Hans 檢查後） 1. Section spacing 太緊湊，缺乏呼吸感 2. 詐騙調查區塊深黑色背景與整站白底落差太大 3. 熱門攻略推薦使用 emoji placeholder，需改為真實封面 4. 精選攻略導航只有純文字卡片，需改為圖文卡片 --- ## 22:03 - UI v2 修正開始 ### 修正項目 1. **Section spacing 統一** - 桌面版 section padding 統一為 48",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.41212235391139984,
+      "maxScore": 0.41212235391139984,
+      "firstRecalledAt": "2026-05-17T04:52:49.162Z",
+      "lastRecalledAt": "2026-05-17T04:52:49.162Z",
+      "queryHashes": [
+        "e1562cbc4900"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "articles/index.html",
+        "index.html",
+        "style.css",
+        "casino-scam-alert.html",
+        "casino-scam-complete-guide.html",
+        "18.5m",
+        "尚有",
+        "少量"
+      ]
+    },
+    "memory:memory/2026-05-16.md:45:67": {
+      "key": "memory:memory/2026-05-16.md:45:67",
+      "path": "memory/2026-05-16.md",
+      "startLine": 45,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "## 16:30 - 第二批批次封面更新完成（12篇） 使用 update_cover.py 批次完成 12 篇封面圖更新： 1. **hg-casino-promotions-may-2026** → `/static/images/articles/articles/hg-casino-promotions-may-2026-cover.jpg` 2. **poker-casino-guide** → `/static/images/articles/articles/poker-casino-guide-cover.jpg` 3. **2026-casino-recommendation** → `/static/images/articles/articles/2026-casino-recommendation-cover.jpg` 4. **safety-guide** → `/static/images/articles/articles/safety-guide-cover.jpg` 5. **withdrawal-ranking** → `/static/images/articles/articles/withdrawal-ranking-cover.jpg` 6. **withdrawal-risks** → `/static/images/articles/articles/withdrawal-risks-cover.jpg` 7. **casino-app-download** → `/static/images/articles/article",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46573760807514186,
+      "maxScore": 0.46573760807514186,
+      "firstRecalledAt": "2026-05-17T04:55:36.165Z",
+      "lastRecalledAt": "2026-05-17T04:55:36.165Z",
+      "queryHashes": [
+        "aeee2c6624fb"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "update-cover.py",
+        "hg-casino-promotions-may-2026",
+        "poker-casino-guide",
+        "2026-casino-recommendation",
+        "safety-guide",
+        "withdrawal-ranking",
+        "withdrawal-risks",
+        "casino-app-download"
+      ]
+    },
+    "memory:memory/2026-05-15.md:29:88": {
+      "key": "memory:memory/2026-05-15.md:29:88",
+      "path": "memory/2026-05-15.md",
+      "startLine": 29,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "dateModified 與頁面顯示更新為 `2026-05-15` --- ## 新封面圖上線 ### USDT 詐騙文章 - 新圖：`usdt-scam-guide-2026-cover.webp`（1200×630，128KB） - 文章路徑：`/articles/usdt-scam-guide-2026.html` ### HG 娛樂城優惠文章 - 新圖：`hg-promo-may-2026-cover.webp`（1200×630，126KB） - 文章路徑：`/articles/hg-casino-promotions-may-2026.html` --- ## 新發布流程（Hans 制定） **Phase 1：內容完成階段** 1. 完成文章 HTML 2. 更新首頁、分類頁、sitemap 3. ❌ 不 deploy 4. ❌ 不發布正式站 5. 回報：標題、URL、meta description、建議封面圖主題 6. **等待 Hans 製作封面圖** **Phase 2：收到封面圖後** 1. 上傳封面圖 2. 更新 og:image / schema image / twitter:image 3. ✅ 最後 deploy **禁止事項**： - 不文章寫完就直接發布 - 不使用預設封面圖 - 不自動 deploy --- ## 部署記錄 - deploy.sh 更新 token：`nfp_TaE2jFupmC6TBN1ERFFUA46Z6p1bUogSf432` - 部署時間：2026-05-15 16:17 - 部署網址：ht",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.45092099308967587,
+      "maxScore": 0.45092099308967587,
+      "firstRecalledAt": "2026-05-17T04:55:36.165Z",
+      "lastRecalledAt": "2026-05-17T04:55:36.165Z",
+      "queryHashes": [
+        "aeee2c6624fb"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "usdt-scam-guide-2026-cover.webp",
+        "hg-promo-may-2026-cover.webp",
+        "deploy.sh",
+        "datemodified",
+        "顯示",
+        "更新",
+        "封面",
+        "上線"
+      ]
+    },
+    "memory:memory/2026-03-18.md:1:49": {
+      "key": "memory:memory/2026-03-18.md:1:49",
+      "path": "memory/2026-03-18.md",
+      "startLine": 1,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "# 2026-03-18 - Fun1399.com 兩階段部署流程建立 ## 重要更新 ### 兩階段部署流程正式建立 為避免錯誤直接上線，建立了「先預覽，後正式」的部署流程： **第一階段：Preview（預覽）** - Build 網站 - 部署為預覽版本（不覆蓋正式網站） - 提供預覽網址或用戶自行預覽 **第二階段：正式部署（等待確認）** - 必須等待用戶明確回覆「可以上線」 - 才部署到 fun1399.com ### Netlify 部署資訊 - **Site Name**: statuesque-pithivier-bc9060 - **Site ID**: `7232c8ac-d01c-454d-867b-f0eb8f4c7f94` - **Production URL**: https://fun1399.com - **Deploy ID**: 69ba731997aebc7b511fa9ed ### 本次部署內容（2026-03-18 16:55） ✅ **已修復** - 首頁「最新攻略文章」添加新文章 - 文章列表頁添加體驗金攻略 - 添加 casino-registration-guide.html - 添加 casino-free-trial-bonus.html ### 自動化任務調整 **舊任務（已移除）：** - 週一/三/五自動生成內容並直接部署 **新任務（僅到 Preview 階段）：** - 週一 10:07 - 生成文章 + Build（不部署） - 週三 10:13 - 生成文章 + Build（不部署）",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.1738472265185962,
+      "maxScore": 0.6804845702829014,
+      "firstRecalledAt": "2026-05-17T08:07:11.202Z",
+      "lastRecalledAt": "2026-05-18T06:42:16.591Z",
+      "queryHashes": [
+        "48336677ab13",
+        "2892e02c73c9"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "fun1399.com",
+        "statuesque-pithivier-bc9060",
+        "casino-registration-guide.html",
+        "casino-free-trial-bonus.html",
+        "週一/三/五自動生成內容並直接部署",
+        "fun1399",
+        "com",
+        "階段"
+      ]
+    },
+    "memory:memory/2026-03-14.md:71:103": {
+      "key": "memory:memory/2026-03-14.md:71:103",
+      "path": "memory/2026-03-14.md",
+      "startLine": 71,
+      "endLine": 103,
+      "source": "memory",
+      "snippet": "- 驗證檔案：googlefc1e7a1231a7786a.html - 已永久加入 build 目錄 - 未來部署自動包含 ### 按鈕連結修復 發現並修復13個[聯盟連結]佔位符： - recommend/2026.html（6個連結） - promotions/2026-03.html（3個連結） - reviews/jucity.html（1個連結） - reviews/index.html（3個連結） - articles/baccarat-guide.html（1個連結） - articles/slots-guide.html（1個連結） 連結對應表： - 鉅城：https://fun1399.ofa177.net/ - MBM：https://fun1399.mbm88.net/ - 優塔：https://u.town/3006 - HG：https://hg.91kdy.com/ - 大老爺：https://gm1688.net/ - 3A：https://3a.casino/ ### 自動部署方案設計 - 方案：Netlify API部署 - 用戶提供Token：nfp_4kP1Jgd6fZFGVqDyCF71cKzoeuU3xYzxa96c - Site ID：7232c8ac-d01c-454d-867b-f0eb8f4c7f94 - 目標：實現「修改完成→自動部署」流程 ### 發送的檔案 - fun1399-gsc-verified.zip（含GSC驗證檔） - fun1399-fixed-buttons.zip（修復按鈕連結） - AUTO-",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.466220383466021,
+      "maxScore": 0.6697903559811271,
+      "firstRecalledAt": "2026-05-17T08:07:11.202Z",
+      "lastRecalledAt": "2026-05-18T06:42:16.591Z",
+      "queryHashes": [
+        "48336677ab13",
+        "9b366ad48c7c",
+        "2892e02c73c9"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "googlefc1e7a1231a7786a.html",
+        "recommend/2026.html",
+        "promotions/2026-03.html",
+        "reviews/jucity.html",
+        "reviews/index.html",
+        "articles/baccarat-guide.html",
+        "articles/slots-guide.html",
+        "fun1399.ofa177.net"
+      ]
+    },
+    "memory:memory/2026-04-18.md:1:30": {
+      "key": "memory:memory/2026-04-18.md:1:30",
+      "path": "memory/2026-04-18.md",
+      "startLine": 1,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "--- ## 2026-04-18 12:30 更新（緊急修復完成） ### 正式站緊急修復狀態 **問題**：fun1399.com 無法開啟（ERR_FAILED） **修復執行**： 1. ✅ 找到 Deploy ID: 69d898cb57d22a77ea8b0986（4/10 基準版本） 2. ✅ 將此 deploy 設為 Production 3. ✅ 確認網站恢復正常訪問 **修復結果**： | 檢查項目 | 狀態 | |----------|------| | HTTP 狀態碼 | ✅ 200 OK | | Production Deploy ID | ✅ 69d898cb57d22a77ea8b0986 | | Custom Domain | ✅ fun1399.com 已綁定 | | SSL/HTTPS | ✅ 正常啟用（Strict-Transport-Security） | | Netlify Edge | ✅ 正常運作 | **驗證連結**： - 正式站：https://fun1399.com（已恢復） - 當前版本：https://69d898cb57d22a77ea8b0986--statuesque-pithivier-bc9060.netlify.app **狀態**：正式站已恢復正常運作。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4415165305137634,
+      "maxScore": 0.4415165305137634,
+      "firstRecalledAt": "2026-05-17T08:07:11.202Z",
+      "lastRecalledAt": "2026-05-17T08:07:11.202Z",
+      "queryHashes": [
+        "48336677ab13"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "fun1399.com",
+        "err-failed",
+        "4/10",
+        "ssl/https",
+        "strict-transport-security",
+        "更新",
+        "緊急",
+        "修復"
+      ]
+    },
+    "memory:memory/2026-04-07.md:33:64": {
+      "key": "memory:memory/2026-04-07.md:33:64",
+      "path": "memory/2026-04-07.md",
+      "startLine": 33,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "| sports-betting.webp | 體育投注 | MLB、運動彩券 | | basketball-court.webp | NBA投注 | NBA相關文章 | ### 部署狀態 - **Deploy ID:** `69d4a53f1d39d46b7578835a` - **時間:** 2026-04-07 14:35 - **狀態:** ✅ 已成功部署到正式網站 - **URL:** https://fun1399.com ### 待補充（未來優化） - 部分文章仍可使用AI生成更精準的封面圖 - 可考慮為每篇文章生成獨特圖片（目前使用分類共用圖片） - 世界盃專題可製作專屬視覺系列 --- ## 其他事件 ### API Key 付費升級成功 - 新的 Gemini API Key 已完成付費升級 - AI圖片生成功能已可用 - 測試圖片已成功生成：百家樂賭場場景 ### 週一文章補發 - 4月6日（週一）cron job再次出現false positive - 手動生成：MBM娛樂城評價文章 - 已包含在這次部署中 ---",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.40242403447628017,
+      "maxScore": 0.40242403447628017,
+      "firstRecalledAt": "2026-05-17T08:07:11.202Z",
+      "lastRecalledAt": "2026-05-17T08:07:11.202Z",
+      "queryHashes": [
+        "48336677ab13"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "sports-betting.webp",
+        "basketball-court.webp",
+        "fun1399.com",
+        "sports",
+        "betting.webp",
+        "體育",
+        "投注",
+        "mlb"
+      ]
+    },
+    "memory:memory/2026-05-08.md:440:469": {
+      "key": "memory:memory/2026-05-08.md:440:469",
+      "path": "memory/2026-05-08.md",
+      "startLine": 440,
+      "endLine": 469,
+      "source": "memory",
+      "snippet": "**今日建議手動提交 5 個 URL**（需 Hans 自行登入 GSC UI 操作）： 1. `https://fun1399.com/articles/casino-scam-methods` 2. `https://fun1399.com/articles/casino-fake-customer-service` 3. `https://fun1399.com/articles/wealth-god-casino-scam-review` 4. `https://fun1399.com/articles/fast-withdrawal` 5. `https://fun1399.com/articles/casino-dcard-2026` **提交步驟**： 1. 登入 GSC → 選擇 fun1399.com 資源 2. 左側「網頁」→「檢查網址」 3. 輸入 URL → 點「要求建立索引」 4. 逐個重複上述步驟 --- ### 四十八、開始重寫兩篇孤立文章（5/8 19:39-進行中） **Hans 指示**：先重寫 `casino-dcard-2026` 與 `fast-withdrawal` 兩篇孤兒頁面，補 FAQ / 真實案例 / 比較表格 / PTT Dcard 討論，目標增厚至 1500-2500 字。 **已執行**： - ✅ 讀取兩篇既有檔案，分析內容問題 - ✅ 開始重寫 casino-dcard-2026（初稿完成，待擴充至 1500+ 字） - ✅ 開始重寫 fast-withdrawal（初稿完成，待擴充至 1500+ 字） -",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8585723251104355,
+      "maxScore": 0.4655263632535934,
+      "firstRecalledAt": "2026-05-17T10:48:26.800Z",
+      "lastRecalledAt": "2026-05-17T12:41:03.885Z",
+      "queryHashes": [
+        "9b366ad48c7c",
+        "d6cee1bfb6a9"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "fun1399.com",
+        "5/8",
+        "39-進行中",
+        "casino-dcard-2026",
+        "fast-withdrawal",
+        "1500-2500",
+        "今日",
+        "建議"
+      ]
+    },
+    "memory:memory/2026-05-08.md:413:446": {
+      "key": "memory:memory/2026-05-08.md:413:446",
+      "path": "memory/2026-05-08.md",
+      "startLine": 413,
+      "endLine": 446,
+      "source": "memory",
+      "snippet": "**回覆已交付阿學**（message_id 2928），含基本面、估值、籌碼、風險、進場建議 - 結論：穩健型 AI 股，PE 30x 在 AI 供應鏈中算便宜 - 進場建議：190-200 元 3 成、175-185 元 4 成、160 元以下 3 成 - 停損設 150 元 - 關鍵觀察：5/20 股東會、4 月營收、AI 電源訂單能見度、外資持續買超 --- ### 四十七、Hans 糾正 GSC 操作權限說明（5/8 19:33） **Hans 指出我混淆了「分析/建議」與「實際操作 GSC UI」的界線** **更正事實**： • GSC API **只有讀取功能**，沒有 `request indexing` 功能 • 「要求建立索引」必須透過 GSC 網頁 UI 手動點按鈕 • 網址：`https://search.google.com/search-console` **我能做的**： • ✅ 分析 GSC 數據、排序優先級 • ✅ 檢查 URL 狀態、給 SEO 建議 • ✅ 寫腳本自動化讀取數據 **我不能做的**： • ❌ 實際點「要求建立索引」按鈕 • ❌ 修改 GSC 設定、驗證網站、提交 sitemap • ❌ 操作 GSC UI 任何功能 **今日建議手動提交 5 個 URL**（需 Hans 自行登入 GSC UI 操作）： 1. `https://fun1399.com/articles/casino-scam-methods` 2. `https://fun1399.com/articles/casino-fake-custo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.39056649506092067,
+      "maxScore": 0.39056649506092067,
+      "firstRecalledAt": "2026-05-17T10:48:26.800Z",
+      "lastRecalledAt": "2026-05-17T10:48:26.800Z",
+      "queryHashes": [
+        "9b366ad48c7c"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "message-id",
+        "190-200",
+        "175-185",
+        "5/20",
+        "5/8",
+        "分析/建議",
+        "search.google.com/search-console",
+        "回覆"
+      ]
+    },
+    "memory:memory/2026-05-10.md:79:103": {
+      "key": "memory:memory/2026-05-10.md:79:103",
+      "path": "memory/2026-05-10.md",
+      "startLine": 79,
+      "endLine": 103,
+      "source": "memory",
+      "snippet": "- 世界盃/體育類：world-cup-2026-guide, world-cup-betting-guide, world-cup-betting-tips, world-cup-favorites, world-cup-schedule, world-cup-live-betting, soccer-betting, nba-betting, mlb-betting - 論壇/社群類：casino-ptt-discussion, casino-dcard-2026 - 其他：about, contact, privacy, terms, guides/faq, promotions/2026-03 --- ### 三、策略分析進度（進行中） **已完成**： - ✅ 讀取 GSC 數據、網站內容主題、MEMORY.md、市場規模數據 - ✅ 搜索競爭對手策略、台灣娛樂城市場趨勢、關鍵字搜尋量參考資料 - ✅ 整理 fun1399 內容主題分布清單 **已完成**： - ✅ 根據數據撰寫完整策略分析報告（Hans 要求的 10 項輸出格式） - ✅ 補充競爭對手拆解（qttheluxe 模式分析） - ✅ 補充關鍵字機會清單（高轉化/低競爭/風險關鍵字分級） **交付內容**（message_id 2997/2999/3001/3005）： 1. fun1399 狀況判斷（88 URL，僅 13 曝光，73 零曝光） 2. 3 條路線分析（A:詐騙防範權威站、B:優惠比較導航站、C:單一產品著陸頁） 3. 建議主攻方向：路線 C + 路線 A 組合 4. 建議做第二",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38567961752414703,
+      "maxScore": 0.38567961752414703,
+      "firstRecalledAt": "2026-05-17T10:48:26.800Z",
+      "lastRecalledAt": "2026-05-17T10:48:26.800Z",
+      "queryHashes": [
+        "9b366ad48c7c"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "世界盃/體育類",
+        "world-cup-2026-guide",
+        "world-cup-betting-guide",
+        "world-cup-betting-tips",
+        "world-cup-favorites",
+        "world-cup-schedule",
+        "world-cup-live-betting",
+        "soccer-betting"
+      ]
+    },
+    "memory:memory/2026-04-23.md:71:109": {
+      "key": "memory:memory/2026-04-23.md:71:109",
+      "path": "memory/2026-04-23.md",
+      "startLine": 71,
+      "endLine": 109,
+      "source": "memory",
+      "snippet": "- 此功能僅限 GSC 網頁介面手動操作 - Google 2023 年曾暫時關閉此功能，後重新開放但僅限手動 - 官方文件明確指出沒有自動化 API ### 已確認在 Sitemap 中的新文章（8 篇） | 文章 | Sitemap lastmod | |------|-----------------| | hg-casino-review.html | 2026-04-18 | | gm1688-casino-scam-review.html | 2026-04-21 | | 3a-casino-scam-review.html | 2026-04-21 | | casino-investment-scam.html | 2026-04-22 | | mbm-casino-review.html | 2026-04-07 | | utown-casino-scam-review.html | 2026-04-11 | | casino-fake-customer-service.html | 2026-04-16 | | casino-no-withdrawal-scam.html | 2026-04-09 | ### 下一步（需手動執行） 1. 登入 GSC 網頁介面：https://search.google.com/search-console 2. 進入「網址審查」工具 3. 逐個輸入新文章 URL 並點擊「要求建立索引」 4. 優先順序：HG → 大老爺 → 3A → 投資詐騙 --- *Last updated: 2026-04-23 20:44*",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.38135748505592343,
+      "maxScore": 0.38135748505592343,
+      "firstRecalledAt": "2026-05-17T10:48:26.800Z",
+      "lastRecalledAt": "2026-05-17T10:48:26.800Z",
+      "queryHashes": [
+        "9b366ad48c7c"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "hg-casino-review.html",
+        "gm1688-casino-scam-review.html",
+        "3a-casino-scam-review.html",
+        "casino-investment-scam.html",
+        "mbm-casino-review.html",
+        "utown-casino-scam-review.html",
+        "casino-no-withdrawal-scam.html",
+        "search.google.com/search-console"
+      ]
+    },
+    "memory:memory/2026-04-23.md:24:57": {
+      "key": "memory:memory/2026-04-23.md:24:57",
+      "path": "memory/2026-04-23.md",
+      "startLine": 24,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "| 假客服詐騙 | /articles/casino-fake-customer-service.html | 娛樂城安全 | | 不出金詐騙 | /articles/casino-no-withdrawal-scam.html | 娛樂城安全 | | 優塔評價 | /articles/utown-casino-scam-review.html | 品牌評價 | | MBM評價 | /articles/mbm-casino-review.html | 品牌評價 | ## 待執行 - [x] 重試 Netlify publish API → 已自動 published - [x] 驗證正式站 https://fun1399.com/articles/ 分類頁 → ✅ 品牌評價區顯示 5 篇 - [x] 驗證正式站 https://fun1399.com/ 首頁 → ✅ 200 OK --- *Last updated: 2026-04-23 20:39 ( compaction flush )* --- ## 2026-04-23 20:44 更新：Google 索引提升任務執行 ### 執行項目 **1. Sitemap 提交** - ✅ 使用 GSC API 提交 sitemap - URL: https://fun1399.com/sitemap.xml - 提交時間: 2026-04-23T12:45:02.022Z (UTC) - 上次下載: 2026-03-27T11:01:07.246Z - 錯誤: 0 | 警告: 0 **2. URL 索引狀態檢查（",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3753209859132767,
+      "maxScore": 0.3753209859132767,
+      "firstRecalledAt": "2026-05-17T10:48:26.800Z",
+      "lastRecalledAt": "2026-05-17T10:48:26.800Z",
+      "queryHashes": [
+        "9b366ad48c7c"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "articles/mbm-casino-review.html",
+        "fun1399.com/articles",
+        "fun1399.com",
+        "fun1399.com/sitemap.xml",
+        "2026-04-23t12",
+        "02.022z",
+        "2026-03-27t11",
+        "07.246z"
+      ]
+    },
+    "memory:memory/2026-05-10.md:61:76": {
+      "key": "memory:memory/2026-05-10.md:61:76",
+      "path": "memory/2026-05-10.md",
+      "startLine": 61,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "- casino-registration-guide（5 impressions） - sports-betting-master（5 impressions） - homepage（4 impressions, 3 clicks, CTR 75%） - casino-investment-scam（3 impressions） - casino-no-withdrawal-scam（3 impressions） - baccarat-master（3 impressions） - baccarat-guide（2 impressions） - newbie-guide（1 impression） **競爭對手觀察**（來自 MEMORY.md）： - qttheluxe.com, qttowerrush.com, inoutchickenroad2.com, pandasportsevents.com, dglivevideo.com - 採用「單一產品深度優化」策略（vs fun1399「大量文章覆蓋」策略） - 單頁優化優點：內容成本低、見效快、維護成本低 **現有 fun1399 內容主題分布**（88 HTML files）： - 詐騙/安全類：casino-scam-methods, casino-no-withdrawal-scam, casino-fake-customer-service, casino-account-freeze-scam, casino-romance-scam, casino-investment-",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5072582095861434,
+      "maxScore": 0.5072582095861434,
+      "firstRecalledAt": "2026-05-17T12:41:03.885Z",
+      "lastRecalledAt": "2026-05-17T12:41:03.885Z",
+      "queryHashes": [
+        "d6cee1bfb6a9"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "casino-registration-guide",
+        "sports-betting-master",
+        "casino-investment-scam",
+        "casino-no-withdrawal-scam",
+        "baccarat-master",
+        "baccarat-guide",
+        "newbie-guide",
+        "memory.md"
+      ]
+    },
+    "memory:memory/2026-05-15.md:142:185": {
+      "key": "memory:memory/2026-05-15.md:142:185",
+      "path": "memory/2026-05-15.md",
+      "startLine": 142,
+      "endLine": 185,
+      "source": "memory",
+      "snippet": "2. `/articles/casino-license-verification-2026` 3. `/articles/fake-line-official-account` 4. `/articles/casino-scam-emergency-response` 5. `/articles/biwin-casino-no-withdrawal` --- ## 18:49 - Title/Meta 優化 Deploy 完成 - **Deploy ID**: `6a06f22c3233312eedb706ae` - **Deploy 時間**: 2026-05-15 18:15:11 - **生產環境**: https://fun1399.com - **修改文章**: casino-investment-scam, fast-withdrawal, gm1688-casino-scam-review - **效果追蹤**: 2-3天後檢查 CTR 變化 --- ## 19:30 - casino-scam-alert 完整重寫 - **檔案路徑**: `/articles/casino-scam-alert.html` - **新大小**: 47KB（原約14KB） - **結構**: 11個完整章節 + 目錄 + FAQ + CTA + 10篇延伸閱讀內鏈 - **新封面**: `casino-scam-alert-cover-2026.png`（深色警示風格） - **OG/Twitter/Schema image**: 全部同步更新 - **日期**:",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4919681400060653,
+      "maxScore": 0.4919681400060653,
+      "firstRecalledAt": "2026-05-17T12:41:03.885Z",
+      "lastRecalledAt": "2026-05-17T12:41:03.885Z",
+      "queryHashes": [
+        "d6cee1bfb6a9"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "title/meta",
+        "fun1399.com",
+        "casino-investment-scam",
+        "fast-withdrawal",
+        "gm1688-casino-scam-review",
+        "2-3天後檢查",
+        "casino-scam-alert",
+        "articles/casino-scam-alert.html"
+      ]
+    },
+    "memory:memory/2026-05-17.md:62:85": {
+      "key": "memory:memory/2026-05-17.md:62:85",
+      "path": "memory/2026-05-17.md",
+      "startLine": 62,
+      "endLine": 85,
+      "source": "memory",
+      "snippet": "- casino-registration-guide: 曝光 20, CTR 0% → 優先級 P0 - baccarat-strategy & deposit-guide: 0 曝光, 未索引 → 優先級 P0 - GSC API 目前無法使用（token 失效），改用手動分析 ### 文章優化實作（free-credit-guide + casino-registration-guide） - 加強 Title: 加入「2026最新」 - 新增/更新 HowTo Schema（體驗金領取 5 步驟 / 註冊 5 步驟） - 新增 FAQPage Schema（各 8 題） - 新增 3-4 個 CTA 區塊（平台比較 / 主轉化 / 相關導航） - 加強內鏈（deposit-guide, fast-withdrawal, safety-guide 等） - 修復 free-credit-guide 重複結構 bug - 更新所有 visible 日期與 schema dateModified ### Production Deploy（第二次） - Deploy ID: 6a09a8ba6284e128a7d2fa5e - fun1399.com 正式上線優化後的文章 - 兩篇 P0 文章完成結構化資料與 CTA 升級 ### 今日總結 - 總計修復/優化文章數: 18 + 21 + 2 = 41 篇 - Deploy 次數: Preview 2 次 + Production 2 次 - 新增 Schema: HowTo ×2, FAQPage ×2 - 備",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46608927249908444,
+      "maxScore": 0.46608927249908444,
+      "firstRecalledAt": "2026-05-17T12:41:03.885Z",
+      "lastRecalledAt": "2026-05-17T12:41:03.885Z",
+      "queryHashes": [
+        "d6cee1bfb6a9"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "casino-registration-guide",
+        "baccarat-strategy",
+        "deposit-guide",
+        "free-credit-guide",
+        "新增/更新",
+        "3-4",
+        "fast-withdrawal",
+        "safety-guide"
+      ]
+    },
+    "memory:memory/2026-05-10.md:76:84": {
+      "key": "memory:memory/2026-05-10.md:76:84",
+      "path": "memory/2026-05-10.md",
+      "startLine": 76,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "- 詐騙/安全類：casino-scam-methods, casino-no-withdrawal-scam, casino-fake-customer-service, casino-account-freeze-scam, casino-romance-scam, casino-investment-scam, utown-scam-review, biwin-scam-review, wealth-god-scam-review, 3a-scam-review, gm1688-scam-review, jucity-review-may-2026, mbm-review, hg-review, how-to-check-scam-record, casino-scam-alert, casino-scam-emergency-response, casino-safe, casino-safety-check - 攻略/教學類：baccarat-guide, baccarat-rules, baccarat-strategy, baccarat-master, sports-betting-guide, sports-betting-tips, sports-betting-master, slots-guide, slots-beginner, slots-myths, fish-game-guide, live-casino-guide, lottery-guide, poker-guide, deposit-guide, withdrawal-tutorial,",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.463202753663063,
+      "maxScore": 0.463202753663063,
+      "firstRecalledAt": "2026-05-17T12:41:03.885Z",
+      "lastRecalledAt": "2026-05-17T12:41:03.885Z",
+      "queryHashes": [
+        "d6cee1bfb6a9"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "詐騙/安全類",
+        "casino-scam-methods",
+        "casino-no-withdrawal-scam",
+        "casino-fake-customer-service",
+        "casino-account-freeze-scam",
+        "casino-romance-scam",
+        "casino-investment-scam",
+        "utown-scam-review"
+      ]
+    },
+    "memory:memory/2026-05-17.md:1:28": {
+      "key": "memory:memory/2026-05-17.md:1:28",
+      "path": "memory/2026-05-17.md",
+      "startLine": 1,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "# Memory - 2026-05-17 ## fun1399 封面圖修復工作紀錄 ### 本日完成修復 #### 第一批：18 篇「有圖檔但 HTML 未引用」文章 - 修復時間：約 14:30 - 修復內容：補上 article hero image + og:image + twitter:image + schema image - 文章清單：casino-withdrawal-tutorial, mobile-casino-guide, casino-ptt-discussion, casino-scam-methods, casino-withdrawal-fast, hg-casino-promotions-may-2026, poker-casino-guide, safety-guide, withdrawal-risks, casino-app-download, casino-bonus-guide, casino-safe, casino-safety-check, high-cashback-casino, baccarat-guide, how-to-check-casino-scam-record, 2026-casino-recommendation, withdrawal-ranking #### 第二批：首頁/列表預覽路徑修復 - 修復 9 篇舊 webp 路徑更新為新 jpg 路徑 - index.html 與 articles/index.html 同步 #### 第三批：刪除重複封面 - 23 篇文章同時有舊 article",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46151266992092127,
+      "maxScore": 0.46151266992092127,
+      "firstRecalledAt": "2026-05-17T12:41:03.885Z",
+      "lastRecalledAt": "2026-05-17T12:41:03.885Z",
+      "queryHashes": [
+        "d6cee1bfb6a9"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "casino-withdrawal-tutorial",
+        "mobile-casino-guide",
+        "casino-ptt-discussion",
+        "casino-scam-methods",
+        "casino-withdrawal-fast",
+        "hg-casino-promotions-may-2026",
+        "poker-casino-guide",
+        "safety-guide"
+      ]
+    },
+    "memory:memory/2026-04-16.md:67:100": {
+      "key": "memory:memory/2026-04-16.md:67:100",
+      "path": "memory/2026-04-16.md",
+      "startLine": 67,
+      "endLine": 100,
+      "source": "memory",
+      "snippet": "| 3 | 優塔評價 (reviews/utown.html) | 延伸閱讀區塊 | | 4 | 體驗金指南 | 延伸閱讀 | | 5 | 註冊教學 | 延伸閱讀 | | 6 | 百家樂 | 延伸閱讀 | | 7 | 不出金詐騙 | 延伸閱讀 | | 8 | 儲值教學 | 延伸閱讀 | | 9 | 快速出金 | 延伸閱讀 | | 10 | 假客服詐騙 | 延伸閱讀 | ### 7. 正式維護路徑規則確立 ``` fun1399-fixed/ ← Source（唯一維護來源） build/ ← 編譯輸出（由 Source 同步） ``` **規則：** 只能修改 `fun1399-fixed/`，執行 `./sync_to_build.sh` 後再部署。 ### 8. 預覽環境建立 - ✅ 預覽連結：`https://69dff45029c311d9296817fd--statuesque-pithivier-bc9060.netlify.app` - ✅ Build 狀態：92 HTML 檔案同步完成 - ✅ 等待人工確認後部署正式站 ## 今日總結 | 項目 | 目標 | 完成 | |------|------|------| | Title重寫 | 4篇 | ✅ 4/4 | | HG文章強化 | 3專區 | ✅ 3/3 | | 內鏈集中 | 10篇 | ✅ 10/10 | | Source回填 | 5篇 | ✅ 5/5 | | 預覽部署 | 1次 | ✅ 1/1 | ## 待確認 - [ ] 預覽連結驗證通過 - [ ] 部署到正式站",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.42295629680156704,
+      "maxScore": 0.42295629680156704,
+      "firstRecalledAt": "2026-05-18T06:42:16.591Z",
+      "lastRecalledAt": "2026-05-18T06:42:16.591Z",
+      "queryHashes": [
+        "2892e02c73c9"
+      ],
+      "recallDays": [
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "reviews/utown.html",
+        "fun1399-fixed",
+        "sync-to-build.sh",
+        "4/4",
+        "3/3",
+        "10/10",
+        "5/5",
+        "1/1"
+      ]
+    },
+    "memory:memory/2026-05-16.md:1:28": {
+      "key": "memory:memory/2026-05-16.md:1:28",
+      "path": "memory/2026-05-16.md",
+      "startLine": 1,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "## 批次封面更新模式（2026-05-16 上午） Hans 指示新的工作流程： - **不再逐步檢查/逐篇回報過程** - 使用自動化腳本 `scripts/update_cover.py` 直接更新 - 單篇目標 30-60 秒完成 - 僅回報：已完成清單、缺少圖片、文章不存在 **已完成封面更新：** 1. `guides/faq` → `guides/faq-cover.png` 2. `pillars/baccarat-master` → `pillars/baccarat-master-cover.jpg` 3. `pillars/newbie-guide` → `pillars/newbie-guide-cover.jpg` 4. `articles/3a-casino-scam-review` → `articles/3a-casino-scam-review-cover.jpg` 5. `articles/casino-investment-scam` → `articles/casino-investment-scam-cover.jpg` 6. `articles/casino-no-withdrawal-scam` → `articles/casino-no-withdrawal-scam-cover.jpg` 7. `articles/casino-romance-scam` → `articles/casino-romance-scam-cover.jpg` 8. `articles/casino-scam-alert` → 等待圖片（Han",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3943321645259857,
+      "maxScore": 0.3943321645259857,
+      "firstRecalledAt": "2026-05-20T03:38:36.862Z",
+      "lastRecalledAt": "2026-05-20T03:38:36.862Z",
+      "queryHashes": [
+        "2984ff3184f2"
+      ],
+      "recallDays": [
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "不再逐步檢查/逐篇回報過程",
+        "scripts/update-cover.py",
+        "30-60",
+        "guides/faq",
+        "guides/faq-cover.png",
+        "pillars/baccarat-master",
+        "pillars/newbie-guide",
+        "pillars/newbie-guide-cover.jpg"
+      ]
+    },
+    "memory:memory/2026-04-04.md:32:69": {
+      "key": "memory:memory/2026-04-04.md:32:69",
+      "path": "memory/2026-04-04.md",
+      "startLine": 32,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "待辦：Google AI Studio 付費升級後啟用AI圖片生成功能 ### 建議的圖片策略 1. **高流量文章優先**（10篇）：百家樂攻略、世界盃投注、詐騙防範 2. **建立品牌視覺風格**： - 🎴 博弈教學類：深色背景+籌碼元素 - 🛡️ 安全防範類：藍色警示風格 - ⚽ 體育投注類：綠色運動風格 - 🏆 平台評測類：金色質感風格 --- ## 技能測試回顧 **昨日（2026-04-03）已完成測試：** - ✅ SEO審計：發現sitemap日期未更新等6個問題 - ✅ 人性化寫作：可移除AI寫作痕跡 - ✅ AI搜尋優化：可提升ChatGPT/Perplexity引用率 - ✅ 圖片優化：WebP壓縮已達86-98% - ⚠️ AI圖片生成：需API Key（已取得但額度用完） **完整報告位置：** `/root/.openclaw/workspace/技能測試報告-2026-04-03.md` --- ## 免費圖庫圖片添加完成 **時間：** 2026-04-04 17:45 **執行：** 使用Unsplash免費圖庫為4篇文章添加封面圖 ### 下載的圖片 | 圖片名稱 | 來源 | 用途 | 壓縮後大小 | |---------|------|------|-----------| | baccarat-chips.webp | Unsplash | 百家樂攻略文章 | 64KB | | casino-security.webp | Unsplash | 安全/詐騙類文章 | 58KB | |",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3895856440067291,
+      "maxScore": 0.3895856440067291,
+      "firstRecalledAt": "2026-05-20T03:38:36.862Z",
+      "lastRecalledAt": "2026-05-20T03:38:36.862Z",
+      "queryHashes": [
+        "2984ff3184f2"
+      ],
+      "recallDays": [
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "gpt",
+        "可提升chatgpt/perplexity引用率",
+        "webp壓縮已達86-98",
+        "baccarat-chips.webp",
+        "casino-security.webp",
+        "安全/詐騙類文章",
+        "google",
+        "studio"
+      ]
+    },
+    "memory:memory/2026-03-19.md:32:59": {
+      "key": "memory:memory/2026-03-19.md:32:59",
+      "path": "memory/2026-03-19.md",
+      "startLine": 32,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "- **用途**: 生成 1K/2K/4K 圖片，支持圖片編輯 ### 00:14 - Self-Improving Agent 安裝 - **來源**: charon-fan/agent-playbook (12.3K 安裝) - **功能**: 通用自我進化系統 - **位置**: `/root/.openclaw/workspace/skills/self-improving-agent/` - **狀態**: ✅ 安裝成功 - **記憶系統**: 語義記憶 + 情境記憶 + 工作記憶 - **用途**: 自動從每次技能互動中學習並改進 ## Installed Skills Summary | Skill | Source | Installs | Risk Level | |-------|--------|----------|------------| | skill-vetter | ClawHub | - | Low | | humanizer | ClawHub | - | Low | | find-skills | Vercel Labs | - | Safe | | nano-banana-pro | ClawHub | - | Low | | self-improving-agent | charon-fan | 12.3K | Med/Low | ## Notes - 用戶積極擴展技能庫，提升工作效率 - Self-improving-agent 將自動記錄和學習未來的互動 - 技能安裝過程中遇到 ClawHub 速率限制問題（已通過等待解決",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3781436264514923,
+      "maxScore": 0.3781436264514923,
+      "firstRecalledAt": "2026-05-20T03:38:36.862Z",
+      "lastRecalledAt": "2026-05-20T03:38:36.862Z",
+      "queryHashes": [
+        "2984ff3184f2"
+      ],
+      "recallDays": [
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "1k/2k/4k",
+        "self-improving",
+        "charon-fan/agent-playbook",
+        "12.3k",
+        "skill-vetter",
+        "find-skills",
+        "nano-banana-pro",
+        "self-improving-agent"
+      ]
+    },
+    "memory:memory/2026-04-15.md:33:78": {
+      "key": "memory:memory/2026-04-15.md:33:78",
+      "path": "memory/2026-04-15.md",
+      "startLine": 33,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "#### 4. 預覽部署 - Draft URL: https://69de6de0c5337c4287503b62--statuesque-pithivier-bc9060.netlify.app - 狀態：等待用戶確認後 Deploy --- ## 未來文章強制規則（已建立） 為避免再次出現相同問題，每篇新文章必須符合： | 檢查項目 | 標準 | 工具 | |---------|------|------| | 封面圖 | 1280x800，專屬設計 | ImageMagick | | 導流連結 | 至少1個註冊/優惠連結 | - | | 高對比度 | 文字與背景對比 ≥ 4.5:1 | - | | 錨文字多樣化 | 不可重複使用相同文案 | - | | 日期正確 | 不可大於發布當日 | - | --- ## 技術筆記 ### ImageMagick 封面圖生成指令範例 ```bash convert -size 1280x800 xc:none \\ -fill \"#1a1a2e\" -draw \"roundrectangle 0,0 1280,800 20,20\" \\ \\( -size 1280x800 gradient:#2d2d5a-#1a1a2e \\) -compose DstIn -composite \\ -pointsize 60 -fill \"#ff6b35\" -gravity center -annotate +0,-100 \"標題\" \\ -pointsize 40 -fill \"#ffffff\" -gravity cente",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.36299894154071805,
+      "maxScore": 0.36299894154071805,
+      "firstRecalledAt": "2026-05-20T03:38:36.862Z",
+      "lastRecalledAt": "2026-05-20T03:38:36.862Z",
+      "queryHashes": [
+        "2984ff3184f2"
+      ],
+      "recallDays": [
+        "2026-05-20"
+      ],
+      "conceptTags": [
+        "至少1個註冊/優惠連結",
+        "4.5",
+        "部署",
+        "draft",
+        "url",
+        "https",
+        "69de6de0c5337c4287503b62",
+        "statuesque"
+      ]
+    }
+  }
+}

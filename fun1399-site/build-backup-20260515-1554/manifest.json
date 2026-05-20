@@ -1,0 +1,16 @@
+{
+  "name": "娛樂城玩家俱樂部",
+  "short_name": "娛樂城推薦",
+  "description": "2026最新娛樂城推薦、線上娛樂城比較、百家樂攻略",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a5f7a",
+  "theme_color": "#00d4ff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

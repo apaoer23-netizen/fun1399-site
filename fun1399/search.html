@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>站內搜尋 | 娛樂城玩家俱樂部</title>
+    <meta name="description" content="搜尋娛樂城玩家俱樂部的所有文章、評測與攻略">
+    <link rel="canonical" href="https://fun1399.com/search">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.8;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        h1 { color: #1a5f7a; font-size: 2rem; margin-bottom: 30px; text-align: center; }
+        .search-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .search-input-wrapper {
+            display: flex;
+            gap: 10px;
+        }
+        #searchInput {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        #searchInput:focus {
+            border-color: #00d4ff;
+        }
+        #searchBtn {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #1a5f7a, #00d4ff);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        #searchBtn:hover {
+            transform: translateY(-2px);
+        }
+        .quick-tags {
+            margin-top: 20px;
+        }
+        .quick-tags h3 {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .tag {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 5px;
+            background: #f0f0f0;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #1a5f7a;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .tag:hover {
+            background: #1a5f7a;
+            color: #fff;
+        }
+        #results {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .result-item {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.3s;
+        }
+        .result-item:hover {
+            background: #f9f9f9;
+        }
+        .result-item:last-child {
+            border-bottom: none;
+        }
+        .result-title {
+            font-size: 1.2rem;
+            color: #1a5f7a;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .result-title:hover {
+            text-decoration: underline;
+        }
+        .result-desc {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+        .result-url {
+            color: #28a745;
+            font-size: 0.85rem;
+        }
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #1a5f7a;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #1a5f7a;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 站內搜尋</h1>
+        
+        <div class="search-box">
+            <div class="search-input-wrapper">
+                <input type="text" id="searchInput" placeholder="輸入關鍵字搜尋文章..." autocomplete="off">
+                <button id="searchBtn" onclick="performSearch()">搜尋</button>
+            </div>
+            
+            <div class="quick-tags">
+                <h3>熱門搜尋：</h3>
+                <span class="tag" onclick="quickSearch('詐騙')">詐騙</span>
+                <span class="tag" onclick="quickSearch('出金')">出金</span>
+                <span class="tag" onclick="quickSearch('體驗金')">體驗金</span>
+                <span class="tag" onclick="quickSearch('百家樂')">百家樂</span>
+                <span class="tag" onclick="quickSearch('鉅城')">鉅城</span>
+                <span class="tag" onclick="quickSearch('MBM')">MBM</span>
+                <span class="tag" onclick="quickSearch('優惠')">優惠</span>
+                <span class="tag" onclick="quickSearch('註冊')">註冊</span>
+            </div>
+        </div>
+        
+        <div id="results">
+            <p class="no-results">輸入關鍵字開始搜尋，或點擊上方熱門標籤</p>
+        </div>
+        
+        <a href="/" class="back-link">← 返回首頁</a>
+    </div>
+    
+    <script>
+        // 文章資料庫（簡化版，實際可擴展）
+        const articles = [
+            { title: "娛樂城詐騙手法大公開", url: "/articles/casino-scam-methods.html", desc: "揭露娛樂城常見詐騙手法，教你如何保護自己" },
+            { title: "娛樂城詐騙警示", url: "/articles/casino-scam-alert.html", desc: "最新詐騙手法警示與防範指南" },
+            { title: "娛樂城安全指南", url: "/articles/safety-guide.html", desc: "如何辨別黑網與安全平台" },
+            { title: "2026年娛樂城出金速度排行榜", url: "/articles/withdrawal-ranking.html", desc: "各大平台出金速度完整比較" },
+            { title: "娛樂城體驗金完整指南", url: "/articles/free-credit-guide.html", desc: "免費試玩與提款條件解析" },
+            { title: "百家樂完整攻略", url: "/articles/baccarat-guide.html", desc: "從入門到進階的百家樂教學" },
+            { title: "鉅城娛樂城評測", url: "/reviews/jucity.html", desc: "鉅城娛樂城深度評測與玩家評價" },
+            { title: "MBM娛樂城評測", url: "/reviews/mbm.html", desc: "MBM娛樂城完整分析" },
+            { title: "優塔娛樂城評測", url: "/reviews/utown.html", desc: "3A級優塔娛樂城評測" },
+            { title: "HG娛樂城評測", url: "/reviews/hg.html", desc: "HG娛樂城體育博彩專業評測" },
+            { title: "洗碼量與流水倍數教學", url: "/articles/wagering-guide.html", desc: "完整解析洗碼量計算方式" },
+            { title: "娛樂城返水攻略", url: "/articles/cashback-guide.html", desc: "如何最大化你的返水收益" },
+            { title: "娛樂城比較指南", url: "/articles/casino-comparison-guide.html", desc: "2026年七大面向完整評比" },
+            { title: "體育投注完整教學", url: "/articles/sports-betting-guide.html", desc: "從入門到進階的體育投注攻略" },
+            { title: "老虎機完整攻略", url: "/articles/slots-guide.html", desc: "RTP、 volatility與中獎機率解析" },
+            { title: "2026年娛樂城推薦", url: "/recommend/2026.html", desc: "嚴選6大信譽娛樂城推薦" },
+            { title: "關於我們", url: "/about.html", desc: "娛樂城玩家俱樂部介紹與聯絡方式" },
+            { title: "作者群介紹", url: "/author.html", desc: "認識我們的專業作者團隊" }
+        ];
+        
+        // 搜尋功能
+        function performSearch() {
+            const query = document.getElementById('searchInput').value.toLowerCase().trim();
+            const resultsDiv = document.getElementById('results');
+            
+            if (!query) {
+                resultsDiv.innerHTML = '<p class="no-results">請輸入搜尋關鍵字</p>';
+                return;
+            }
+            
+            resultsDiv.innerHTML = '<p class="loading">搜尋中...</p>';
+            
+            // 模擬搜尋延遲
+            setTimeout(() => {
+                const results = articles.filter(article => 
+                    article.title.toLowerCase().includes(query) || 
+                    article.desc.toLowerCase().includes(query)
+                );
+                
+                if (results.length === 0) {
+                    resultsDiv.innerHTML = `
+                        <div class="no-results">
+                            <h3>找不到符合「${escapeHtml(query)}」的結果</h3>
+                            <p>建議：</p>
+                            <ul style="text-align: left; display: inline-block;">
+                                <li>檢查關鍵字拼字</li>
+                                <li>嘗試較簡短的字詞</li>
+                                <li>點擊上方熱門標籤</li>
+                            </ul>
+                        </div>
+                    `;
+                } else {
+                    let html = `<p style="margin-bottom: 20px; color: #666;">找到 ${results.length} 個結果：</p>`;
+                    results.forEach(article => {
+                        html += `
+                            <div class="result-item">
+                                <a href="${article.url}" class="result-title">${highlightText(article.title, query)}</a>
+                                <p class="result-desc">${highlightText(article.desc, query)}</p>
+                                <span class="result-url">${article.url}</span>
+                            </div>
+                        `;
+                    });
+                    resultsDiv.innerHTML = html;
+                }
+            }, 300);
+        }
+        
+        // 快速搜尋
+        function quickSearch(keyword) {
+            document.getElementById('searchInput').value = keyword;
+            performSearch();
+        }
+        
+        // 高亮搜尋文字
+        function highlightText(text, query) {
+            const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
+            return text.replace(regex, '<mark style="background: #ffeb3b;">$1</mark>');
+        }
+        
+        // 轉義HTML
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        // 轉義正則特殊字符
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+        
+        // Enter鍵搜尋
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+        
+        // URL參數搜尋
+        window.addEventListener('load', function() {
+            const params = new URLSearchParams(window.location.search);
+            const q = params.get('q');
+            if (q) {
+                document.getElementById('searchInput').value = q;
+                performSearch();
+            }
+        });
+    </script>
+</body>
+</html>

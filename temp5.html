@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>jc911blogs-article-optimization-report</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="jc911blogs.com-文章優化報告">jc911blogs.com 文章優化報告</h1>
+<h2 id="非每日分析文章---逐篇優化建議">非每日分析文章 -
+逐篇優化建議</h2>
+<p><strong>網站主要關鍵字：</strong> 鉅城娛樂城<br />
+<strong>文章分類：</strong> 線上娛樂城推薦、百家樂系列、老虎機系列<br />
+<strong>每日分析預測：</strong> 暫停更新（不列入優化）</p>
+<hr />
+<h2 id="一線上娛樂城推薦系列">一、線上娛樂城推薦系列</h2>
+<h3 id="文章-1線上娛樂城洗碼量流水怎麼算">文章
+1：線上娛樂城洗碼量、流水怎麼算？</h3>
+<p><strong>網址：</strong>
+https://jc911blogs.com/online-casino-wagering-rebate/<br />
+<strong>目前標題：</strong>
+線上娛樂城洗碼量、流水怎麼算？提款限制與返水機制全解析（附高反水平台推薦）<br />
+<strong>字數估計：</strong> 約 3,000-4,000 字 ✅</p>
+<h4 id="現況優勢">✅ 現況優勢</h4>
+<ul>
+<li>內容深度足夠，有 3,000+ 字</li>
+<li>有 FAQ 區塊（Q1-Q5）</li>
+<li>有推薦平台（鉅城、MBM）</li>
+<li>有圖片搭配</li>
+</ul>
+<h4 id="優化建議">⚠️ 優化建議</h4>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>優化項目</th>
+<th>具體做法</th>
+<th>預期效果</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Title 優化</strong></td>
+<td>改為：「【2025最新】洗碼量流水怎麼算？娛樂城提款限制與返水機制完整攻略」</td>
+<td>增加年份關鍵字，提升點擊率</td>
+</tr>
+<tr class="even">
+<td><strong>2. Meta Description</strong></td>
+<td>撰寫 50-70
+字描述，包含「洗碼量計算、流水要求、返水機制、鉅城娛樂城」</td>
+<td>提升 SERP 摘要品質</td>
+</tr>
+<tr class="odd">
+<td><strong>3. H1 標籤</strong></td>
+<td>確認只有一個 H1，內容為文章主標題</td>
+<td>爬蟲理解文章主題</td>
+</tr>
+<tr class="even">
+<td><strong>4. H2/H3 結構</strong></td>
+<td>已有良好 H2/H3 結構，建議添加目錄 (Table of Contents)</td>
+<td>增加內部錨點連結</td>
+</tr>
+<tr class="odd">
+<td><strong>5. FAQ Schema</strong></td>
+<td>為 Q1-Q5 添加 FAQPage Schema 標記</td>
+<td>有機會顯示在 Google PAA</td>
+</tr>
+<tr class="even">
+<td><strong>6. 內部連結</strong></td>
+<td>在「返水機制」段落連結到「鉅城優惠懶人包」文章</td>
+<td>強化主題群組</td>
+</tr>
+<tr class="odd">
+<td><strong>7. CTA 優化</strong></td>
+<td>將「👉立即前往鉅城娛樂城官網」改為按鈕式 CTA</td>
+<td>提升點擊率</td>
+</tr>
+<tr class="even">
+<td><strong>8. 圖片 Alt</strong></td>
+<td>目前圖片 Alt 為空白，應填入描述：「鉅城娛樂城返水機制說明」</td>
+<td>圖片 SEO 優化</td>
+</tr>
+<tr class="odd">
+<td><strong>9. 延伸閱讀</strong></td>
+<td>文末延伸閱讀連結建議改為文字連結（目前為圖片）</td>
+<td>爬蟲可追蹤</td>
+</tr>
+<tr class="even">
+<td><strong>10. 更新日期</strong></td>
+<td>在標題下方顯示「最後更新：2025年3月」</td>
+<td>增加內容新鮮度</td>
+</tr>
+</tbody>
+</table>
+<h4 id="目標關鍵字優化">🎯 目標關鍵字優化</h4>
+<table>
+<thead>
+<tr class="header">
+<th>關鍵字</th>
+<th>目前位置</th>
+<th>建議</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>洗碼量怎麼算</td>
+<td>標題、H2</td>
+<td>✅ 已優化</td>
+</tr>
+<tr class="even">
+<td>流水計算</td>
+<td>H2</td>
+<td>在內文多提及 2-3 次</td>
+</tr>
+<tr class="odd">
+<td>返水機制</td>
+<td>H2</td>
+<td>✅ 已優化</td>
+</tr>
+<tr class="even">
+<td>鉅城娛樂城</td>
+<td>內文</td>
+<td>在首段再提及 1 次</td>
+</tr>
+<tr class="odd">
+<td>娛樂城提款</td>
+<td>內文</td>
+<td>改為「娛樂城提款限制」</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="文章-2線上娛樂城推薦-2025">文章 2：線上娛樂城推薦 2025</h3>
+<p><strong>網址：</strong> （從內文連結推測存在）<br />
+<strong>預估標題：</strong> 線上娛樂城推薦
+2025：最受歡迎的高評價娛樂城比較</p>
+<h4 id="優化建議-1">⚠️ 優化建議</h4>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>優化項目</th>
+<th>具體做法</th>
+<th>預期效果</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Title 強化</strong></td>
+<td>改為：「【2025娛樂城推薦】台灣最熱門5大線上娛樂城評比｜鉅城娛樂城領銜」</td>
+<td>加入數字與品牌名</td>
+</tr>
+<tr class="even">
+<td><strong>2. 比較表格</strong></td>
+<td>添加 5 大娛樂城比較表格（鉅城、MBM、大老爺、3A、優塔）</td>
+<td>有機會獲得 Featured Snippet</td>
+</tr>
+<tr class="odd">
+<td><strong>3. 結構化資料</strong></td>
+<td>添加 Comparison Table Schema</td>
+<td>提升 SERP 顯示效果</td>
+</tr>
+<tr class="even">
+<td><strong>4. 作者署名</strong></td>
+<td>添加作者名稱與簡介</td>
+<td>建立 E-E-A-T</td>
+</tr>
+<tr class="odd">
+<td><strong>5. 更新機制</strong></td>
+<td>每月更新一次「本月推薦」區塊</td>
+<td>保持內容新鮮</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="二百家樂系列">二、百家樂系列</h2>
+<h3 id="文章-3百家樂破解是真的嗎">文章 3：百家樂破解是真的嗎？</h3>
+<p><strong>網址：</strong>
+https://jc911blogs.com/jc-baccarat-odds/<br />
+<strong>目前標題：</strong>
+百家樂破解是真的嗎？鉅城娛樂城分析百家樂背後的機率</p>
+<h4 id="現況優勢-1">✅ 現況優勢</h4>
+<ul>
+<li>標題含疑問句（利於 SEO）</li>
+<li>有鉅城娛樂城品牌名</li>
+<li>內容提及「莊家優勢 50.68%」具專業性</li>
+</ul>
+<h4 id="優化建議-2">⚠️ 優化建議</h4>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>優化項目</th>
+<th>具體做法</th>
+<th>預期效果</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Title 擴充</strong></td>
+<td>改為：「百家樂破解是真的嗎？3大迷思破解+鉅城娛樂城機率分析【2025】」</td>
+<td>加入數字與年份</td>
+</tr>
+<tr class="even">
+<td><strong>2. 內容深度</strong></td>
+<td>目前內容較短（約 800-1,000 字），建議擴充至 2,000+ 字</td>
+<td>提升排名競爭力</td>
+</tr>
+<tr class="odd">
+<td><strong>3. 擴充內容</strong></td>
+<td>添加：「百家樂看路技巧」、「百家樂馬丁策略」、「百家樂資金管理」</td>
+<td>涵蓋更多長尾關鍵字</td>
+</tr>
+<tr class="even">
+<td><strong>4. 圖表添加</strong></td>
+<td>添加「莊閒機率比較圖」、「期望值計算表」</td>
+<td>增加內容豐富度</td>
+</tr>
+<tr class="odd">
+<td><strong>5. Video Schema</strong></td>
+<td>如有影片嵌入，添加 VideoObject Schema</td>
+<td>影片 SEO</td>
+</tr>
+<tr class="even">
+<td><strong>6. CTA 位置</strong></td>
+<td>在「資金管理」段落後添加 CTA：「在鉅城娛樂城練習百家樂，首儲送
+1000」</td>
+<td>自然植入轉化</td>
+</tr>
+<tr class="odd">
+<td><strong>7. FAQ 添加</strong></td>
+<td>添加 FAQ 區塊（5-8 題）</td>
+<td>增加 PAA 機會</td>
+</tr>
+<tr class="even">
+<td><strong>8. 內部連結</strong></td>
+<td>連結到「老虎機攻略」文章（相關遊戲）</td>
+<td>建立內部連結網</td>
+</tr>
+<tr class="odd">
+<td><strong>9. 外部連結</strong></td>
+<td>引用維基百科「百家樂」或數學機率資料</td>
+<td>建立權威性</td>
+</tr>
+<tr class="even">
+<td><strong>10. 麵包屑</strong></td>
+<td>添加：首頁 &gt; 百家樂系列 &gt; 百家樂破解是真的嗎？</td>
+<td>改善導覽結構</td>
+</tr>
+</tbody>
+</table>
+<h4 id="目標關鍵字優化-1">🎯 目標關鍵字優化</h4>
+<table>
+<thead>
+<tr class="header">
+<th>關鍵字</th>
+<th>建議位置</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>百家樂破解</td>
+<td>標題 ✅</td>
+</tr>
+<tr class="even">
+<td>百家樂機率</td>
+<td>H2</td>
+</tr>
+<tr class="odd">
+<td>百家樂技巧</td>
+<td>新增段落</td>
+</tr>
+<tr class="even">
+<td>百家樂看路</td>
+<td>新增段落</td>
+</tr>
+<tr class="odd">
+<td>鉅城百家樂</td>
+<td>內文提及</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="三老虎機系列">三、老虎機系列</h2>
+<h3 id="文章-4老虎機贏錢秘訣">文章 4：老虎機贏錢秘訣</h3>
+<p><strong>網址：</strong> https://jc911blogs.com/winning-tips/<br />
+<strong>目前標題：</strong>
+老虎機贏錢秘訣：掌握技巧，提升勝率的終極指南</p>
+<h4 id="現況優勢-2">✅ 現況優勢</h4>
+<ul>
+<li>內容豐富，有 2,000+ 字</li>
+<li>有表格（符號說明表）</li>
+<li>有 FAQ 區塊</li>
+<li>有推薦遊戲（雷神之鎚、戰神賽特）</li>
+</ul>
+<h4 id="優化建議-3">⚠️ 優化建議</h4>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>優化項目</th>
+<th>具體做法</th>
+<th>預期效果</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Title 優化</strong></td>
+<td>改為：「【老虎機攻略】5大贏錢秘訣+高RTP機台推薦｜鉅城娛樂城教學」</td>
+<td>加入數字與品牌</td>
+</tr>
+<tr class="even">
+<td><strong>2. 標籤優化</strong></td>
+<td>添加標籤：老虎機、電子遊戲、鉅城娛樂城、雷神之鎚、戰神賽特</td>
+<td>內部分類優化</td>
+</tr>
+<tr class="odd">
+<td><strong>3. 圖片優化</strong></td>
+<td>目前有多張圖片，確認都有 Alt 文字</td>
+<td>圖片 SEO</td>
+</tr>
+<tr class="even">
+<td><strong>4. 影片嵌入</strong></td>
+<td>如有條件，嵌入 YouTube 老虎機教學影片</td>
+<td>增加停留時間</td>
+</tr>
+<tr class="odd">
+<td><strong>5. RTP 列表</strong></td>
+<td>添加「鉅城娛樂城高 RTP 機台 Top 10 列表」</td>
+<td>實用性內容</td>
+</tr>
+<tr class="even">
+<td><strong>6. 互動元素</strong></td>
+<td>添加「老虎機運氣測試」或「適合你的機台推薦」互動區塊</td>
+<td>增加互動率</td>
+</tr>
+<tr class="odd">
+<td><strong>7. CTA 優化</strong></td>
+<td>將文末 CTA 改為：「立即註冊鉅城，首儲 1000 送 1000 玩雷神之鎚」</td>
+<td>具體化優惠</td>
+</tr>
+<tr class="even">
+<td><strong>8. Schema 標記</strong></td>
+<td>添加 Article Schema + FAQ Schema</td>
+<td>結構化資料</td>
+</tr>
+<tr class="odd">
+<td><strong>9. 相關文章</strong></td>
+<td>添加「相關文章」區塊：連結到「老虎機攻略」文章</td>
+<td>內部連結</td>
+</tr>
+<tr class="even">
+<td><strong>10. 社交分享</strong></td>
+<td>添加社交分享按鈕（FB、LINE、Twitter）</td>
+<td>增加分享率</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="文章-5鉅城娛樂城老虎機攻略">文章 5：鉅城娛樂城老虎機攻略</h3>
+<p><strong>網址：</strong>
+https://jc911blogs.com/online-casino-slot-strategy-guide/<br />
+<strong>目前標題：</strong>
+鉅城娛樂城老虎機攻略｜如何挑選高勝率機種？新手必看懶人包！</p>
+<h4 id="現況優勢-3">✅ 現況優勢</h4>
+<ul>
+<li>標題含品牌名「鉅城娛樂城」✅</li>
+<li>有明確目標族群（新手）</li>
+<li>有數字「5大技巧」</li>
+</ul>
+<h4 id="優化建議-4">⚠️ 優化建議</h4>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>優化項目</th>
+<th>具體做法</th>
+<th>預期效果</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Title 微調</strong></td>
+<td>改為：「【鉅城老虎機攻略】5大技巧挑選高RTP機台｜新手必看懶人包2025」</td>
+<td>加入年份</td>
+</tr>
+<tr class="even">
+<td><strong>2. H2 標題優化</strong></td>
+<td>目前 H2
+為「鉅城娛樂城挑選高勝率機台的五大技巧」，建議簡化為「5大技巧挑選高勝率機台」</td>
+<td>避免重複品牌名</td>
+</tr>
+<tr class="odd">
+<td><strong>3. 內部連結</strong></td>
+<td>在「RTP」段落連結到「老虎機贏錢秘訣」文章</td>
+<td>強化群組</td>
+</tr>
+<tr class="even">
+<td><strong>4. 優惠連結</strong></td>
+<td>添加連結到「鉅城優惠懶人包」</td>
+<td>導流至 Money Page</td>
+</tr>
+<tr class="odd">
+<td><strong>5. 圖片說明</strong></td>
+<td>如有機台截圖，添加圖片說明</td>
+<td>豐富內容</td>
+</tr>
+<tr class="even">
+<td><strong>6. 玩家見證</strong></td>
+<td>添加「玩家心得」或「真實案例」（匿名）</td>
+<td>建立信任</td>
+</tr>
+<tr class="odd">
+<td><strong>7. 更新標示</strong></td>
+<td>在文末添加「最後更新日期」</td>
+<td>內容新鮮度</td>
+</tr>
+<tr class="even">
+<td><strong>8. 行動呼籲</strong></td>
+<td>添加「立即試玩」按鈕，連結至鉅城官網</td>
+<td>轉化優化</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="四全站通用優化建議">四、全站通用優化建議</h2>
+<h3 id="網站架構優化">1. 網站架構優化</h3>
+<pre><code>建議的 URL 結構：
+
+首頁
+├── /casino-recommendation/ (娛樂城推薦 Pillar Page)
+│   ├── /online-casino-wagering-rebate/ (洗碼量文章)
+│   └── /casino-comparison-2025/ (娛樂城比較)
+│
+├── /baccarat-guides/ (百家樂系列 Pillar Page)
+│   ├── /jc-baccarat-odds/ (破解迷思)
+│   ├── /baccarat-strategy/ (策略教學 - 建議新增)
+│   └── /baccarat-pattern/ (看路技巧 - 建議新增)
+│
+├── /slot-guides/ (老虎機系列 Pillar Page)
+│   ├── /winning-tips/ (贏錢秘訣)
+│   ├── /online-casino-slot-strategy-guide/ (攻略)
+│   └── /high-rtp-slots/ (高RTP機台 - 建議新增)
+│
+└── /daily-analysis/ (每日分析 - 暫停更新，改為歷史資料)</code></pre>
+<h3 id="內部連結策略">2. 內部連結策略</h3>
+<p><strong>每篇文章必須包含的連結：</strong> - 連結到所屬 Pillar
+Page（如百家樂系列 → 百家樂總覽頁） - 連結到 2-3 篇同系列其他文章 -
+連結到 1 篇相關系列文章（如百家樂 → 老虎機） - 連結到 1 個 Money
+Page（鉅城優惠頁）</p>
+<h3 id="schema-標記必裝清單">3. Schema 標記必裝清單</h3>
+<p><strong>每篇文章必須添加：</strong></p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;@context&quot;</span><span class="fu">:</span> <span class="st">&quot;https://schema.org&quot;</span><span class="fu">,</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;@type&quot;</span><span class="fu">:</span> <span class="st">&quot;Article&quot;</span><span class="fu">,</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;headline&quot;</span><span class="fu">:</span> <span class="st">&quot;文章標題&quot;</span><span class="fu">,</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;author&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;@type&quot;</span><span class="fu">:</span> <span class="st">&quot;Organization&quot;</span><span class="fu">,</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;鉅城娛樂城&quot;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">},</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;publisher&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;@type&quot;</span><span class="fu">:</span> <span class="st">&quot;Organization&quot;</span><span class="fu">,</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;鉅城娛樂城&quot;</span><span class="fu">,</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;logo&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;@type&quot;</span><span class="fu">:</span> <span class="st">&quot;ImageObject&quot;</span><span class="fu">,</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;url&quot;</span><span class="fu">:</span> <span class="st">&quot;網站 Logo URL&quot;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">},</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;datePublished&quot;</span><span class="fu">:</span> <span class="st">&quot;2025-03-01&quot;</span><span class="fu">,</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;dateModified&quot;</span><span class="fu">:</span> <span class="st">&quot;2025-03-01&quot;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<p><strong>FAQ 文章添加：</strong></p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode json"><code class="sourceCode json"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;@type&quot;</span><span class="fu">:</span> <span class="st">&quot;FAQPage&quot;</span><span class="fu">,</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&quot;mainEntity&quot;</span><span class="fu">:</span> <span class="ot">[</span><span class="fu">{</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;@type&quot;</span><span class="fu">:</span> <span class="st">&quot;Question&quot;</span><span class="fu">,</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;name&quot;</span><span class="fu">:</span> <span class="st">&quot;問題&quot;</span><span class="fu">,</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&quot;acceptedAnswer&quot;</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;@type&quot;</span><span class="fu">:</span> <span class="st">&quot;Answer&quot;</span><span class="fu">,</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>      <span class="dt">&quot;text&quot;</span><span class="fu">:</span> <span class="st">&quot;答案&quot;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">}</span><span class="ot">]</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div>
+<h3 id="圖片全站優化">4. 圖片全站優化</h3>
+<p><strong>所有圖片必須：</strong> - [ ] 檔名含關鍵字（如
+<code>baccarat-odds-comparison.jpg</code>） - [ ] Alt 文字描述（15-20
+字） - [ ] 壓縮至 100KB 以下 - [ ] 使用 WebP 格式（如可行情況）</p>
+<h3 id="行動裝置優化">5. 行動裝置優化</h3>
+<p><strong>檢查項目：</strong> - [ ] 字體大小至少 16px - [ ]
+按鈕點擊區域 44x44px 以上 - [ ] 表格可橫向捲動 - [ ] 圖片自適應螢幕</p>
+<hr />
+<h2
+id="五新增文章建議填補內容缺口">五、新增文章建議（填補內容缺口）</h2>
+<h3 id="建議新增文章利於-seo">建議新增文章（利於 SEO）：</h3>
+<table>
+<thead>
+<tr class="header">
+<th>文章主題</th>
+<th>目標關鍵字</th>
+<th>重要性</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>鉅城娛樂城 USDT 儲值教學</td>
+<td>鉅城 USDT、USDT 儲值教學</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr class="even">
+<td>鉅城娛樂城優惠懶人包 2025</td>
+<td>鉅城優惠、娛樂城優惠</td>
+<td>⭐⭐⭐⭐⭐</td>
+</tr>
+<tr class="odd">
+<td>鉅城娛樂城註冊教學</td>
+<td>鉅城註冊、如何註冊鉅城</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr class="even">
+<td>百家樂看路技巧完整教學</td>
+<td>百家樂看路、長龍單跳</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr class="odd">
+<td>老虎機 RTP 排行榜 Top 10</td>
+<td>高 RTP 老虎機、老虎機推薦</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+<tr class="even">
+<td>娛樂城出金速度比較</td>
+<td>娛樂城出金、快速出金</td>
+<td>⭐⭐⭐⭐</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="六執行優先級">六、執行優先級</h2>
+<h3 id="第一優先立即執行">🔴 第一優先（立即執行）</h3>
+<ol type="1">
+<li>為所有文章添加 Meta Description</li>
+<li>優化所有圖片 Alt 文字</li>
+<li>添加 Article Schema 標記</li>
+<li>建立內部連結網路</li>
+</ol>
+<h3 id="第二優先week-2">🟡 第二優先（Week 2）</h3>
+<ol type="1">
+<li>擴充短文章（百家樂破解）至 2,000+ 字</li>
+<li>添加 FAQ Schema</li>
+<li>優化所有 Title 標籤</li>
+<li>建立 Pillar-Cluster 頁面</li>
+</ol>
+<h3 id="第三優先month-2">🟢 第三優先（Month 2）</h3>
+<ol type="1">
+<li>新增 5-6 篇長尾關鍵字文章</li>
+<li>建立作者檔案頁面</li>
+<li>添加麵包屑導覽</li>
+<li>優化行動裝置體驗</li>
+</ol>
+<hr />
+<p><em>報告產生日期：2025年3月</em><br />
+<em>適用網站：jc911blogs.com</em><br />
+<em>主要關鍵字：鉅城娛樂城</em></p>
+</body>
+</html>

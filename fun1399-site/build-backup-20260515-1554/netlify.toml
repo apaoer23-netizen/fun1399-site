@@ -1,0 +1,44 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/*.html"
+  to = "/articles/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reviews/*.html"
+  to = "/reviews/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/recommend/*.html"
+  to = "/recommend/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pillars/*.html"
+  to = "/pillars/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/promotions/*.html"
+  to = "/promotions/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*.html"
+  to = "/:splat"
+  status = 301
+  force = true

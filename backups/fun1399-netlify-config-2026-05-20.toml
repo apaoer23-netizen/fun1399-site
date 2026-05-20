@@ -1,0 +1,889 @@
+plugins = []
+headers = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/root/.openclaw/workspace/fun1399-clean"
+publishOrigin = "default"
+base = "/root/.openclaw/workspace/fun1399-clean"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[redirects]]
+from = "/articles/hg-casino-review.html"
+to = "/articles/hg-casino-review"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/gm1688-casino-scam-review.html"
+to = "/articles/gm1688-casino-scam-review"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/3a-casino-scam-review.html"
+to = "/articles/3a-casino-scam-review"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-investment-scam.html"
+to = "/articles/casino-investment-scam"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-fake-customer-service.html"
+to = "/articles/casino-fake-customer-service"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-no-withdrawal-scam.html"
+to = "/articles/casino-no-withdrawal-scam"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/mbm-casino-review.html"
+to = "/articles/mbm-casino-review"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/utown-casino-scam-review.html"
+to = "/articles/utown-casino-scam-review"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/baccarat-guide.html"
+to = "/articles/baccarat-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/baccarat-rules.html"
+to = "/articles/baccarat-rules"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/baccarat-strategy.html"
+to = "/articles/baccarat-strategy"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/slots-guide.html"
+to = "/articles/slots-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/slots-beginner.html"
+to = "/articles/slots-beginner"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/slots-myths.html"
+to = "/articles/slots-myths"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/high-rtp-slots.html"
+to = "/articles/high-rtp-slots"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/sports-betting-guide.html"
+to = "/articles/sports-betting-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/soccer-betting.html"
+to = "/articles/soccer-betting"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/nba-betting.html"
+to = "/articles/nba-betting"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/mlb-betting.html"
+to = "/articles/mlb-betting"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/sports-betting-tips.html"
+to = "/articles/sports-betting-tips"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/world-cup-2026-guide.html"
+to = "/articles/world-cup-2026-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/world-cup-favorites.html"
+to = "/articles/world-cup-favorites"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/world-cup-betting-guide.html"
+to = "/articles/world-cup-betting-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/world-cup-betting-tips.html"
+to = "/articles/world-cup-betting-tips"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/world-cup-schedule.html"
+to = "/articles/world-cup-schedule"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/world-cup-live-betting.html"
+to = "/articles/world-cup-live-betting"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/how-to-check-casino-scam-record.html"
+to = "/articles/how-to-check-casino-scam-record"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/safety-guide.html"
+to = "/articles/safety-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-safety-check.html"
+to = "/articles/casino-safety-check"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-scam-methods.html"
+to = "/articles/casino-scam-methods"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-scam-alert.html"
+to = "/articles/casino-scam-alert"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/withdrawal-risks.html"
+to = "/articles/withdrawal-risks"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-free-trial-bonus.html"
+to = "/articles/casino-free-trial-bonus"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/free-credit-guide.html"
+to = "/articles/free-credit-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/cashback-guide.html"
+to = "/articles/cashback-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/high-cashback-casino.html"
+to = "/articles/high-cashback-casino"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-bonus-guide.html"
+to = "/articles/casino-bonus-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/wagering-guide.html"
+to = "/articles/wagering-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/rtp-compare.html"
+to = "/articles/rtp-compare"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-customer-service.html"
+to = "/articles/casino-customer-service"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-registration-guide.html"
+to = "/articles/casino-registration-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/newbie-friendly.html"
+to = "/articles/newbie-friendly"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/deposit-guide.html"
+to = "/articles/deposit-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-deposit-methods.html"
+to = "/articles/casino-deposit-methods"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-withdrawal-tutorial.html"
+to = "/articles/casino-withdrawal-tutorial"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/withdrawal-ranking.html"
+to = "/articles/withdrawal-ranking"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/fast-withdrawal.html"
+to = "/articles/fast-withdrawal"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/vip-guide.html"
+to = "/articles/vip-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/usdt-casino.html"
+to = "/articles/usdt-casino"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/mobile-casino-guide.html"
+to = "/articles/mobile-casino-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-app-download.html"
+to = "/articles/casino-app-download"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/live-casino-guide.html"
+to = "/articles/live-casino-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/fish-game-guide.html"
+to = "/articles/fish-game-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/lottery-casino-guide.html"
+to = "/articles/lottery-casino-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/poker-casino-guide.html"
+to = "/articles/poker-casino-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-ranking-2026.html"
+to = "/articles/casino-ranking-2026"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-agent-guide.html"
+to = "/articles/casino-agent-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-dcard-2026.html"
+to = "/articles/casino-dcard-2026"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-ptt-discussion.html"
+to = "/articles/casino-ptt-discussion"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-review-real.html"
+to = "/articles/casino-review-real"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-safe.html"
+to = "/articles/casino-safe"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/casino-withdrawal-fast.html"
+to = "/articles/casino-withdrawal-fast"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/baccarat-master.html"
+to = "/articles/baccarat-master"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/newbie-guide.html"
+to = "/articles/newbie-guide"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/sports-betting-master.html"
+to = "/articles/sports-betting-master"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/articles/2026-casino-recommendation.html"
+to = "/articles/2026-casino-recommendation"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/about.html"
+to = "/about"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/contact.html"
+to = "/contact"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/privacy.html"
+to = "/privacy"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/terms.html"
+to = "/terms"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/guides/faq.html"
+to = "/guides/faq"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/recommend/2026.html"
+to = "/recommend/2026"
+status = 301.0
+force = true
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
