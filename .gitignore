@@ -18,3 +18,16 @@ node_modules/
 
 # Deploy log
 deploy-backup-log.md
+
+# Sensitive files
+config/gsc-credentials.json
+memory/*.md
+.openclaw/
+AGENTS.md
+HEARTBEAT.md
+IDENTITY.md
+SOUL.md
+TOOLS.md
+USER.md
+build/
+scripts/fun1399-crawler/**/__pycache__/
