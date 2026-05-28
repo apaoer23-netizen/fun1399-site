@@ -43,9 +43,10 @@ fi
 echo "$(date): Triggering draft generation for fun1399..." >> "$LOG_FILE"
 
 # 觸發 openclaw agent 生成文章草稿
+# 同時要求 AI 在文章生成後，自動執行 generate_cover.py 生成封面圖
 # --deliver 會將結果發送到 Telegram
 openclaw agent \
-    --message "[fun1399-auto-draft] Today is $(date +%Y-%m-%d). Please generate a new article draft for fun1399 according to the content plan (2MONTH-CONTENT-PLAN-May-Jun-2026-v7.md). Save the draft HTML to build/articles/ (NOT root articles/). DO NOT deploy. DO NOT push to production. After generating, output: 1) Article title, 2) Permalink, 3) Cover image requirements, 4) Internal link plan, 5) CTA strategy. Send a summary to Hans for confirmation." \
+    --message "[fun1399-auto-draft] Today is $(date +%Y-%m-%d). Please generate a new article draft for fun1399 according to the content plan (2MONTH-CONTENT-PLAN-May-Jun-2026-v7.md). Save the draft HTML to build/articles/ (NOT root articles/). DO NOT deploy. DO NOT push to production.\n\nIMPORTANT: The cover image will be auto-generated as <slug>-cover.webp (NOT .png). Please reference it in the HTML as: /static/images/articles/<slug>-cover.webp\n\nAFTER generating the article, please also run the cover image generation script:\n  python3 scripts/generate_cover.py <article-slug> '<article-title>'\n\nAfter generating, output: 1) Article title, 2) Permalink, 3) Cover image path (.webp), 4) Internal link plan, 5) CTA strategy. Send a summary to Hans for confirmation." \
     --channel telegram \
     --to 671592741 \
     --deliver \
