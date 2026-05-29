@@ -43,6 +43,10 @@ fi
 echo "$(date): Triggering draft generation for fun1399..." >> "$LOG_FILE"
 
 # 觸發 openclaw agent 生成文章草稿
+# 防呆：記錄生成前 HTML 檔案數量
+BEFORE_COUNT=$(ls -1 "$DRAFT_DIR"/*.html 2>/dev/null | wc -l)
+echo "$(date): HTML files before generation: $BEFORE_COUNT" >> "$LOG_FILE"
+
 # 同時要求 AI 在文章生成後，自動執行 generate_cover.py 生成封面圖
 # --deliver 會將結果發送到 Telegram
 openclaw agent \
@@ -54,4 +58,21 @@ openclaw agent \
     --timeout 1200 \
     >> "$LOG_FILE" 2>&1
 
-echo "$(date): Draft generation triggered successfully." >> "$LOG_FILE"
+AGENT_EXIT_CODE=$?
+
+# 防呆：檢查生成後 HTML 檔案數量是否增加
+AFTER_COUNT=$(ls -1 "$DRAFT_DIR"/*.html 2>/dev/null | wc -l)
+echo "$(date): HTML files after generation: $AFTER_COUNT" >> "$LOG_FILE"
+
+if [[ "$AFTER_COUNT" -le "$BEFORE_COUNT" ]]; then
+    echo "$(date): ❌ ERROR: No new article generated! (Before: $BEFORE_COUNT, After: $AFTER_COUNT)" >> "$LOG_FILE"
+    # 發送 Telegram 錯誤通知
+    openclaw message send \
+        --channel telegram \
+        --to 671592741 \
+        --message "❌ $(date +%Y-%m-%d) 文章生成失敗：未產出新檔案\n請檢查 openclaw agent 狀態或手動補發。" \
+        >> "$LOG_FILE" 2>&1 || true
+    exit 1
+fi
+
+echo "$(date): ✅ Draft generation confirmed: new article created ($BEFORE_COUNT → $AFTER_COUNT)." >> "$LOG_FILE"
