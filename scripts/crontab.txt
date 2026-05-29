@@ -1,0 +1,5 @@
+0 3 * * 0 /root/.openclaw/workspace/scripts/backup.sh >> /root/.openclaw/backups/backup.log 2>&1
+# Fun1399 auto-draft - MIGRATED to OpenClaw native cron (openclaw cron add)
+# 0 9 * * 1,3,5 /root/.openclaw/workspace/scripts/auto-draft-trigger.sh >> /root/.openclaw/workspace/build/cron.log 2>&1
+# Fun1399 cover generation - kept in Linux cron (uses python3, no openclaw agent CLI)
+10 9 * * 1,3,5 /root/.openclaw/workspace/scripts/auto-cover-trigger.sh
