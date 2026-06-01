@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="透過表單回報線上娛樂城爭議事件，協助建立公開觀察資料。本站不提供博弈服務，所有資料僅供參考。">
+<meta property="og:title" content="我要回報 | 靠北娛樂城">
+<meta property="og:description" content="透過表單回報線上娛樂城爭議事件，協助建立公開觀察資料。本站不提供博弈服務，所有資料僅供參考。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kaobei-casino.example.com/report/">
+<meta property="og:site_name" content="靠北娛樂城">
+<link rel="canonical" href="https://kaobei-casino.example.com/report/">
+<link rel="stylesheet" href="/static/styles.css">
+<title>我要回報 | 靠北娛樂城</title>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">
+      <span class="logo-icon">KB</span>
+      <span class="logo-text">
+        <span>靠北娛樂城</span>
+        <small>爭議紀錄與風險觀察</small>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="/cases/">爭議案件</a>
+      <a href="/withdrawal-issues/">出金問題</a>
+      <a href="/casinos/">平台紀錄</a>
+      <a href="/about/">關於本站</a>
+      <a href="/report/" class="nav-cta">我要回報</a>
+    </nav>
+    <button class="mobile-menu-btn" aria-label="開啟選單" onclick="document.querySelector('.main-nav').classList.toggle('mobile-open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<main>
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb"><a href="/">首頁</a> · <span>我要回報</span></nav>
+    <h1>爭議事件回報</h1>
+    <p>協助我們建立更完整的線上娛樂城觀察資料</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="max-width:640px; margin:0 auto;">
+      <div class="alert alert-info" style="margin-bottom:24px;">
+        <span class="alert-icon">ℹ️</span>
+        <div>目前本站處於建置階段，回報功能為示範表單。實際回報系統將於正式上線後啟用。你可以先將資料寄送至 <a href="mailto:[待 Hans 提供]">[待 Hans 提供]</a>。</div>
+      </div>
+
+      <div class="card">
+        <form action="#" method="post" onsubmit="event.preventDefault(); alert('目前為示範模式，表單尚未連結實際收件系統。');">
+          <div class="form-group">
+            <label class="form-label" for="platform">涉及的娛樂城平台名稱 *</label>
+            <input class="form-input" type="text" id="platform" name="platform" placeholder="例如：XX娛樂城" required>
+            <p class="form-hint">請填寫平台官方名稱或網域名稱</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="case_type">爭議類型 *</label>
+            <select class="form-select" id="case_type" name="case_type" required>
+              <option value="">請選擇...</option>
+              <option value="withdrawal_delay">出金延遲</option>
+              <option value="withdrawal_denied">出金被拒</option>
+              <option value="customer_service">客服糾紛</option>
+              <option value="bonus_terms">優惠條款爭議</option>
+              <option value="account_frozen">帳戶凍結</option>
+              <option value="fraud_suspected">疑似詐騙</option>
+              <option value="other">其他</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="incident_date">事件發生日期（約略）</label>
+            <input class="form-input" type="date" id="incident_date" name="incident_date">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="description">事件描述 *</label>
+            <textarea class="form-textarea" id="description" name="description" placeholder="請描述你遇到的問題，包含時間、經過、與平台的溝通情況等..." required></textarea>
+            <p class="form-hint">請盡量客觀描述事實，避免情緒性用語。我們會將資訊整理歸檔。</p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="amount">涉及金額（可選）</label>
+            <input class="form-input" type="text" id="amount" name="amount" placeholder="例如：NT$ 50,000">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contact">聯絡方式（可選，方便後續確認）</label>
+            <input class="form-input" type="text" id="contact" name="contact" placeholder="Email 或 LINE ID">
+          </div>
+
+          <div class="form-group">
+            <label style="display:flex; align-items:flex-start; gap:8px; cursor:pointer;">
+              <input type="checkbox" required style="margin-top:4px;">
+              <span style="font-size:0.85rem; color:var(--text-secondary);">我確認以上資訊為我親身經歷或經核實的資料，並同意本站將資訊整理為觀察紀錄公開（個人身份資訊將匿名處理）。</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">提交回報（示範模式）</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-icon">KB</span>
+        <strong>靠北娛樂城</strong>
+        <p style="margin-top:8px; line-height:1.6;">
+          線上娛樂城爭議紀錄與風險觀察資料庫。<br>
+          所有資料僅供參考，不構成任何投資或博弈建議。
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>導覽</h4>
+        <a href="/cases/">爭議案件</a>
+        <a href="/withdrawal-issues/">出金問題</a>
+        <a href="/casinos/">平台紀錄</a>
+        <a href="/report/">我要回報</a>
+      </div>
+      <div class="footer-links">
+        <h4>關於</h4>
+        <a href="/about/">關於本站</a>
+        <a href="/disclaimer/">免責聲明</a>
+        <a href="/contact/">聯絡與申訴</a>
+        <a href="https://fun1399.com/" target="_blank" rel="noopener">fun1399</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 靠北娛樂城 · 本站為觀察與紀錄平台，不提供任何博弈服務 · <a href="/disclaimer/">免責聲明</a></p>
+      <p style="margin-top:4px; font-size:0.7rem;">「詐騙」「黑網」「不出金」等詞彙僅為搜尋常用詞彙，不代表本站對任何平台之指控。</p>
+    </div>
+  </div>
+</footer>
+</body></html>

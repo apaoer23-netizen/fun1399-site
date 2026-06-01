@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /case/
+Disallow: /casino/
+Disallow: /data/
+Disallow: /config/
+Disallow: /static/
+
+# Preview mode: all pages noindex via meta tags
+# Production sitemap should update after launch
+Sitemap: https://kaobei-casino.example.com/sitemap.xml

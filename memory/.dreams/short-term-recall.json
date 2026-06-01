@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-01T04:17:55.224Z",
+  "entries": {
+    "memory:memory/2026-05-20.md:97:134": {
+      "key": "memory:memory/2026-05-20.md:97:134",
+      "path": "memory/2026-05-20.md",
+      "startLine": 97,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "| Play Link | https://fun1399.ofa177.net/ | --- ## 🎯 品牌名稱策略（已執行） - **頁面內文字**: 統一使用「娛樂城玩家俱樂部」 - **Footer**: 保留 `© 2026 娛樂城玩家俱樂部 FUN1399`（品牌聲明） - **網域/meta/canonical**: 保留 fun1399.com - **Title**: 「體育分析團隊｜娛樂城玩家俱樂部...」 - team.html 內無「FUN1399 體育」「FUN1399 娛樂」「FUN1399 分析」殘留 --- ## 🔄 封面圖流程變更（2026-05-20 11:37） ### 舊流程 ❌ 1. 文章完成 → 自動生成封面圖 → deploy ### 新流程 ✅ 1. 文章完成（內容 + SEO + Schema + 首頁更新 + sitemap） 2. **輸出封面需求規格**（不下單/不生成圖片） 3. 等待 Hans 製作封面圖並提供 4. 收到圖片後 → deploy ### 封面需求規格模板 每次文章完成後必須輸出： | 項目 | 說明 | |------|------| | **尺寸** | 1200 × 630 px（固定） | | **用途** | OG / Facebook / Threads / X 分享 | | **建議主標題** | 文章標題或 2-4 字精簡版 | | **副標/小字** | 如有需要 | | **建議風格** | 深色底/運動感/質感等 | | **建議視覺元素** | 球場、籌碼、",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3822104752063751,
+      "maxScore": 0.3822104752063751,
+      "firstRecalledAt": "2026-06-01T04:17:55.224Z",
+      "lastRecalledAt": "2026-06-01T04:17:55.224Z",
+      "queryHashes": [
+        "50b1679642a0"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "fun1399.ofa177.net",
+        "網域/meta/canonical",
+        "fun1399.com",
+        "team.html",
+        "不下單/不生成圖片",
+        "2-4",
+        "副標/小字",
+        "深色底/運動感/質感等"
+      ]
+    },
+    "memory:memory/2026-03-14.md:1:40": {
+      "key": "memory:memory/2026-03-14.md:1:40",
+      "path": "memory/2026-03-14.md",
+      "startLine": 1,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "# 2026-03-14 - Fun1399 網站第三輪 UI/UX 優化 ## 工作摘要 完成 Fun1399.com 娛樂城網站的第三輪優化，包含四大項目： ## 完成的優化項目 ### 1. 首頁文字可讀性優化 - 網站名稱：添加 `text-shadow: 0 2px 4px rgba(0,0,0,0.3)` - 主標題：改為 `#ffffff` + `text-shadow: 0 2px 8px rgba(0,0,0,0.4)` - Slogan：改為 `#ffd700` + `font-weight: 600` + 陰影 - Hero 描述：提高透明度至 95% + 添加陰影 - LINE 按鈕：改為 `rgba(255,255,255,0.15)` 背景 + `backdrop-filter: blur(4px)` - Hero 背景：加深漸層顏色 ### 2. 平台 Logo 統一與壓縮 - 使用 ImageMagick 統一調整所有 Logo 高度為 60px - 轉換為 WebP 格式（quality 85） - 壓縮結果： - 3a-logo.webp: 3.0K - gm1688-logo.webp: 4.6K - hg-logo.webp: 7.1K - jucity-logo.webp: 6.5K - mbm-logo.webp: 1.5K - utown-logo.webp: 3.4K - 總計從 662KB 壓縮至 26KB（96% 壓縮率） - 更新 HTML 引用：index.html, recommend/2",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3799591094255447,
+      "maxScore": 0.3799591094255447,
+      "firstRecalledAt": "2026-06-01T04:17:55.224Z",
+      "lastRecalledAt": "2026-06-01T04:17:55.224Z",
+      "queryHashes": [
+        "50b1679642a0"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "ui/ux",
+        "fun1399.com",
+        "text-shadow",
+        "0.3",
+        "0.4",
+        "font-weight",
+        "0.15",
+        "backdrop-filter"
+      ]
+    },
+    "memory:memory/2026-04-27.md:164:207": {
+      "key": "memory:memory/2026-04-27.md:164:207",
+      "path": "memory/2026-04-27.md",
+      "startLine": 164,
+      "endLine": 207,
+      "source": "memory",
+      "snippet": "## 2026-04-27 18:03 更新：Sitemap 更新正式部署完成 ### Deploy ID - `69ef3484d626d44607581a15` - Published: 2026-04-27T10:03:49.342Z (UTC) - 狀態: ready ### 正式站驗證 - Sitemap URL: https://fun1399.com/sitemap.xml - URL 總數: **79** ✅ - /author 與 /responsible-gaming 已移除 ✅ - 無 .html 結尾 ✅ --- ## 2026-04-27 18:04 更新：Cron 排程除錯 + 文章補救 ### 排程故障根因 | 檢查項目 | 結果 | |----------|------| | 系統時間 | ✅ 2026-04-27 18:04 CST | | 系統時區 | ✅ Asia/Taipei | | 系統 cron 服務 | ✅ active (running) | | 系統 crontab | ⚠️ 僅有 backup.sh（無發文排程） | | OpenClaw Cron | ❌ **不存在**（4/23 移除後未重建） | **根因**：4/23 移除舊 Cron（Job ID: 5539df74...）後，未建立新 Cron，導致週五（4/24）與週一（4/27）皆未自動發文。 ### Cron 重建 | 項目 | 內容 | |------|------| | Job ID | `ceda6b75-372f-4464-bbaf-6e",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3796602457761764,
+      "maxScore": 0.3796602457761764,
+      "firstRecalledAt": "2026-06-01T04:17:55.224Z",
+      "lastRecalledAt": "2026-06-01T04:17:55.224Z",
+      "queryHashes": [
+        "50b1679642a0"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "backup",
+        "2026-04-27t10",
+        "49.342z",
+        "fun1399.com/sitemap.xml",
+        "responsible-gaming",
+        "asia/taipei",
+        "backup.sh",
+        "4/23"
+      ]
+    },
+    "memory:memory/2026-05-10.md:61:76": {
+      "key": "memory:memory/2026-05-10.md:61:76",
+      "path": "memory/2026-05-10.md",
+      "startLine": 61,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "- casino-registration-guide（5 impressions） - sports-betting-master（5 impressions） - homepage（4 impressions, 3 clicks, CTR 75%） - casino-investment-scam（3 impressions） - casino-no-withdrawal-scam（3 impressions） - baccarat-master（3 impressions） - baccarat-guide（2 impressions） - newbie-guide（1 impression） **競爭對手觀察**（來自 MEMORY.md）： - qttheluxe.com, qttowerrush.com, inoutchickenroad2.com, pandasportsevents.com, dglivevideo.com - 採用「單一產品深度優化」策略（vs fun1399「大量文章覆蓋」策略） - 單頁優化優點：內容成本低、見效快、維護成本低 **現有 fun1399 內容主題分布**（88 HTML files）： - 詐騙/安全類：casino-scam-methods, casino-no-withdrawal-scam, casino-fake-customer-service, casino-account-freeze-scam, casino-romance-scam, casino-investment-",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.37710745036602017,
+      "maxScore": 0.37710745036602017,
+      "firstRecalledAt": "2026-06-01T04:17:55.224Z",
+      "lastRecalledAt": "2026-06-01T04:17:55.224Z",
+      "queryHashes": [
+        "50b1679642a0"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "casino-registration-guide",
+        "sports-betting-master",
+        "casino-investment-scam",
+        "casino-no-withdrawal-scam",
+        "baccarat-master",
+        "baccarat-guide",
+        "newbie-guide",
+        "memory.md"
+      ]
+    },
+    "memory:memory/2026-05-17.md:37:67": {
+      "key": "memory:memory/2026-05-17.md:37:67",
+      "path": "memory/2026-05-17.md",
+      "startLine": 37,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "- 舊路徑分散在 `/static/images/articles/tech/`、`/static/images/articles/scam/` 等子目錄 - update_cover.py 腳本在 5/16 執行時只完成「寫圖檔 + 更新列表頁引用」，未完成「更新文章頁 og:image + hero image」 --- ## 後續進展（19:00 後） ### 21 篇新封面整合完成 - Hans 後續上傳了 21 篇新封面圖（deposit-guide, sports-betting-guide, casino-registration-guide 等） - 我逐一整合到各文章 HTML 中（og:image / twitter:image / schema image / hero image） - 更新 visible 日期為 2026-05-17 ### Production Deploy（第一次） - Hans 確認 preview 無問題後，執行正式 deploy - Deploy ID: 6a0994157b6b97099918384f - 結果: fun1399.com 成功上線所有更新 - 建立備份: fun1399-deploy-backup-20260517.tar.gz (35MB) - Hans 已下載備份檔案 ### 五篇文章深度優化分析 - 分析對象: casino-registration-guide, free-credit-guide, 3a-casino-scam-review, baccarat-strategy, de",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.3768673956394195,
+      "maxScore": 0.3768673956394195,
+      "firstRecalledAt": "2026-06-01T04:17:55.224Z",
+      "lastRecalledAt": "2026-06-01T04:17:55.224Z",
+      "queryHashes": [
+        "50b1679642a0"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "backup",
+        "static/images/articles/tech",
+        "static/images/articles/scam",
+        "update-cover.py",
+        "5/16",
+        "deposit-guide",
+        "sports-betting-guide",
+        "casino-registration-guide"
+      ]
+    },
+    "memory:memory/2026-05-19.md:61:103": {
+      "key": "memory:memory/2026-05-19.md:61:103",
+      "path": "memory/2026-05-19.md",
+      "startLine": 61,
+      "endLine": 103,
+      "source": "memory",
+      "snippet": "7. Ethan → 🏀 NBA/棒球分析師 8. 移除「平台監督/出金/詐騙」語調，改為「一起聊球/分享觀點/球迷交流」 9. 精選文章改為 MLB/足球/NBA 賽事觀點 10. FAQ 改為球迷相關問題 11. SEO meta 更新（title/description/keywords/schema） - 驗證結果： - /team 頁面所有 9 區塊完整顯示 ✅ - 首頁導航有「分析團隊」連結 ✅ - CSS 正常載入 ✅ - 狀態：等待 Hans 檢查確認 --- *最後更新：2026-05-19 14:39* # 2026-05-19 工作記錄 ## ✅ 完成項目 ### 1. FUN1399 /team 分析團隊頁面 — 設計完成 **頁面檔案**: - `fun1399-clean/team.html` — 完整頁面（19403 bytes） - `fun1399-clean/static/css/team.css` — 專屬樣式（16656 bytes） - `fun1399-clean/static/images/team/avatar-placeholder.svg` — 頭像 placeholder **頁面包含 9 大區塊**: 1. ✅ Hero 區塊（標題 + 團隊數據 + CTA） 2. ✅ 團隊介紹（定位 + 3 個核心價值） 3. ✅ 分析師卡片 x3（Diana / Molly / Ethan） 4. ✅ 精選文章 3 篇 5. ✅ 為什麼選擇我們（3 個差異化） 6. ✅ FAQ（5 題摺疊",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.370381411910057,
+      "maxScore": 0.370381411910057,
+      "firstRecalledAt": "2026-06-01T04:17:55.224Z",
+      "lastRecalledAt": "2026-06-01T04:17:55.224Z",
+      "queryHashes": [
+        "50b1679642a0"
+      ],
+      "recallDays": [
+        "2026-06-01"
+      ],
+      "conceptTags": [
+        "nba/棒球分析師",
+        "平台監督/出金/詐騙",
+        "一起聊球/分享觀點/球迷交流",
+        "mlb/足球/nba",
+        "fun1399-clean/team.html",
+        "ethan",
+        "nba",
+        "棒球"
+      ]
+    }
+  }
+}
