@@ -59,7 +59,7 @@ while [[ $ATTEMPT -le $MAX_RETRIES ]]; do
     set +e
     openclaw agent \
         --agent main \
-        --message "[fun1399-auto-draft] Today is $(date +%Y-%m-%d). Please generate a new article draft for fun1399 according to the content plan (2MONTH-CONTENT-PLAN-May-Jun-2026-v7.md). Save the draft HTML to build/articles/ (NOT root articles/). DO NOT deploy. DO NOT push to production.\n\nIMPORTANT: The cover image will be auto-generated as <slug>-cover.webp (NOT .png). Please reference it in the HTML as: /static/images/articles/<slug>-cover.webp\n\nAFTER generating the article, please also run the cover image generation script:\n  python3 scripts/generate_cover.py <article-slug> '<article-title>'\n\nAfter generating, output: 1) Article title, 2) Permalink, 3) Cover image path (.webp), 4) Internal link plan, 5) CTA strategy. Send a summary to Hans for confirmation." \
+        --message "[fun1399-auto-draft] Today is $(date +%Y-%m-%d). Please generate a new article draft for fun1399 according to the content plan (2MONTH-CONTENT-PLAN-May-Jun-2026-v7.md).\n\n⚠️ CRITICAL TEMPLATE REQUIREMENTS:\n1. MUST use the gm1688-casino-scam-review.html as the base template (copy its full HTML structure)\n2. MUST include: Header, Footer, CSS, Breadcrumb, Hero Image, Author block, TOC\n3. MUST include at least 3 CTA blocks (warning + line + recommend)\n4. MUST include at least 6 FAQ items with FAQPage Schema\n5. MUST include Article Schema, Open Graph, Twitter Card\n6. MUST include 'Related Reading' section with 6 articles\n7. Content must be 2500-3500 Chinese characters minimum\n8. MUST include all 10 H2 sections as specified in the content plan\n\nAFTER generating the article, you MUST run this validation command:\n  python3 scripts/validate_article.py build/articles/<slug>.html\n\nIf validation fails, STOP and DO NOT deploy. Report the errors.\n\nSave the draft HTML to build/articles/ (NOT root articles/). DO NOT deploy. DO NOT push to production.\n\nThe cover image will be auto-generated as <slug>-cover.webp (NOT .png). Please reference it in the HTML as: /static/images/articles/<slug>-cover.webp\n\nAFTER generating the article, please also run the cover image generation script:\n  python3 scripts/generate_cover.py <article-slug> '<article-title>'\n\nAfter generating AND validating, output: 1) Article title, 2) Permalink, 3) Cover image path (.webp), 4) Internal link plan, 5) CTA count, 6) FAQ count, 7) Validation result, 8) Word count. Send a summary to Hans for confirmation." \
         --channel telegram \
         --to 671592741 \
         --deliver \
@@ -99,6 +99,30 @@ done
 
 if [[ "$SUCCESS" == "true" ]]; then
     echo "$(date): ✅ Draft generation confirmed after $((ATTEMPT)) attempt(s)." >> "$LOG_FILE"
+    
+    # 驗證新生成的文章
+    NEWEST_FILE=$(ls -t "$DRAFT_DIR"/*.html | head -1)
+    echo "$(date): Validating new article: $NEWEST_FILE" >> "$LOG_FILE"
+    
+    set +e
+    python3 "$WORKSPACE/scripts/validate_article.py" "$NEWEST_FILE" >> "$LOG_FILE" 2>&1
+    VALIDATION_EXIT=$?
+    set -e
+    
+    if [[ $VALIDATION_EXIT -eq 0 ]]; then
+        echo "$(date): ✅ Validation passed. Article is ready for review." >> "$LOG_FILE"
+    else
+        echo "$(date): ❌ Validation FAILED. Article does NOT meet template standards." >> "$LOG_FILE"
+        # 發送 Telegram 通知
+        set +e
+        openclaw message send \
+            --channel telegram \
+            --to 671592741 \
+            --message "⚠️ $(date +%Y-%m-%d) 文章生成完成但驗證失敗\n\n新文章已生成，但未通過模板驗證。\n請檢查並手動修正後再部署。\n\n檔案: $NEWEST_FILE\nLog: $LOG_FILE" \
+            >> "$LOG_FILE" 2>&1 || true
+        set -e
+    fi
+    
     exit 0
 else
     echo "$(date): ❌ FAILED: All $MAX_RETRIES attempts exhausted. No new article generated." >> "$LOG_FILE"
