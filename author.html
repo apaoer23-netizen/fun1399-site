@@ -9,17 +9,45 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json">
-    <title>作者介紹｜娛樂城玩家俱樂部專業編輯團隊</title>
-    <meta name="description" content="認識娛樂城玩家俱樂部的專業編輯團隊。Kevin Lin資深娛樂城分析師、Jason Chen數據研究專家、Vivian Wu內容策略總監，提供專業的娛樂城評測與攻略。">
+    <title>作者介紹｜娛樂城玩家俱樂部核心編輯與分析團隊</title>
+    <meta name="description" content="認識娛樂城玩家俱樂部核心編輯團隊：Hans／學哥、Kevin Lin、Jason Chen、Diana 芯與 Vivian Wu，涵蓋平台評測、出金與風險分析、RTP與賠率研究、體育賽事分析及內容審核。">
     <link rel="canonical" href="https://fun1399.com/author">
-    <meta name="author" content="娛樂城玩家俱樂部編輯團隊">
+    <meta name="author" content="娛樂城玩家俱樂部">
     <link rel="stylesheet" href="/static/css/style.css">
     <style>
+        .author-hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border-radius: 12px;
+            margin-bottom: 40px;
+            border: 1px solid #e9ecef;
+        }
+        .author-hero h1 {
+            color: #1a1a2e;
+            margin-bottom: 15px;
+        }
+        .author-hero .hero-intro {
+            color: #495057;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .member-disclaimer {
+            background: #f8f9fa;
+            border-left: 4px solid #ff6b35;
+            padding: 15px 20px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+            color: #495057;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
         .author-profile {
             display: grid;
             grid-template-columns: 120px 1fr;
-            gap: 30px;
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            gap: 25px;
+            background: #ffffff;
             padding: 30px;
             border-radius: 12px;
             margin-bottom: 30px;
@@ -32,19 +60,24 @@
             border-radius: 50%;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            flex-shrink: 0;
         }
         .author-avatar img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+        .author-info {
+            min-width: 0;
+        }
         .author-header {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 8px;
+            margin-bottom: 12px;
         }
         .author-name-full {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: bold;
             color: #1a1a2e;
             margin: 0;
@@ -64,8 +97,8 @@
         .author-credentials {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
+            gap: 8px;
+            margin-bottom: 15px;
         }
         .credential-badge {
             background: #e9ecef;
@@ -75,25 +108,20 @@
             font-size: 0.85rem;
         }
         .author-bio-full {
-            grid-column: 1 / -1;
-            margin-top: 10px;
-            padding-top: 20px;
-            border-top: 1px solid #e9ecef;
+            margin-top: 15px;
         }
         .author-bio-full p {
             color: #495057;
             line-height: 1.8;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
         .expertise-section {
-            margin-top: 20px;
+            margin-top: 15px;
         }
         .expertise-section h4 {
             color: #1a1a2e;
             margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-size: 1rem;
         }
         .expertise-tags {
             display: flex;
@@ -104,29 +132,70 @@
             background: white;
             border: 2px solid #ff6b35;
             color: #ff6b35;
-            padding: 5px 15px;
+            padding: 5px 14px;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 500;
         }
-        .stats-bar {
-            display: flex;
-            gap: 30px;
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px solid #e9ecef;
+        .editorial-standard {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border: 1px solid #e9ecef;
         }
-        .stat-item {
+        .editorial-standard h2 {
+            color: #1a1a2e;
+            margin-bottom: 20px;
+        }
+        .editorial-standard ol {
+            padding-left: 20px;
+            color: #495057;
+            line-height: 1.8;
+        }
+        .editorial-standard li {
+            margin-bottom: 12px;
+        }
+        .cta-section {
             text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+            border-radius: 12px;
+            margin: 40px 0;
+            color: white;
         }
-        .stat-number {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #ff6b35;
+        .cta-section h3 {
+            color: white;
+            margin-bottom: 15px;
         }
-        .stat-label {
-            font-size: 0.85rem;
-            color: #6c757d;
+        .cta-section p {
+            color: #b0b0c0;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .cta-section .btn {
+            display: inline-block;
+            background: #ff6b35;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .author-profile {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .author-avatar {
+                margin: 0 auto;
+            }
+            .author-credentials {
+                justify-content: center;
+            }
+            .expertise-tags {
+                justify-content: center;
+            }
         }
     </style>
     <!-- Google tag (gtag.js) -->
@@ -138,6 +207,171 @@
       gtag('config', 'G-1V53J5D71S');
     </script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "@id": "https://fun1399.com/author#profilepage",
+          "url": "https://fun1399.com/author",
+          "name": "作者介紹｜娛樂城玩家俱樂部核心編輯與分析團隊",
+          "description": "認識娛樂城玩家俱樂部核心編輯團隊：Hans／學哥、Kevin Lin、Jason Chen、Diana 芯與 Vivian Wu，涵蓋平台評測、出金與風險分析、RTP與賠率研究、體育賽事分析及內容審核。",
+          "dateModified": "2026-08-27T00:00:00+08:00",
+          "mainEntity": {
+            "@id": "https://fun1399.com/author#editorial-team"
+          },
+          "breadcrumb": {
+            "@id": "https://fun1399.com/author#breadcrumb"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://fun1399.com/author#editorial-team",
+          "name": "娛樂城玩家俱樂部核心編輯團隊",
+          "url": "https://fun1399.com/author",
+          "publishingPrinciples": "https://fun1399.com/author#editorial-guidelines",
+          "member": [
+            {
+              "@id": "https://fun1399.com/author#hans"
+            },
+            {
+              "@id": "https://fun1399.com/author#kevin"
+            },
+            {
+              "@id": "https://fun1399.com/author#jason"
+            },
+            {
+              "@id": "https://fun1399.com/author#diana"
+            },
+            {
+              "@id": "https://fun1399.com/author#vivian"
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fun1399.com/author#hans",
+          "name": "Hans",
+          "alternateName": "學哥",
+          "url": "https://fun1399.com/author#hans",
+          "jobTitle": "站長／共同創辦人／首席實戰顧問",
+          "description": "Hans（學哥）是娛樂城玩家俱樂部站長、共同創辦人兼總主筆，擁有超過8年的線上博弈實戰經驗，累積發表超過500篇原創平台評測與遊戲教學。過去曾透過直播分享百家樂實戰觀察、遊戲節奏與資金配置思路。其內容主要從玩家實際會遇到的規則、流水、提款與平台風控問題出發，並區分可查核事實、個人經驗與主觀判斷。",
+          "knowsAbout": [
+            "百家樂實戰與牌路觀察",
+            "老虎機機制與規則解析",
+            "娛樂城爭議與風險查核",
+            "流水及平台風控機制",
+            "直播實戰分享",
+            "玩家資金管理觀念"
+          ],
+          "worksFor": {
+            "@id": "https://fun1399.com/author#editorial-team"
+          },
+          "image": "https://fun1399.com/static/images/team/avatar-hans.webp"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fun1399.com/author#kevin",
+          "name": "Kevin Lin",
+          "url": "https://fun1399.com/author#kevin",
+          "jobTitle": "資深娛樂城分析師／共同創辦人",
+          "description": "Kevin Lin 是娛樂城玩家俱樂部共同創辦人兼資深娛樂城分析師，擁有超過10年的產業經驗，實測超過50家娛樂城平台，累積執行超過1000筆出金測試。專精於平台風險評估、出金速度與資金安全分析。單次或特定期間的提款測試不代表平台未來每次結果。",
+          "knowsAbout": [
+            "娛樂城平台風險評估",
+            "出金速度實測分析",
+            "優惠條件解析",
+            "百家樂策略研究",
+            "資金安全管理",
+            "產業趨勢分析"
+          ],
+          "worksFor": {
+            "@id": "https://fun1399.com/author#editorial-team"
+          },
+          "image": "https://fun1399.com/static/images/kevin-lin-avatar.webp"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fun1399.com/author#jason",
+          "name": "Jason Chen",
+          "url": "https://fun1399.com/author#jason",
+          "jobTitle": "數據研究專家／首席分析師",
+          "description": "Jason Chen 是娛樂城玩家俱樂部首席數據分析師，擁有統計學碩士學位與超過8年的數據分析資歷。曾任職於國際線上遊戲公司數據部門，專精於RTP、賠率建模、風險評估演算法與博弈理論。理論RTP、機率模型與個別玩家短期結果並不相同。",
+          "knowsAbout": [
+            "RTP與賠率分析",
+            "老虎機機制研究",
+            "優惠價值建模",
+            "風險評估演算法",
+            "數據視覺化",
+            "博弈理論應用"
+          ],
+          "worksFor": {
+            "@id": "https://fun1399.com/author#editorial-team"
+          },
+          "image": "https://fun1399.com/static/images/jason-chen-avatar.webp"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fun1399.com/author#diana",
+          "name": "Diana 芯",
+          "alternateName": "Diana",
+          "url": "https://fun1399.com/author#diana",
+          "jobTitle": "資深寫手／體育賽事分析總監",
+          "description": "Diana（芯）自2019年起深耕博弈產業，曾有多年娛樂城代理服務經驗，熟悉產業規則與玩家心理。專精MLB及國際體育賽事盤口解析，負責過關組合與風險分析。分析內容區分比賽事實、數據趨勢與分析觀點。",
+          "knowsAbout": [
+            "MLB投手與打線分析",
+            "國際體育賽事",
+            "盤口與賠率變化",
+            "過關組合風險",
+            "球員及球隊近況",
+            "體育內容規劃"
+          ],
+          "worksFor": {
+            "@id": "https://fun1399.com/author#editorial-team"
+          },
+          "image": "https://fun1399.com/static/images/team/avatar-diana.jpg"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fun1399.com/author#vivian",
+          "name": "Vivian Wu",
+          "url": "https://fun1399.com/author#vivian",
+          "jobTitle": "內容策略總監／資深編輯",
+          "description": "Vivian Wu 是娛樂城玩家俱樂部的內容策略總監，擁有超過6年的內容編輯與SEO經驗。曾任職於財經與科技媒體，負責遊戲教學、SEO內容、社群內容及品質審核。",
+          "knowsAbout": [
+            "遊戲教學撰寫",
+            "內容策略規劃",
+            "SEO內容優化",
+            "體育賽事分析",
+            "優惠活動整理",
+            "社群內容經營"
+          ],
+          "worksFor": {
+            "@id": "https://fun1399.com/author#editorial-team"
+          },
+          "image": "https://fun1399.com/static/images/vivian-wu-avatar.webp"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://fun1399.com/author#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "首頁",
+              "item": "https://fun1399.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "作者介紹",
+              "item": "https://fun1399.com/author"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header class="header">
@@ -162,49 +396,67 @@
             <nav class="breadcrumb"><a href="/">首頁</a> > <span>作者介紹</span></nav>
 
             <div class="author-hero">
-                <h1>專業編輯團隊</h1>
-                <p class="tagline">由資深產業分析師與數據研究專家組成的專業團隊</p>
+                <h1>娛樂城玩家俱樂部核心編輯團隊</h1>
+                <p class="hero-intro">本頁介紹負責 FUN1399 內容規劃、平台評測、數據研究、體育賽事分析與編輯審核的五位核心成員。團隊會區分平台公開資訊、團隊測試、代理方提供資料與讀者回報，並在文章中清楚標示樣本、日期與資料限制。</p>
             </div>
 
-            <!-- Kevin Lin -->
+            <div class="member-disclaimer">
+                <p>成員年資與內容產出數據依團隊截至 2026 年 8 月的內部紀錄整理；學歷與工作經歷為成員提供資料。相關資訊只用於說明團隊分工與專長，不代表任何平台背書或獲利保證。</p>
+            </div>
+
+            <!-- 1. Hans／學哥 -->
+            <div class="author-profile" id="hans">
+                <div class="author-avatar">
+                    <img src="/static/images/team/avatar-hans.webp" alt="Hans／學哥代表頭像" width="120" height="120" loading="lazy" decoding="async">
+                </div>
+                <div class="author-info">
+                    <div class="author-header">
+                        <h2 class="author-name-full">Hans／學哥</h2>
+                        <span class="author-title-badge">站長／共同創辦人／首席實戰顧問</span>
+                    </div>
+                    <div class="author-credentials">
+                        <span class="credential-badge">8年+ 線上博弈實戰經驗</span>
+                        <span class="credential-badge">500+ 篇原創評測與核心教學</span>
+                        <span class="credential-badge">直播實戰分享</span>
+                    </div>
+                    <div class="author-bio-full">
+                        <p>Hans（學哥）是娛樂城玩家俱樂部站長、共同創辦人兼總主筆，擁有超過8年的線上博弈實戰經驗，累積發表超過500篇原創平台評測與遊戲教學。過去曾透過直播分享百家樂實戰觀察、遊戲節奏與資金配置思路。</p>
+                        <p>其內容主要從玩家實際會遇到的規則、流水、提款與平台風控問題出發，並區分可查核事實、個人經驗與主觀判斷。所有分析僅供參考，不涉及「穩贏、破解必勝、保證獲利」等宣稱。</p>
+                        <div class="expertise-section">
+                            <h4>專精領域</h4>
+                            <div class="expertise-tags">
+                                <span class="expertise-tag">百家樂實戰與牌路觀察</span>
+                                <span class="expertise-tag">老虎機機制與規則解析</span>
+                                <span class="expertise-tag">娛樂城爭議與風險查核</span>
+                                <span class="expertise-tag">流水及平台風控機制</span>
+                                <span class="expertise-tag">直播實戰分享</span>
+                                <span class="expertise-tag">玩家資金管理觀念</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Kevin Lin -->
             <div class="author-profile" id="kevin">
                 <div class="author-avatar">
-                    <img src="/static/images/kevin-lin-avatar.webp" alt="Kevin Lin 頭像">
+                    <img src="/static/images/kevin-lin-avatar.webp" alt="Kevin Lin 資深娛樂城分析師" width="120" height="120" loading="lazy" decoding="async">
                 </div>
                 <div class="author-info">
                     <div class="author-header">
                         <h2 class="author-name-full">Kevin Lin</h2>
-                        <span class="author-title-badge">⭐ 資深娛樂城分析師 / 創辦人</span>
+                        <span class="author-title-badge">資深娛樂城分析師／共同創辦人</span>
                     </div>
-                    
                     <div class="author-credentials">
-                        <span class="credential-badge">📊 10年+ 產業經驗</span>
-                        <span class="credential-badge">🎰 實測 50+ 娛樂城平台</span>
-                        <span class="credential-badge">💰 累積出金測試 1000+</span>
+                        <span class="credential-badge">10年+ 產業經驗</span>
+                        <span class="credential-badge">實測50+娛樂城平台</span>
+                        <span class="credential-badge">累積1000+筆出金測試</span>
                     </div>
-
-                    <div class="stats-bar">
-                        <div class="stat-item">
-                            <div class="stat-number">150+</div>
-                            <div class="stat-label">篇深度評測</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">50+</div>
-                            <div class="stat-label">個實測平台</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">10年</div>
-                            <div class="stat-label">產業資歷</div>
-                        </div>
-                    </div>
-
                     <div class="author-bio-full">
-                        <p><strong>Kevin Lin</strong> 是娛樂城玩家俱樂部的創辦人兼首席分析師，擁有超過<strong>10年</strong>的線上娛樂城市場研究經驗。曾任職於知名博弈產業顧問公司，專精於平台風險評估與玩家資金安全分析。</p>
-                        
-                        <p>Kevin 親自實測過台灣市場上超過<strong>50家娛樂城平台</strong>，累積執行超過<strong>1000次出金測試</strong>，建立完整的平台評測數據庫。他開創的「四維度評測法」（出金速度、優惠誠意、客服品質、遊戲體驗）已成為業界參考標準。</p>
-
+                        <p>Kevin Lin 是娛樂城玩家俱樂部共同創辦人兼資深娛樂城分析師，擁有超過10年的產業經驗，實測超過50家娛樂城平台，累積執行超過1000筆出金測試。專精於平台風險評估、出金速度與資金安全分析。</p>
+                        <p>單次或特定期間的提款測試，不代表平台未來每次結果。所有評測內容均會標示測試日期、樣本範圍與資料限制，讓讀者自行判斷。</p>
                         <div class="expertise-section">
-                            <h4>🎯 專精領域</h4>
+                            <h4>專精領域</h4>
                             <div class="expertise-tags">
                                 <span class="expertise-tag">娛樂城平台風險評估</span>
                                 <span class="expertise-tag">出金速度實測分析</span>
@@ -218,50 +470,31 @@
                 </div>
             </div>
 
-            <!-- Jason Chen -->
+            <!-- 3. Jason Chen -->
             <div class="author-profile" id="jason">
                 <div class="author-avatar">
-                    <img src="/static/images/jason-chen-avatar.webp" alt="Jason Chen 頭像">
+                    <img src="/static/images/jason-chen-avatar.webp" alt="Jason Chen 數據研究專家" width="120" height="120" loading="lazy" decoding="async">
                 </div>
                 <div class="author-info">
                     <div class="author-header">
                         <h2 class="author-name-full">Jason Chen</h2>
-                        <span class="author-title-badge">📊 數據研究專家 / 首席分析師</span>
+                        <span class="author-title-badge">數據研究專家／首席分析師</span>
                     </div>
-                    
                     <div class="author-credentials">
-                        <span class="credential-badge">🎓 統計學碩士</span>
-                        <span class="credential-badge">📈 8年+ 數據分析</span>
-                        <span class="credential-badge">🎰 RTP 機制研究</span>
+                        <span class="credential-badge">統計學碩士</span>
+                        <span class="credential-badge">8年+數據分析資歷</span>
+                        <span class="credential-badge">曾任國際線上遊戲公司數據部門</span>
                     </div>
-
-                    <div class="stats-bar">
-                        <div class="stat-item">
-                            <div class="stat-number">200+</div>
-                            <div class="stat-label">款遊戲分析</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">次赔率建模</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">8年</div>
-                            <div class="stat-label">數據資歷</div>
-                        </div>
-                    </div>
-
                     <div class="author-bio-full">
-                        <p><strong>Jason Chen</strong> 是娛樂城玩家俱樂部的首席數據分析師，擁有<strong>統計學碩士</strong>學位，專精於賭場數學與機率分析。在加入團隊前，曾任職於國際線上遊戲公司的數據分析部門。</p>
-                        
-                        <p>Jason 負責所有平台的<strong>RTP（玩家回報率）分析</strong>、<strong>赔率建模</strong>與<strong>風險評估模型</strong>建立。他開發的「優惠價值計算公式」能精準評測各種首儲優惠的真實價值，幫助玩家識別真正划算的優惠活動。</p>
-
+                        <p>Jason Chen 是娛樂城玩家俱樂部首席數據分析師，擁有統計學碩士學位與超過8年的數據分析資歷。曾任職於國際線上遊戲公司數據部門，專精於RTP、賠率建模、風險評估演算法與博弈理論。</p>
+                        <p>理論RTP、機率模型與個別玩家短期結果並不相同。數據分析僅提供參考框架，不得把模型包裝成勝率保證或獲利承諾。</p>
                         <div class="expertise-section">
-                            <h4>🎯 專精領域</h4>
+                            <h4>專精領域</h4>
                             <div class="expertise-tags">
-                                <span class="expertise-tag">RTP/赔率分析</span>
+                                <span class="expertise-tag">RTP與賠率分析</span>
                                 <span class="expertise-tag">老虎機機制研究</span>
                                 <span class="expertise-tag">優惠價值建模</span>
-                                <span class="expertise-tag">風險評估算法</span>
+                                <span class="expertise-tag">風險評估演算法</span>
                                 <span class="expertise-tag">數據視覺化</span>
                                 <span class="expertise-tag">博弈理論應用</span>
                             </div>
@@ -270,45 +503,59 @@
                 </div>
             </div>
 
-            <!-- Vivian Wu -->
+            <!-- 4. Diana 芯 -->
+            <div class="author-profile" id="diana">
+                <div class="author-avatar">
+                    <img src="/static/images/team/avatar-diana.jpg" alt="Diana 芯 資深寫手／體育賽事分析總監" width="120" height="120" loading="lazy" decoding="async">
+                </div>
+                <div class="author-info">
+                    <div class="author-header">
+                        <h2 class="author-name-full">Diana 芯</h2>
+                        <span class="author-title-badge">資深寫手／體育賽事分析總監</span>
+                    </div>
+                    <div class="author-credentials">
+                        <span class="credential-badge">自2019年起深耕博弈產業</span>
+                        <span class="credential-badge">曾有多年娛樂城代理服務經驗</span>
+                        <span class="credential-badge">專精MLB及國際體育賽事盤口解析</span>
+                    </div>
+                    <div class="author-bio-full">
+                        <p>Diana（芯）自2019年起深耕博弈產業，曾有多年娛樂城代理服務經驗，熟悉產業規則與玩家心理。專精MLB及國際體育賽事盤口解析，負責過關組合與風險分析。</p>
+                        <p>所有分析內容均區分比賽事實、數據趨勢與分析觀點，不得虛構命中率、獲利率、預測場次或保證過關。讀者應將體育分析視為參考資訊，而非投注建議。</p>
+                        <div class="expertise-section">
+                            <h4>專精領域</h4>
+                            <div class="expertise-tags">
+                                <span class="expertise-tag">MLB投手與打線分析</span>
+                                <span class="expertise-tag">國際體育賽事</span>
+                                <span class="expertise-tag">盤口與賠率變化</span>
+                                <span class="expertise-tag">過關組合風險</span>
+                                <span class="expertise-tag">球員及球隊近況</span>
+                                <span class="expertise-tag">體育內容規劃</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Vivian Wu -->
             <div class="author-profile" id="vivian">
                 <div class="author-avatar">
-                    <img src="/static/images/vivian-wu-avatar.webp" alt="Vivian Wu 頭像">
+                    <img src="/static/images/vivian-wu-avatar.webp" alt="Vivian Wu 內容策略總監" width="120" height="120" loading="lazy" decoding="async">
                 </div>
                 <div class="author-info">
                     <div class="author-header">
                         <h2 class="author-name-full">Vivian Wu</h2>
-                        <span class="author-title-badge">✍️ 內容策略總監 / 資深編輯</span>
+                        <span class="author-title-badge">內容策略總監／資深編輯</span>
                     </div>
-                    
                     <div class="author-credentials">
-                        <span class="credential-badge">📚 6年+ 內容編輯</span>
-                        <span class="credential-badge">🎯 SEO 內容策略</span>
-                        <span class="credential-badge">🌐 中英雙語內容</span>
+                        <span class="credential-badge">6年+內容編輯與SEO經驗</span>
+                        <span class="credential-badge">曾任職財經與科技媒體</span>
+                        <span class="credential-badge">負責遊戲教學、SEO內容、社群內容及品質審核</span>
                     </div>
-
-                    <div class="stats-bar">
-                        <div class="stat-item">
-                            <div class="stat-number">300+</div>
-                            <div class="stat-label">篇攻略文章</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">50萬+</div>
-                            <div class="stat-label">字內容產出</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">6年</div>
-                            <div class="stat-label">編輯資歷</div>
-                        </div>
-                    </div>
-
                     <div class="author-bio-full">
-                        <p><strong>Vivian Wu</strong> 是娛樂城玩家俱樂部的內容策略總監，負責所有內容的策劃、編輯與品質把關。擁有<strong>6年</strong>以上的數位內容編輯經驗，曾任職於知名財經媒體與科技媒體。</p>
-                        
-                        <p>Vivian 擅長將複雜的博弈知識轉化為易懂的白話教學，並確保所有內容符合<strong>SEO最佳實務</strong>與<strong>Google E-E-A-T</strong>標準。她主導編輯的《百家樂入門指南》與《老虎機RTP攻略》已成為業界廣為引用的參考資料。</p>
-
+                        <p>Vivian Wu 是娛樂城玩家俱樂部的內容策略總監，擁有超過6年的內容編輯與SEO經驗。曾任職於財經與科技媒體，負責遊戲教學、SEO內容、社群內容及品質審核。</p>
+                        <p>所有內容均經過事實查核與來源標示，確保讀者能清楚分辨平台公開資訊、團隊測試結果、代理方提供資料與讀者回報。</p>
                         <div class="expertise-section">
-                            <h4>🎯 專精領域</h4>
+                            <h4>專精領域</h4>
                             <div class="expertise-tags">
                                 <span class="expertise-tag">遊戲教學撰寫</span>
                                 <span class="expertise-tag">內容策略規劃</span>
@@ -322,74 +569,25 @@
                 </div>
             </div>
 
-            <!-- 客服團隊 -->
-            <div class="author-profile">
-                <div class="author-avatar">
-                    <img src="/static/images/support-team-avatar.webp" alt="玩家服務團隊頭像">
-                </div>
-                <div class="author-info">
-                    <div class="author-header">
-                        <h2 class="author-name-full">玩家服務團隊</h2>
-                        <span class="author-title-badge">🎧 24H 專業客服</span>
-                    </div>
-                    
-                    <div class="author-credentials">
-                        <span class="credential-badge">⚡ 平均5分鐘回覆</span>
-                        <span class="credential-badge">📞 全年無休服務</span>
-                        <span class="credential-badge">😊 98% 滿意度</span>
-                    </div>
-
-                    <div class="stats-bar">
-                        <div class="stat-item">
-                            <div class="stat-number">5000+</div>
-                            <div class="stat-label">則諮詢解答</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">98%</div>
-                            <div class="stat-label">玩家滿意度</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">24H</div>
-                            <div class="stat-label">全年服務</div>
-                        </div>
-                    </div>
-
-                    <div class="author-bio-full">
-                        <p>我們的<strong>玩家服務團隊</strong>由多位經驗豐富的客服專員組成，提供<strong>全年無休、24小時</strong>的專業諮詢服務。團隊成員均接受過完整的娛樂城產業知識培訓，能夠快速準確地回答玩家各類問題。</p>
-                        
-                        <p>服務範圍包括：平台選擇建議、註冊流程指引、優惠規則說明、一般遊戲諮詢等。我們承諾<strong>平均5分鐘內回覆</strong>LINE訊息，郵件則在24小時內回覆。</p>
-
-                        <div class="expertise-section">
-                            <h4>📞 聯絡方式</h4>
-                            <div class="expertise-tags">
-                                <span class="expertise-tag">LINE：@win1313</span>
-                                <span class="expertise-tag">Email：apaoer23@gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="editorial-standard">
-                <h2>📋 編輯準則與倫理規範</h2>
-                <p>我們的所有內容都遵循以下嚴格的編輯準則：</p>
+            <div class="editorial-standard" id="editorial-guidelines">
+                <h2>編輯準則與倫理規範</h2>
                 <ol>
-                    <li><strong>獨立性原則：</strong>不接受任何娛樂城平台的廣告費用或付費評測，確保評測結果不受商業利益影響。</li>
-                    <li><strong>實測性原則：</strong>所有平台評測都經過實際註冊、儲值、遊戲、提款的完整流程，絕非紙上談兵。</li>
-                    <li><strong>透明性原則：</strong>清楚標示所有聯盟連結與潛在利益關係，讓讀者充分了解內容背後的商業模式。</li>
-                    <li><strong>準確性原則：</strong>定期更新內容，確保優惠資訊、出金時間等數據準確無誤。</li>
-                    <li><strong>責任性原則：</strong>積極倡導理性娛樂，提醒玩家注意資金安全與成癮風險。</li>
+                    <li><strong>獨立性原則：</strong>商業合作不應改變內容結論。平台優點、限制與風險須依相同標準整理，不得以合作關係取代查核或隱藏負面資訊。</li>
+                    <li><strong>實測性原則：</strong>只有團隊實際執行並留有日期、樣本與紀錄的內容才能標示為「實測」。代理方、平台方或讀者提供的素材，必須明確標示來源，不得改寫成團隊親自實測。</li>
+                    <li><strong>透明性原則：</strong>清楚揭露合作連結、代理關係、資料來源、樣本範圍與內容限制，讓讀者能分辨事實、外部提供資料及編輯分析。</li>
+                    <li><strong>準確性原則：</strong>平台規則、優惠與儲提款資訊須標示查核或更新日期；若資料改變或發現錯誤，應進行更正。個別測試結果不得延伸為永久保證。</li>
+                    <li><strong>責任性原則：</strong>不提供獲利保證或誘導追損，提醒讀者留意資金、流水、帳號安全、詐騙與所在地法律及年齡限制，並將娛樂視為高風險支出。</li>
                 </ol>
             </div>
 
             <div class="cta-section">
-                <p>有問題或合作邀約？</p>
-                <a href="/contact" class="btn btn-primary">與我們聯絡</a>
+                <h3>需要客服協助、資料更正或合作洽詢？</h3>
+                <p>若你想回報文章錯誤、確認平台資訊或提出合作需求，請前往聯絡我們／客服中心。娛樂城帳號、儲提款或身分驗證問題，仍應直接洽詢該平台官方客服。</p>
+                <a href="/contact" class="btn">前往聯絡我們／客服中心</a>
             </div>
         </div>
     </article>
 
-    
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -404,7 +602,8 @@
                     <a href="/articles/">攻略文章</a>
                     <a href="/about">關於我們</a>
                     <a href="/author">作者介紹</a>
-                    <a href="/contact">聯絡我們</a></div>
+                    <a href="/contact">聯絡我們</a>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 娛樂城玩家俱樂部. 僅供參考，理性遊戲.</p>
