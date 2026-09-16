@@ -9,8 +9,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json">
-    <title>手機娛樂城攻略｜網頁版與APP差異、iPhone安裝與實際操作（2026）</title>
-    <meta name="description" content="手機娛樂城該用網頁版還是APP？以iPhone 14 Pro Max查看鉅城、MBM與HG樂遊手機頁面，整理下載入口、操作差異、儲值、客服與安全注意事項。">
+    <title>手機娛樂城怎麼玩？網頁版、APP安裝與三平台操作觀察（2026）</title>
+    <meta name="description" content="手機娛樂城一定要下載APP嗎？本文以iPhone 14 Pro Max查看鉅城、MBM與HG樂遊手機網頁版，整理PWA安裝方式、主要功能入口、三平台差異與iPhone安全注意事項。">
     <meta name="keywords" content="手機娛樂城,手機娛樂城攻略,手機娛樂城APP,手機娛樂城網頁版,鉅城娛樂城,MBM娛樂城,HG樂遊,iPhone娛樂城,手機博弈,線上娛樂城行動版,iOS免安裝,手機網頁版娛樂城,手機版娛樂城,iPhone手機網頁版,手機瀏覽器遊玩">
     <meta name="author" content="Hans／學哥">
     <meta name="update" content="2026-09-16">
@@ -27,8 +27,8 @@
 
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://fun1399.com/articles/mobile-casino-guide">
-    <meta property="og:title" content="手機娛樂城攻略｜網頁版與APP差異、iPhone安裝與實際操作（2026）">
-    <meta property="og:description" content="手機娛樂城該用網頁版還是APP？以iPhone 14 Pro Max查看鉅城、MBM與HG樂遊手機頁面，整理下載入口、操作差異、儲值、客服與安全注意事項。">
+    <meta property="og:title" content="手機娛樂城怎麼玩？網頁版、APP安裝與三平台操作觀察（2026）">
+    <meta property="og:description" content="手機娛樂城一定要下載APP嗎？本文以iPhone 14 Pro Max查看鉅城、MBM與HG樂遊手機網頁版，整理PWA安裝方式、主要功能入口、三平台差異與iPhone安全注意事項。">
     <meta property="og:image" content="https://fun1399.com/static/images/articles/mobile-casino-guide-cover.webp">
     <meta property="og:locale" content="zh_TW">
     <meta property="article:published_time" content="2026-05-17T00:00:00+08:00">
@@ -37,7 +37,9 @@
     <meta property="article:section" content="攻略文章">
     <meta property="article:tag" content="手機娛樂城,手機娛樂城APP,手機娛樂城網頁版,鉅城娛樂城,MBM娛樂城,HG樂遊">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="手機娛樂城怎麼玩？網頁版、APP安裝與三平台操作觀察（2026）">
     <meta name="twitter:image" content="https://fun1399.com/static/images/articles/mobile-casino-guide-cover.webp">
+    <meta name="twitter:description" content="手機娛樂城一定要下載APP嗎？本文以iPhone 14 Pro Max查看鉅城、MBM與HG樂遊手機網頁版，整理PWA安裝方式、主要功能入口、三平台差異與iPhone安全注意事項。">
     <meta name="twitter:title" content="手機娛樂城攻略｜網頁版與APP差異、iPhone安裝與實際操作（2026）">
     <meta name="twitter:description" content="手機娛樂城該用網頁版還是APP？以iPhone 14 Pro Max查看鉅城、MBM與HG樂遊手機頁面，整理下載入口、操作差異、儲值、客服與安全注意事項。">
 
@@ -145,8 +147,25 @@
         margin-top: 0;
     }
 
+    /* R13 本次觀察結論卡（頁面局部） */
+    .article-mobile-guide .mcg-sumcards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
+    .article-mobile-guide .mcg-sumcard { border: 1px solid #e9ecef; border-radius: 10px; padding: 18px; background: #f8f9fa; }
+    .article-mobile-guide .mcg-sumcard h3 { margin: 0 0 10px; font-size: 18px; }
+    .article-mobile-guide .mcg-sumcard ul { margin: 0; padding-left: 20px; }
+    .article-mobile-guide .mcg-sumcard li { margin: 6px 0; line-height: 1.7; font-size: 15px; }
+    /* R13 平台資訊卡＋CTA（頁面局部） */
+    .article-mobile-guide .mcg-pcard { border: 1px solid #e9ecef; border-radius: 10px; padding: 20px; margin: 20px 0; background: #fff; }
+    .article-mobile-guide .mcg-pcard-name { font-weight: 700; font-size: 18px; margin-bottom: 10px; }
+    .article-mobile-guide .mcg-pcard ul { margin: 0 0 14px; padding-left: 20px; }
+    .article-mobile-guide .mcg-pcard li { margin: 6px 0; line-height: 1.7; }
+    .article-mobile-guide .mcg-btn { display: inline-block; min-height: 44px; line-height: 44px; padding: 0 24px; background: #1a1a2e; color: #fff !important; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    .article-mobile-guide .mcg-btn:hover { background: #2d2d44; }
+    .article-mobile-guide .mcg-disclosure { font-size: 14px; color: #555; background: rgba(0,0,0,0.04); border-radius: 8px; padding: 12px 16px; margin: 20px 0; line-height: 1.8; }
+    .article-mobile-guide .mcg-scrollhint { font-size: 13px; color: #888; margin: 0 0 6px; }
+
     /* 手機版微調 */
     @media (max-width: 768px) {
+        .article-mobile-guide .mcg-sumcards { grid-template-columns: 1fr; }
         .article-mobile-guide .shot-item {
             flex: 0 1 240px;
             max-width: 260px;
@@ -167,8 +186,8 @@
     "@graph": [
         {
             "@type": "Article",
-            "headline": "手機娛樂城怎麼玩？網頁版、APP安裝與三平台操作觀察",
-            "description": "手機娛樂城該用網頁版還是APP？以iPhone 14 Pro Max查看鉅城、MBM與HG樂遊手機頁面，整理下載入口、操作差異、儲值、客服與安全注意事項。",
+            "headline": "手機娛樂城怎麼玩？網頁版、APP安裝與三平台操作觀察（2026）",
+            "description": "手機娛樂城一定要下載APP嗎？本文以iPhone 14 Pro Max查看鉅城、MBM與HG樂遊手機網頁版，整理PWA安裝方式、主要功能入口、三平台差異與iPhone安全注意事項。",
             "image": "https://fun1399.com/static/images/articles/mobile-casino-guide-cover.webp",
             "author": {
                 "@type": "Person",
@@ -201,37 +220,37 @@
                 {
                     "@type": "Question",
                     "name": "手機娛樂城一定要下載 APP 嗎？",
-                    "acceptedAnswer": { "@type": "Answer", "text": "不需要。鉅城與 MBM 直接使用手機網頁版即可，HG 樂遊也可以使用網頁版。" }
+                    "acceptedAnswer": { "@type": "Answer", "text": "不一定，鉅城、MBM 與 HG 樂遊都能先使用手機網頁版。鉅城與 MBM 另有 PWA 加入主畫面教學，HG 樂遊的實際安裝類型則需在下載前再次確認。" }
                 },
                 {
                     "@type": "Question",
                     "name": "iPhone 可以使用手機娛樂城嗎？",
-                    "acceptedAnswer": { "@type": "Answer", "text": "可以。本文以 iPhone 14 Pro Max 實際開啟鉅城、MBM 與 HG 樂遊的手機網頁版，三平台皆能正常開啟，並可查看本文列出的主要頁面與功能入口。" }
+                    "acceptedAnswer": { "@type": "Answer", "text": "可以，本次以 iPhone 14 Pro Max 開啟三平台手機網頁版，皆能查看主要頁面與功能入口。本文未測試實際儲值、提款或完整 APP 功能。" }
                 },
                 {
                     "@type": "Question",
-                    "name": "網頁版和 APP 該怎麼選？",
-                    "acceptedAnswer": { "@type": "Answer", "text": "一般使用可先選網頁版。若確認 APP 的安裝來源與功能符合需求，再考慮安裝。" }
+                    "name": "網頁版和 APP／安裝版該怎麼選？",
+                    "acceptedAnswer": { "@type": "Answer", "text": "想免安裝可先用手機網頁版，經常使用則可評估加入主畫面或安裝版。安裝前應確認來源、開發者及所要求的權限。" }
                 },
                 {
                     "@type": "Question",
-                    "name": "哪些平台適合直接使用網頁版？",
-                    "acceptedAnswer": { "@type": "Answer", "text": "三平台皆提供可用的手機網頁版；各平台已確認的頁面與功能差異請見上方比較表。" }
+                    "name": "哪些平台提供 PWA 加入主畫面？",
+                    "acceptedAnswer": { "@type": "Answer", "text": "本次確認鉅城與 MBM 的教學頁提供 PWA 加入主畫面流程。HG 樂遊下載頁未清楚標示安裝類型。" }
                 },
                 {
                     "@type": "Question",
                     "name": "手機遊玩會很耗電或耗流量嗎？",
-                    "acceptedAnswer": { "@type": "Answer", "text": "手機遊玩會消耗電量與行動數據，實際用量會受到遊戲類型、畫質、連線時間、網路訊號及裝置狀況影響。使用行動網路時，可透過 iPhone 的行動服務用量查看個別瀏覽器或 APP 的實際消耗。" }
+                    "acceptedAnswer": { "@type": "Answer", "text": "會消耗電量與行動數據，實際用量取決於使用時間、畫質、網路及遊戲類型。真人視訊通常比一般靜態頁面消耗更多流量。" }
                 },
                 {
                     "@type": "Question",
                     "name": "APP 應從哪裡安裝？",
-                    "acceptedAnswer": { "@type": "Answer", "text": "一律從平台官方入口或官方提供的安裝教學頁下載。鉅城與 MBM 的安裝教學頁可正常開啟；HG 樂遊可從其平台入口進入後依頁面引導找到下載頁，不使用陌生第三方縮網址或來路不明的安裝連結。" }
+                    "acceptedAnswer": { "@type": "Answer", "text": "只使用可核對的平台入口或下載頁，不要從陌生縮網址安裝。下載前仍要檢查網域、開發者、描述檔及權限要求。" }
                 },
                 {
                     "@type": "Question",
                     "name": "iPhone 安裝娛樂城 APP 一定安全嗎？",
-                    "acceptedAnswer": { "@type": "Answer", "text": "不能只憑下載頁或「官方入口」保證安全。安裝前應核對網址、開發者名稱與要求的權限；若要求安裝不明描述檔、信任陌生企業開發者、輸入 Apple ID 密碼或開放無關權限，應停止安裝，手機網頁版已能使用時可優先選擇免安裝方式。" }
+                    "acceptedAnswer": { "@type": "Answer", "text": "不一定，出現在平台下載頁不代表可以忽略安裝風險。遇到不明描述檔、陌生企業開發者、Apple ID 密碼要求或無關權限時，應停止安裝。" }
                 }
             ]
         },
@@ -293,7 +312,6 @@
                      width="1280" height="800"
                      loading="eager" fetchpriority="high" decoding="async"
                      style="max-width: 100%; width: 100%; height: auto; object-fit: contain;">
-                <p class="image-caption">手機娛樂城怎麼玩？網頁版、APP安裝與三平台操作觀察</p>
             </div>
 
             <div class="article-meta" style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px; flex-wrap: wrap;">
@@ -311,18 +329,20 @@
 
             <!-- Direct Answer -->
             <div class="direct-answer">
-                <p><strong>手機娛樂城一定要下載 APP 嗎？</strong></p>
-                <p>不一定要下載 APP。依目前三個平台的操作資料，鉅城與 MBM 直接使用手機網頁版即可；HG 樂遊也能使用網頁版。依使用者提供的操作回饋，HG 樂遊 APP 的使用感受略佳；本文未進行完整 APP 功能測試。</p>
+                <p>iPhone 不一定需要下載娛樂城 APP。這次以 iPhone 14 Pro Max 開啟鉅城、MBM 與 HG 樂遊的手機網頁版，三者均能查看主要功能入口；鉅城與 MBM 的安裝教學確認採用 PWA 加入主畫面，HG 樂遊下載頁的實際安裝類型則未能由頁面確認。</p>
                 <ul>
-                    <li><strong>免安裝：</strong>使用手機瀏覽器即可開啟，不需另外安裝 APP。</li>
-                    <li><strong>一般操作：</strong>鉅城與 MBM 的手機網頁版已具備主要使用功能。</li>
-                    <li><strong>依平台選擇：</strong>HG 樂遊可使用網頁版，偏好 APP 操作時再考慮安裝。</li>
+                    <li><strong>想免安裝：</strong>三平台都可以先使用手機網頁版。</li>
+                    <li><strong>想加入主畫面：</strong>鉅城與 MBM 已確認提供 PWA 教學。</li>
+                    <li><strong>想安裝 HG 樂遊：</strong>先核對下載來源及安裝類型，不要直接信任不明描述檔或企業開發者。</li>
                 </ul>
             </div>
 
             <div class="scope-note">
-                <strong>觀察範圍：</strong>本文以 iPhone 14 Pro Max 實際開啟鉅城、MBM 與 HG 樂遊的手機網頁版，觀察首頁、遊戲大廳、選單、註冊、儲值、客服及下載入口；未進行實際儲值、提款或完整 APP 功能測試。<br>
-                觀察日期：2026-09-15。
+                <strong>本次觀察方式</strong><br>
+                觀察裝置：iPhone 14 Pro Max<br>
+                觀察日期：2026-09-15<br>
+                觀察項目：首頁、遊戲大廳、選單、註冊頁、儲值頁、客服及下載入口。<br>
+                測試邊界：未進行實際儲值、提款、長時間連線或三平台完整 APP 功能測試。
             </div>
 
             <section>
@@ -331,8 +351,41 @@
             </section>
 
             <section>
+                <h2>本次觀察三個手機娛樂城，有哪些差異？</h2>
+                <p>以下依本次 iPhone 實際開啟的手機網頁版畫面，整理三平台的差異重點；各平台完整功能請續讀下方比較表與平台段落。</p>
+                <div class="mcg-sumcards">
+                    <div class="mcg-sumcard">
+                        <h3>鉅城</h3>
+                        <ul>
+                            <li>手機網頁版可查看首頁、遊戲大廳、註冊、儲值、優惠及功能選單。</li>
+                            <li>安裝教學確認為 PWA 加入主畫面。</li>
+                            <li>本次沒有進行實際儲值與提款。</li>
+                        </ul>
+                    </div>
+                    <div class="mcg-sumcard">
+                        <h3>MBM</h3>
+                        <ul>
+                            <li>手機網頁版可查看首頁、遊戲大廳、儲值、優惠及分享功能。</li>
+                            <li>安裝教學確認為 PWA 加入主畫面。</li>
+                            <li>本次畫面不足以確認完整註冊流程。</li>
+                        </ul>
+                    </div>
+                    <div class="mcg-sumcard">
+                        <h3>HG 樂遊</h3>
+                        <ul>
+                            <li>手機網頁版可查看首頁、遊戲大廳、優惠、客服、註冊及下載入口。</li>
+                            <li>下載頁提供 iOS 下載引導。</li>
+                            <li>頁面未清楚標示屬於 PWA、App Store、TestFlight、企業簽章或描述檔，因此本文不推測安裝類型。</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>如果只是想快速查看平台內容，三者都能先從手機網頁版開始；想加入 iPhone 主畫面時，鉅城與 MBM 已有可核對的 PWA 教學，HG 樂遊則應先確認實際下載來源與安裝類型。</p>
+            </section>
+
+            <section>
                 <h2>手機網頁版與 APP 差異比較表</h2>
-                <div class="table-wrap">
+                <p class="mcg-scrollhint">手機版可左右滑動檢視完整表格</p>
+                <div class="table-wrap" tabindex="0" role="region" aria-label="手機網頁版與 APP 差異比較表，可左右滑動">
                     <table style="width: 100%; border-collapse: collapse; background: #fff; min-width: 560px;">
                         <thead>
                             <tr style="background: #f8f9fa;">
@@ -354,13 +407,13 @@
                             </tr>
                             <tr>
                                 <td style="padding: 15px; border: 1px solid #e9ecef;">本次三平台支援情形</td>
-                                <td style="padding: 15px; border: 1px solid #e9ecef;">鉅城、MBM、HG 樂遊皆可使用（本文 15 張手機操作畫面皆為手機網頁版）</td>
+                                <td style="padding: 15px; border: 1px solid #e9ecef;">三平台皆可使用（本文 15 張操作畫面皆為手機網頁版）</td>
                                 <td style="padding: 15px; border: 1px solid #e9ecef;">鉅城功能選單有 APP 下載入口；HG 樂遊大廳有 APP 下載引導與下載頁</td>
                             </tr>
                             <tr>
                                 <td style="padding: 15px; border: 1px solid #e9ecef;">本次操作感受</td>
                                 <td style="padding: 15px; border: 1px solid #e9ecef;">三平台手機網頁版的主要功能入口皆可正常檢視（依本文 15 張操作畫面）</td>
-                                <td style="padding: 15px; border: 1px solid #e9ecef;">依使用者提供的操作回饋，HG 樂遊 APP 使用感受略佳（本文未完整測試）</td>
+                                <td style="padding: 15px; border: 1px solid #e9ecef;">未完成完整 APP 測試，不列比較</td>
                             </tr>
                             <tr>
                                 <td style="padding: 15px; border: 1px solid #e9ecef;">主要差異</td>
@@ -369,13 +422,14 @@
                         </tbody>
                     </table>
                 </div>
-                <p>手機網頁版適合希望免安裝、直接透過瀏覽器使用的讀者。是否需要 APP，應依平台實際安裝方式與個人操作習慣決定，不能單靠功能名稱判斷。</p>
+                <p>手機網頁版適合希望免安裝、直接透過瀏覽器使用的讀者。是否需要 APP，應依平台實際安裝方式與個人操作習慣決定，不能單靠功能名稱判斷。若尚未決定平台，也可先參考<a href="/recommend/2026">2026 娛樂城推薦整理</a>。</p>
                 <p style="font-size: 14px; color: #555;">註：平台實際提供項目可能隨時間調整，請以平台頁面即時資訊為準。</p>
             </section>
 
             <section>
                 <h2>三平台已確認資訊一覽表</h2>
                 <p>以下僅整理本次 iPhone 手機網頁版操作圖片與平台頁面可確認的內容。</p>
+                <p class="mcg-scrollhint">手機版可左右滑動檢視完整表格</p>
                 <div class="table-wrap" tabindex="0" role="region" aria-label="三平台已確認資訊一覽表，可左右滑動">
                     <table style="width: 100%; border-collapse: collapse; background: #fff; min-width: 720px;">
                         <thead>
@@ -412,7 +466,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p>鉅城與 MBM 適合直接使用手機網頁版，主要入口與操作功能已集中在行動版頁面。HG 樂遊同樣可以使用網頁版，但依使用者提供的操作回饋，其 APP 操作感受略佳。</p>
+                <p>鉅城與 MBM 適合直接使用手機網頁版，主要入口與操作功能已集中在行動版頁面；HG 樂遊同樣可以使用網頁版，其安裝類型與完整 APP 功能需在下載前另行確認。</p>
                 <p style="font-size: 14px; color: #555;">註：僅列出本次可確認的資訊，平台內容可能隨時間調整，請以平台頁面即時資訊為準。</p>
             </section>
 
@@ -446,6 +500,17 @@
                 <h3>鉅城儲值與功能</h3>
                 <p>鉅城手機網頁版儲值頁提供 ATM、超商儲值（7-11、全家）、USDT（TRC20）、街口支付、支付寶（信用卡）、Apple Pay、Google Pay 與信用卡儲值等通道。功能選單中可找到帳號資訊與 APP 下載入口。</p>
                 <p>本次截圖可確認其瀏覽、註冊頁檢視與儲值頁切換皆正常顯示，APP 下載入口位於功能選單內。</p>
+
+                <div class="mcg-disclosure">合作關係說明：以下部分平台連結可能包含合作或推薦關係；本文的觀察內容與限制仍依實際可核對的頁面資料整理。</div>
+                <div class="mcg-pcard">
+                    <div class="mcg-pcard-name">鉅城</div>
+                    <ul>
+                        <li><strong>已確認的手機使用方式：</strong>手機網頁版／PWA 加入主畫面</li>
+                        <li><strong>已確認的頁面：</strong>首頁、註冊、儲值、優惠、功能選單</li>
+                        <li><strong>目前限制：</strong>未測試實際儲值、提款與完整安裝版功能</li>
+                    </ul>
+                    <a class="mcg-btn" href="https://fun1399.ofa177.net/" target="_blank" rel="sponsored nofollow noopener noreferrer">查看鉅城手機版</a>
+                </div>
             </section>
 
             <section>
@@ -478,11 +543,21 @@
                 <h3>MBM 儲值與分享功能</h3>
                 <p>MBM 手機網頁版儲值頁提供 ATM、超商儲值（7-11、全家）、USDT（TRC20）、街口支付、Apple Pay、支付寶（信用卡）與信用卡儲值，儲值流程需先綁定銀行卡。「分享賺點」頁面說明其好友盈利共享機制，推薦好友的有效遊戲碼量會依平台規則回饋。</p>
                 <p>MBM 手機網頁版另有「分享賺點」機制，適合想在同一行動版頁面完成儲值、客服與分享操作的讀者；儲值前需先綁定銀行卡，可一併在功能選單中處理。</p>
+
+                <div class="mcg-pcard">
+                    <div class="mcg-pcard-name">MBM</div>
+                    <ul>
+                        <li><strong>已確認的手機使用方式：</strong>手機網頁版／PWA 加入主畫面</li>
+                        <li><strong>已確認的頁面：</strong>首頁、遊戲大廳、優惠、儲值、分享功能</li>
+                        <li><strong>目前限制：</strong>完整註冊流程與實際交易未測試</li>
+                    </ul>
+                    <a class="mcg-btn" href="https://fun1399.mbm88.net/" target="_blank" rel="sponsored nofollow noopener noreferrer">查看 MBM 手機版</a>
+                </div>
             </section>
 
             <section>
                 <h2>HG 樂遊手機版：網頁版與 APP 選擇</h2>
-                <p>現有操作圖片可確認 HG 樂遊手機網頁版包含首頁、遊戲大廳、優惠、註冊、客服與下載入口。依使用者提供的操作回饋，HG 樂遊 APP 的使用感受略佳；本文未進行完整 APP 功能測試。</p>
+                <p>現有操作圖片可確認 HG 樂遊手機網頁版包含首頁、遊戲大廳、優惠、註冊、客服與下載入口。依使用者提供的操作回饋，HG 樂遊 APP 的使用感受略佳；由於本文未完成 APP 功能與穩定性測試，此項僅作為使用者回饋記錄。</p>
 
                 <div class="shot-gallery">
                     <figure class="shot-item">
@@ -510,6 +585,16 @@
                 <h3>HG 樂遊客服與下載</h3>
                 <p>HG 樂遊客服頁面標示線上客服 24 小時服務，並提供 LINE 客服入口。APP 下載頁提供 iOS 下載按鈕。本文收錄的 HG 樂遊畫面皆為手機網頁版頁面，未包含 APP 內部操作畫面。</p>
                 <p>其大廳提供 APP 下載引導，並含優惠活動與線上客服入口。</p>
+
+                <div class="mcg-pcard">
+                    <div class="mcg-pcard-name">HG 樂遊</div>
+                    <ul>
+                        <li><strong>已確認的手機使用方式：</strong>手機網頁版；另有 iOS 下載引導</li>
+                        <li><strong>已確認的頁面：</strong>首頁、遊戲大廳、優惠、客服、註冊、下載入口</li>
+                        <li><strong>目前限制：</strong>安裝類型及完整 APP 功能未確認</li>
+                    </ul>
+                    <a class="mcg-btn" href="https://www.leyo.tw/r?p=685e99859c687" target="_blank" rel="sponsored nofollow noopener noreferrer">查看 HG 樂遊手機版</a>
+                </div>
             </section>
 
             <section>
@@ -519,8 +604,8 @@
                 <div class="platform-card">
                     <h3>鉅城娛樂城</h3>
                     <ul>
-                        <li>平台入口：<a href="https://fun1399.ofa177.net/" target="_blank" rel="sponsored nofollow noopener noreferrer">https://fun1399.ofa177.net/</a></li>
-                        <li>安裝教學：<a href="https://fun1399.ofa177.net/app" target="_blank" rel="sponsored nofollow noopener noreferrer">https://fun1399.ofa177.net/app</a></li>
+                        <li>平台入口：<a href="https://fun1399.ofa177.net/" target="_blank" rel="sponsored nofollow noopener noreferrer">鉅城平台入口</a></li>
+                        <li>安裝教學：<a href="https://fun1399.ofa177.net/app" target="_blank" rel="sponsored nofollow noopener noreferrer">鉅城安裝教學頁</a></li>
                         <li>手機網頁版功能選單中亦有 APP 下載入口</li>
                     </ul>
                 </div>
@@ -528,16 +613,16 @@
                 <div class="platform-card">
                     <h3>MBM 娛樂城</h3>
                     <ul>
-                        <li>平台入口：<a href="https://fun1399.mbm88.net/" target="_blank" rel="sponsored nofollow noopener noreferrer">https://fun1399.mbm88.net/</a></li>
-                        <li>安裝教學：<a href="https://fun1399.mbm88.net/app" target="_blank" rel="sponsored nofollow noopener noreferrer">https://fun1399.mbm88.net/app</a></li>
+                        <li>平台入口：<a href="https://fun1399.mbm88.net/" target="_blank" rel="sponsored nofollow noopener noreferrer">MBM 平台入口</a></li>
+                        <li>安裝教學：<a href="https://fun1399.mbm88.net/app" target="_blank" rel="sponsored nofollow noopener noreferrer">MBM 安裝教學頁</a></li>
                     </ul>
                 </div>
 
                 <div class="platform-card">
                     <h3>HG 樂遊</h3>
                     <ul>
-                        <li>平台入口：<a href="https://www.leyo.tw/r?p=685e99859c687" target="_blank" rel="sponsored nofollow noopener noreferrer">https://www.leyo.tw/r?p=685e99859c687</a></li>
-                        <li>安裝教學：<a href="https://leyo.tw/mobile-download" target="_blank" rel="sponsored nofollow noopener noreferrer">https://leyo.tw/mobile-download</a></li>
+                        <li>平台入口：<a href="https://www.leyo.tw/r?p=685e99859c687" target="_blank" rel="sponsored nofollow noopener noreferrer">HG 樂遊平台入口</a></li>
+                        <li>安裝教學：<a href="https://leyo.tw/mobile-download" target="_blank" rel="sponsored nofollow noopener noreferrer">HG 樂遊下載教學頁</a></li>
                         <li>手機網頁版大廳有 APP 下載引導</li>
                     </ul>
                 </div>
@@ -556,6 +641,7 @@
 
             <section>
                 <h2>iPhone 使用手機娛樂城的安全注意事項</h2>
+                <p>以下整理 iPhone 使用手機娛樂城前的基本檢查項目；更多註冊與帳號安全整理，可參考<a href="/articles/safety-guide">娛樂城安全注意事項</a>。</p>
                 <ul>
                     <li><strong>從官方入口進入：</strong>直接在瀏覽器輸入平台官方網址，或從平台官方提供的連結進入下載頁，不使用陌生第三方縮網址或來路不明的安裝連結。</li>
                     <li><strong>核對網域：</strong>進入下載頁前，確認網址與平台官方公告一致，留意是否有異常字元或仿冒網域。</li>
@@ -582,25 +668,25 @@
                 <h2>常見問題</h2>
 
                 <h3>手機娛樂城一定要下載 APP 嗎？</h3>
-                <p>不需要。鉅城與 MBM 直接使用手機網頁版即可，HG 樂遊也可以使用網頁版。</p>
+                <p>不一定，鉅城、MBM 與 HG 樂遊都能先使用手機網頁版。鉅城與 MBM 另有 PWA 加入主畫面教學，HG 樂遊的實際安裝類型則需在下載前再次確認。</p>
 
                 <h3>iPhone 可以使用手機娛樂城嗎？</h3>
-                <p>可以。本文以 iPhone 14 Pro Max 實際開啟鉅城、MBM 與 HG 樂遊的手機網頁版，三平台皆能正常開啟，並可查看本文列出的主要頁面與功能入口。</p>
+                <p>可以，本次以 iPhone 14 Pro Max 開啟三平台手機網頁版，皆能查看主要頁面與功能入口。本文未測試實際儲值、提款或完整 APP 功能。</p>
 
-                <h3>網頁版和 APP 該怎麼選？</h3>
-                <p>一般使用可先選網頁版。若確認 APP 的安裝來源與功能符合需求，再考慮安裝。</p>
+                <h3>網頁版和 APP／安裝版該怎麼選？</h3>
+                <p>想免安裝可先用手機網頁版，經常使用則可評估加入主畫面或安裝版。安裝前應確認來源、開發者及所要求的權限。</p>
 
-                <h3>哪些平台適合直接使用網頁版？</h3>
-                <p>三平台皆提供可用的手機網頁版；各平台已確認的頁面與功能差異請見上方比較表。</p>
+                <h3>哪些平台提供 PWA 加入主畫面？</h3>
+                <p>本次確認鉅城與 MBM 的教學頁提供 PWA 加入主畫面流程。HG 樂遊下載頁未清楚標示安裝類型。</p>
 
                 <h3>手機遊玩會很耗電或耗流量嗎？</h3>
-                <p>手機遊玩會消耗電量與行動數據，實際用量會受到遊戲類型、畫質、連線時間、網路訊號及裝置狀況影響。使用行動網路時，可透過 iPhone 的行動服務用量查看個別瀏覽器或 APP 的實際消耗。</p>
+                <p>會消耗電量與行動數據，實際用量取決於使用時間、畫質、網路及遊戲類型。真人視訊通常比一般靜態頁面消耗更多流量。</p>
 
                 <h3>APP 應從哪裡安裝？</h3>
-                <p>一律從平台官方入口或官方提供的安裝教學頁下載。鉅城與 MBM 的安裝教學頁可正常開啟；HG 樂遊可從其平台入口進入後依頁面引導找到下載頁，不使用陌生第三方縮網址或來路不明的安裝連結。</p>
+                <p>只使用可核對的平台入口或下載頁，不要從陌生縮網址安裝。下載前仍要檢查網域、開發者、描述檔及權限要求。</p>
 
                 <h3>iPhone 安裝娛樂城 APP 一定安全嗎？</h3>
-                <p>不能只憑下載頁或「官方入口」保證安全。安裝前應核對網址、開發者名稱與要求的權限；若要求安裝不明描述檔、信任陌生企業開發者、輸入 Apple ID 密碼或開放無關權限，應停止安裝，手機網頁版已能使用時可優先選擇免安裝方式。</p>
+                <p>不一定，出現在平台下載頁不代表可以忽略安裝風險。遇到不明描述檔、陌生企業開發者、Apple ID 密碼要求或無關權限時，應停止安裝。</p>
             </section>
 
             <section>
@@ -623,8 +709,6 @@
                     <li><a href="/articles/baccarat-guide">百家樂玩法、規則與技巧完整攻略</a></li>
                     <li><a href="/articles/slots-guide">老虎機玩法、機制與風險攻略</a></li>
                     <li><a href="/articles/sports-betting-guide">體育投注玩法、盤口與入門教學</a></li>
-                    <li><a href="/articles/safety-guide">娛樂城註冊與安全注意事項</a></li>
-                    <li><a href="/recommend/2026">2026最新娛樂城推薦</a></li>
                 </ul>
             </div>
 
