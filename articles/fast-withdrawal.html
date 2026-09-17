@@ -135,12 +135,16 @@
     .fwr-note { background:#f8fafc; border-radius:8px; padding:16px 20px; margin:18px 0; font-size:14px; line-height:1.9; color:#333; }
     .fwr-time-note { font-size:14px; line-height:1.9; color:#333; margin:0 0 18px 0; }
     .fwr-src { display:inline-block; margin-top:8px; font-size:13px; color:#666; }
+    .fwr-notes { margin:8px 0 4px; padding-left:20px; line-height:1.9; }
+    .fwr-notes li { margin:4px 0; }
+    .fwr-note-common { margin:6px 0 0; }
     .fwr-reason { margin:16px 0; padding:16px 20px; background:#f8fafc; border-left:4px solid #0284c7; border-radius:8px; }
     .fwr-reason h3 { margin:0 0 10px 0; font-size:16px; color:#1a1a2e; }
     .fwr-reason p { margin:4px 0; line-height:1.8; font-size:15px; }
     .fwr-warn { margin:16px 0; padding:16px 20px; background:#fff7ed; border-left:4px solid #ea580c; border-radius:8px; }
     .fwr-warn h3 { margin:0 0 10px 0; font-size:16px; color:#7c2d12; }
-    .fwr-warn ul { margin:0; padding-left:20px; line-height:1.9; }
+    .fwr-warn ul, .fwr-warn ol { margin:0; padding-left:20px; line-height:1.9; }
+    .fwr-warn p { margin:6px 0; line-height:1.8; font-size:15px; }
     .fwr-faq-item { background:#f8f9fa; border-radius:8px; padding:15px 20px; margin-bottom:12px; }
     .fwr-faq-item h3 { color:#1a1a2e; margin:0 0 8px 0; font-size:16px; }
     .fwr-faq-item p { margin:0; line-height:1.8; }
@@ -243,8 +247,14 @@
         <p class="fwr-scrollhint">手機可左右滑動查看完整表格</p>
 
         <div class="fwr-note">
-            <strong>資料說明：</strong>本表整理各平台截至 2026 年 9 月 17 日可查得的公開頁面、幫助頁與後台公告。鉅城現行首頁公告為單筆 1,000～1,000,000 元、每位會員每日 1 次；2023 年教學影片中的 500,000 元單筆上限僅作舊版規則參考。財神與 SWAG 資料來自 2026 年 9 月取得的後台公告截圖。SWAG 所稱『24 小時』是可提出 USDT 申請的時段，不代表 24 小時內到帳。各平台可能依會員等級、通道維護或當日風控調整額度，申請前仍應以登入後顯示的即時規則為準。
-            <br><span class="fwr-src">查核來源：<a href="https://www.ofa377.net/" target="_blank" rel="nofollow noopener noreferrer">鉅城公開頁面</a>、<a href="https://3aaa.com.tw/" target="_blank" rel="nofollow noopener noreferrer">3A公開頁面</a>、<a href="https://as5588.com/" target="_blank" rel="nofollow noopener noreferrer">財神公開頁面</a></span>
+            <strong>資料說明（查核日：2026 年 9 月 17 日）</strong>
+            <ul class="fwr-notes">
+                <li>*1 鉅城：USDT 最高提款額度為 1,000,000，銀行與 USDT 額度依使用者提供的現行提款規則整理；實際幣別換算、單筆限制及可申請額度仍以會員後台當日顯示為準。2023 年教學影片中的單筆 500,000 元上限為舊版規則，僅作歷史參考。</li>
+                <li>*2 財神：資料來自 2026 年後台截圖；已確認支援 USDT，但公開資料未顯示確切額度。</li>
+                <li>*3 SWAG：24 小時是申請時段；銀行提款每日合計 120,000 元的條件為最多綁定 4 個銀行帳戶。</li>
+            </ul>
+            <p class="fwr-note-common">共同說明：提款規則可能因會員等級、活動、驗證狀態及通道維護而改變；實際規則依平台會員後台及當日公告為準。</p>
+            <span class="fwr-src">查核來源：<a href="https://www.ofa377.net/" target="_blank" rel="nofollow noopener noreferrer">鉅城公開頁面</a>、<a href="https://3aaa.com.tw/" target="_blank" rel="nofollow noopener noreferrer">3A公開頁面</a>、<a href="https://as5588.com/" target="_blank" rel="nofollow noopener noreferrer">財神公開頁面</a></span>
         </div>
 
         <div class="fwr-cta">
@@ -254,52 +264,57 @@
         <h2 id="review-reasons">娛樂城提款卡審核的7種常見原因</h2>
 
         <div class="fwr-reason">
-            <h3>1. 流水尚未完成</h3>
-            <p><strong>狀況：</strong>提款被擋，或客服告知流水不足。</p>
-            <p><strong>怎麼確認：</strong>在會員中心比對「有效投注額」與優惠流水倍數（計算方式見本站<a href="/articles/wagering-guide">流水教學</a>）。</p>
-            <p><strong>下一步：</strong>補足流水後重新申請；取消前先問客服是否影響帳戶狀態。</p>
+            <h3>1. 流水尚未完成（有效投注額不足）</h3>
+            <p>流水不足是娛樂城提款卡審核的常見原因之一，代表有效投注額尚未達到儲值或優惠規定。</p>
+            <p><strong>如何確認：</strong>到會員中心比對目前有效投注額及尚缺流水，或直接要求客服提供確切差額（計算方式見本站<a href="/articles/wagering-guide">流水計算教學</a>）。</p>
+            <p><strong>如何處理：</strong>確認規則後補足必要流水，再重新提出提款申請。</p>
+            <p><strong>注意事項：</strong>尚未確認原因前，不要反覆取消及重新申請提款。</p>
         </div>
 
         <div class="fwr-reason">
             <h3>2. 會員與銀行帳戶姓名不一致</h3>
-            <p><strong>狀況：</strong>銀行帳戶驗證失敗，或提款申請被退件。</p>
-            <p><strong>怎麼確認：</strong>逐字核對註冊姓名、身分證字號與銀行帳戶姓名是否一致。</p>
-            <p><strong>下一步：</strong>更正資料後再申請；切勿使用他人帳戶出金。</p>
+            <p>平台通常只接受與會員姓名一致的銀行帳戶，姓名不符時提款會被退件或擋下。</p>
+            <p><strong>如何確認：</strong>逐字核對註冊姓名、身分證字號與銀行帳戶姓名；曾改名者先確認會員資料是否已更新。</p>
+            <p><strong>如何處理：</strong>更新會員資料與銀行帳戶後再申請，完整流程見本站<a href="/articles/casino-withdrawal-tutorial">娛樂城提款教學</a>。</p>
+            <p><strong>注意事項：</strong>切勿使用他人帳戶出金，多數平台會因此拒絕受理。</p>
         </div>
 
         <div class="fwr-reason">
             <h3>3. 超過單筆、每日或次數限制</h3>
-            <p><strong>狀況：</strong>申請被系統直接退件。</p>
-            <p><strong>怎麼確認：</strong>對照本頁五平台表，確認單筆上限、每日上限與提款次數。</p>
-            <p><strong>下一步：</strong>調整金額至限額內，或分日申請。</p>
+            <p>申請金額或次數超出平台公開的單筆、每日或次數上限時，系統會直接退件。</p>
+            <p><strong>如何確認：</strong>對照本頁「五家娛樂城提款規則比較」表，確認單筆上限、每日上限與提款次數。</p>
+            <p><strong>如何處理：</strong>把金額調整到限額內，或依每日次數分日申請。</p>
         </div>
 
         <div class="fwr-reason">
             <h3>4. 首次提款尚未完成身分驗證</h3>
-            <p><strong>狀況：</strong>首次提款進入人工審核，時間較長。</p>
-            <p><strong>怎麼確認：</strong>詢問客服需要哪些文件、驗證需要多長時間。</p>
-            <p><strong>下一步：</strong>依指示提供資料，過程保留對話紀錄。</p>
+            <p>首次提款常需先完成身分或帳戶驗證，未完成前會停在人工審核而無法派發。</p>
+            <p><strong>如何確認：</strong>向客服確認所需文件與預計審核時間；例如 3A 首次提款需先綁定本人銀行帳戶，大老爺的銀行與 USDT 驗證方式不同。</p>
+            <p><strong>如何處理：</strong>依指示完成綁定或驗證，過程保留對話紀錄。</p>
+            <p><strong>注意事項：</strong>各平台驗證流程不同，鉅城 2023 年教學影片中的持證拍照僅為歷史示範，實際以現行後台要求為準。</p>
         </div>
 
         <div class="fwr-reason">
             <h3>5. 付款管道維護或暫停</h3>
-            <p><strong>狀況：</strong>客服回覆系統維護或付款管道暫停。</p>
-            <p><strong>怎麼確認：</strong>查看平台公告頁或官方公告頻道的維護時段。</p>
-            <p><strong>下一步：</strong>等待公告恢復時間；超過公告時程仍未恢復，提高警覺。</p>
+            <p>平台進行系統維護或付款管道暫停時，提款申請會暫時無法受理或延遲處理。</p>
+            <p><strong>如何確認：</strong>查看平台公告頁或官方公告頻道公布的維護時段；SWAG 曾在 USDT 公告中說明維護期間暫停受理、完成後依序處理。</p>
+            <p><strong>如何處理：</strong>避開維護時段，或改用其他可用通道（USDT 操作見本站<a href="/articles/usdt-casino">USDT 提款教學</a>）。</p>
+            <p><strong>注意事項：</strong>超過公告時程仍未恢復，應提高警覺並向客服查證。</p>
         </div>
 
         <div class="fwr-reason">
             <h3>6. 帳戶進入額外風險審查</h3>
-            <p><strong>狀況：</strong>提款狀態長時間停滯，無具體說明。</p>
-            <p><strong>怎麼確認：</strong>詢問客服審查原因、預計完成時間與處理編號。</p>
-            <p><strong>下一步：</strong>配合提供合理證明；超時未回覆保留證據，評估後續申訴管道。</p>
+            <p>銀行端或平台風控對大額、頻繁交易進行額外稽核時，提款狀態會長時間停滯。</p>
+            <p><strong>如何確認：</strong>詢問客服審查原因、預計完成時間與處理編號；3A 幫助中心提到「金管會風控較嚴格」，此為平台單方說法。</p>
+            <p><strong>如何處理：</strong>配合提供合理證明文件；超時未回覆就保留證據，評估後續申訴管道。</p>
         </div>
 
         <div class="fwr-reason">
             <h3>7. 遇到假客服或追加付款詐騙</h3>
-            <p><strong>狀況：</strong>對方要求先繳保證金、解凍金、稅金，或要求額外儲值才能提款。</p>
-            <p><strong>怎麼確認：</strong>正規平台不會要求先付款才能領回自己的款項。</p>
-            <p><strong>下一步：</strong>立即停止付款，保留對話與交易紀錄，向165反詐騙專線或警方查證。</p>
+            <p>自稱客服者以保證金、解凍金、稅金或再儲值為提款前提，屬於高度詐騙警訊。</p>
+            <p><strong>如何確認：</strong>正規平台不會要求先付款才能領回自己的款項；主動私訊你的「客服」，應先向官方管道求證身分。</p>
+            <p><strong>如何處理：</strong>立即停止付款，保留對話與交易紀錄，向 165 反詐騙專線或警方查證。</p>
+            <p><strong>注意事項：</strong>已付款者請立即聯繫銀行並報案，求助流程見下方詐騙警訊段落。</p>
         </div>
 
         <h2 id="evidence-checklist">如何向客服詢問並保留證據</h2>
@@ -310,18 +325,17 @@
             <li>全程截圖：申請紀錄、狀態畫面、完整對話（含時間與對方帳號）。</li>
         </ul>
 
-        <h2 id="fraud-warning">哪些要求可能是詐騙警訊</h2>
+        <h2 id="fraud-warning">什麼情況可能是娛樂城不出金的詐騙警訊？</h2>
         <div class="fwr-warn">
-            <h3>遇到以下任一情形，請停止付款</h3>
-            <ul>
-                <li>要求先繳保證金、解凍金、解鎖費或稅金才能提款。</li>
-                <li>要求「再儲值一筆」驗證帳戶或解除風控後才能出金。</li>
-                <li>要求提供網銀帳號密碼、簡訊驗證碼，或安裝遠端控制軟體。</li>
-                <li>以「不付款就永久凍結帳戶」等語句施壓。</li>
-                <li>透過陌生 LINE、Telegram 私訊自稱客服聯繫你。</li>
-            </ul>
+            <p>如果平台要求先繳解凍金、保證金、稅金或再次儲值才能提款，應立即停止付款、保留紀錄，並向 165 或警方查證。</p>
+            <ol>
+                <li><strong>要求繳交解凍費或保證金：</strong>聲稱必須先匯款，才能解除提款或帳戶限制。</li>
+                <li><strong>要求再次儲值：</strong>以驗證帳戶、重新計算流水或開通提款功能為由要求二次入金。</li>
+                <li><strong>索取敏感資料：</strong>要求提供網路銀行密碼、簡訊驗證碼、提款密碼，或要求安裝遠端操作軟體。</li>
+                <li><strong>拒絕提供書面規則：</strong>客服只以通訊軟體口頭要求付款，卻無法提供可核對的正式條款或紀錄。</li>
+            </ol>
+            <p>以上都屬於高度詐騙警訊：應立即停止付款並查證，不要再提供資金或敏感資料。可撥打<a href="https://165.npa.gov.tw" target="_blank" rel="nofollow noopener noreferrer">165 反詐騙專線</a>或 110 報案；若已付款，立即聯繫銀行並報案。更多求助流程見本站<a href="/articles/casino-scam-emergency-response">娛樂城詐騙緊急處理</a>。</p>
         </div>
-        <p>遇到以上情形，停止付款並保留所有對話與交易紀錄，向<a href="https://165.npa.gov.tw" target="_blank" rel="nofollow noopener noreferrer">165 反詐騙專線</a>或警方查證；若已付款，立即聯繫銀行並報案。更多求助流程見本站<a href="/articles/casino-scam-emergency-response">娛樂城詐騙緊急處理</a>。</p>
 
         <h2>Dcard、PTT 案例能證明什麼、不能證明什麼</h2>
         <ul>
