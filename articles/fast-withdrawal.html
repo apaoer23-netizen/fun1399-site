@@ -18,59 +18,35 @@
   <link rel="canonical" href="https://fun1399.com/articles/fast-withdrawal">
   <meta name="robots" content="noindex">
   <style>
-    /* ===== article-fast-withdrawal 文章專屬響應式規則（版型對齊 3A 評價文章） ===== */
+    /* ===== article-fast-withdrawal 文章專屬規則（比例對齊 3A 評價文章） ===== */
     .article-fast-withdrawal,
-    .article-fast-withdrawal * {
-        box-sizing: border-box;
-    }
-    .article-fast-withdrawal img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-    /* 封面：完整 16:9 顯示，不裁切 */
-    .article-fast-withdrawal .article-hero-image {
-        aspect-ratio: auto;
-    }
-    .article-fast-withdrawal .article-hero-image img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-    /* 排版沿用原 .content 規則 */
-    .article-fast-withdrawal h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 32px; color: var(--secondary); line-height: 1.3; }
-    .article-fast-withdrawal h2 { font-size: 1.6rem; font-weight: 600; margin: 48px 0 20px; color: var(--secondary); padding-bottom: 12px; border-bottom: 3px solid var(--primary); display: inline-block; }
-    .article-fast-withdrawal h3 { font-size: 1.3rem; font-weight: 600; margin: 36px 0 16px; color: var(--text); }
-    .article-fast-withdrawal h4 { font-size: 1.1rem; font-weight: 600; margin: 24px 0 12px; color: var(--text); }
-    .article-fast-withdrawal p { margin-bottom: 20px; color: var(--text); line-height: 1.9; }
-    .article-fast-withdrawal ul, .article-fast-withdrawal ol { margin: 20px 0; padding-left: 28px; }
-    .article-fast-withdrawal li { margin-bottom: 12px; line-height: 1.8; }
-    .article-fast-withdrawal p, .article-fast-withdrawal li { overflow-wrap: break-word; }
-    /* 表格滑動容器 */
-    .article-fast-withdrawal .table-wrap {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        margin: 20px 0;
-        max-width: 100%;
-    }
-    .article-fast-withdrawal .table-wrap table {
-        min-width: 600px;
-        width: 100%;
-        margin: 0;
-    }
-    /* 作者列響應式 */
-    .article-fast-withdrawal .article-meta { flex-wrap: wrap; gap: 10px !important; }
-    @media (max-width: 767px) {
-        .article-fast-withdrawal .article-meta { padding: 16px; }
-        .article-fast-withdrawal .article-meta > span { display: block; width: 100%; font-size: 13px; }
-        .article-fast-withdrawal .article-hero-image { margin: 16px -20px; border-radius: 0; }
-    }
-    /* H1 小螢幕尺寸（對齊 3A） */
+    .article-fast-withdrawal * { box-sizing: border-box; }
+    .article-fast-withdrawal img { max-width: 100%; height: auto; display: block; }
+    /* H1：對齊 3A（桌面 32px／手機 22、26px） */
+    .article-fast-withdrawal h1 { font-size: 32px; line-height: 1.4; margin-bottom: 20px; }
     @media (max-width: 390px) {
         .article-fast-withdrawal h1 { font-size: 22px !important; line-height: 1.35 !important; }
     }
     @media (min-width: 391px) and (max-width: 767px) {
         .article-fast-withdrawal h1 { font-size: 26px !important; line-height: 1.4 !important; }
+    }
+    /* H2／H3 字級與上下間距：對齊 3A（行高繼承全站 1.8） */
+    .article-fast-withdrawal h2 { font-size: 26px; margin: 40px 0 20px; }
+    .article-fast-withdrawal h3 { font-size: 22px; margin: 30px 0 15px; }
+    /* 段落間距對齊 3A（行距繼承全站 1.8） */
+    .article-fast-withdrawal p { margin: 20px 0; }
+    .article-fast-withdrawal p, .article-fast-withdrawal li { overflow-wrap: break-word; }
+    /* 封面：完整 16:9 不裁切 */
+    .article-fast-withdrawal .article-hero-image { aspect-ratio: auto; }
+    .article-fast-withdrawal .article-hero-image img { width: 100%; height: auto; object-fit: contain; }
+    /* 表格：僅在 table-wrap 內滑動 */
+    .article-fast-withdrawal .table-wrap { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 20px 0; max-width: 100%; }
+    .article-fast-withdrawal .table-wrap table { min-width: 600px; width: 100%; margin: 0; }
+    /* 作者列響應式 */
+    .article-fast-withdrawal .article-meta { flex-wrap: wrap; gap: 10px !important; }
+    @media (max-width: 767px) {
+        .article-fast-withdrawal .article-meta { padding: 16px; }
+        .article-fast-withdrawal .article-meta > span { display: block; width: 100%; font-size: 13px; }
     }
     /* FAQ 手風琴（對齊 3A 卡片式） */
     .article-fast-withdrawal .faq-section { margin: 20px 0; }
@@ -80,6 +56,8 @@
         border-radius: 12px;
         margin-bottom: 12px;
         overflow: hidden;
+        width: 100%;
+        max-width: 100%;
         transition: border-color 0.3s;
     }
     .article-fast-withdrawal .faq-item:hover { border-color: rgba(2, 132, 199, 0.3); }
@@ -110,9 +88,8 @@
         .article-fast-withdrawal .faq-item summary { font-size: 16px; padding: 16px 18px; }
         .article-fast-withdrawal .faq-answer { padding: 0 18px 16px 40px; font-size: 15px; line-height: 1.75; }
     }
-    /* warning-box 與 summary-box 內距保險 */
-    .article-fast-withdrawal .warning-box, .article-fast-withdrawal .summary-box { max-width: 100%; overflow-wrap: break-word; }
-    /* 站內推薦卡片容器寬度保險 */
+    /* 摘要／警告卡片與站內推薦：寬度保險 */
+    .article-fast-withdrawal .warning-box, .article-fast-withdrawal .summary-box { max-width: 100%; overflow-wrap: break-word; box-sizing: border-box; }
     .article-fast-withdrawal .related-quick-links { max-width: 100%; }
     .article-fast-withdrawal .related-quick-links > a { max-width: 100%; box-sizing: border-box; }
     @media (max-width: 767px) {
