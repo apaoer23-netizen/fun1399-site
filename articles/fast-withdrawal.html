@@ -16,6 +16,102 @@
 
   <link rel="canonical" href="https://fun1399.com/articles/fast-withdrawal">
   <meta name="robots" content="noindex">
+  <style>
+    /* ===== article-fast-withdrawal 文章專屬響應式規則（版型對齊 3A 評價文章） ===== */
+    .article-fast-withdrawal,
+    .article-fast-withdrawal * {
+        box-sizing: border-box;
+    }
+    .article-fast-withdrawal img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    /* 封面：完整 16:9 顯示，不裁切 */
+    .article-fast-withdrawal .article-hero-image {
+        aspect-ratio: auto;
+    }
+    .article-fast-withdrawal .article-hero-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    /* 排版沿用原 .content 規則 */
+    .article-fast-withdrawal h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 32px; color: var(--secondary); line-height: 1.3; }
+    .article-fast-withdrawal h2 { font-size: 1.6rem; font-weight: 600; margin: 48px 0 20px; color: var(--secondary); padding-bottom: 12px; border-bottom: 3px solid var(--primary); display: inline-block; }
+    .article-fast-withdrawal h3 { font-size: 1.3rem; font-weight: 600; margin: 36px 0 16px; color: var(--text); }
+    .article-fast-withdrawal h4 { font-size: 1.1rem; font-weight: 600; margin: 24px 0 12px; color: var(--text); }
+    .article-fast-withdrawal p { margin-bottom: 20px; color: var(--text); line-height: 1.9; }
+    .article-fast-withdrawal ul, .article-fast-withdrawal ol { margin: 20px 0; padding-left: 28px; }
+    .article-fast-withdrawal li { margin-bottom: 12px; line-height: 1.8; }
+    .article-fast-withdrawal p, .article-fast-withdrawal li { overflow-wrap: break-word; }
+    /* 表格滑動容器 */
+    .article-fast-withdrawal .table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 20px 0;
+        max-width: 100%;
+    }
+    .article-fast-withdrawal .table-wrap table {
+        min-width: 600px;
+        width: 100%;
+        margin: 0;
+    }
+    /* 作者列響應式 */
+    .article-fast-withdrawal .article-meta { flex-wrap: wrap; gap: 10px !important; }
+    @media (max-width: 767px) {
+        .article-fast-withdrawal .article-meta { padding: 16px; }
+        .article-fast-withdrawal .article-meta > span { display: block; width: 100%; font-size: 13px; }
+        .article-fast-withdrawal .article-hero-image { margin: 16px -20px; border-radius: 0; }
+    }
+    /* H1 小螢幕尺寸（對齊 3A） */
+    @media (max-width: 390px) {
+        .article-fast-withdrawal h1 { font-size: 22px !important; line-height: 1.35 !important; }
+    }
+    @media (min-width: 391px) and (max-width: 767px) {
+        .article-fast-withdrawal h1 { font-size: 26px !important; line-height: 1.4 !important; }
+    }
+    /* FAQ 手風琴（對齊 3A 卡片式） */
+    .article-fast-withdrawal .faq-section { margin: 20px 0; }
+    .article-fast-withdrawal .faq-item {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        overflow: hidden;
+        transition: border-color 0.3s;
+    }
+    .article-fast-withdrawal .faq-item:hover { border-color: rgba(2, 132, 199, 0.3); }
+    .article-fast-withdrawal .faq-item summary {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 20px 25px;
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        outline: none;
+    }
+    .article-fast-withdrawal .faq-item summary::-webkit-details-marker { display: none; }
+    .article-fast-withdrawal .faq-item summary::before {
+        content: "\25B6";
+        font-size: 12px;
+        color: #0284c7;
+        transition: transform 0.3s;
+        flex-shrink: 0;
+    }
+    .article-fast-withdrawal .faq-item[open] summary::before { transform: rotate(90deg); }
+    .article-fast-withdrawal .faq-item summary h3 { display: inline; margin: 0; font-size: inherit; color: inherit; border: none; padding: 0; }
+    .article-fast-withdrawal .faq-answer { padding: 0 25px 20px 50px; color: #333; line-height: 1.75; }
+    .article-fast-withdrawal .faq-answer p { margin: 0; }
+    @media (max-width: 767px) {
+        .article-fast-withdrawal .faq-item summary { font-size: 16px; padding: 16px 18px; }
+        .article-fast-withdrawal .faq-answer { padding: 0 18px 16px 40px; font-size: 15px; line-height: 1.75; }
+    }
+    /* warning-box 與 summary-box 內距保險 */
+    .article-fast-withdrawal .warning-box, .article-fast-withdrawal .summary-box { max-width: 100%; overflow-wrap: break-word; }
+    </style>
   <meta property="og:title" content="2026娛樂城快速出金攻略｜實測比較、卡審核原因與加速技巧">
   <meta property="og:description" content="2026娛樂城快速出金攻略，整理提款卡審核原因、降低退回機率的申請步驟，以及鉅城、3A、大老爺、財神與SWAG提款規則，並說明平台顯示完成與銀行實際入帳的差異。">
   <meta property="og:image" content="https://fun1399.com/static/images/articles/tech/fast-withdrawal-cover-1200x675.png">
@@ -113,23 +209,6 @@
       ]
     }
     </script>
-    <style>
-    .faq-section { margin:20px 0; }
-    .faq-item { background:#fff; border:1px solid #e3e6ea; border-radius:12px; margin-bottom:14px; overflow:hidden; }
-    .faq-item summary { color:#1a1a2e; font-size:19px; font-weight:600; padding:18px 22px; cursor:pointer; list-style:none; display:flex; align-items:center; gap:12px; }
-    .faq-item summary::-webkit-details-marker { display:none; }
-    .faq-item summary:focus-visible { outline:2px solid #f97316; outline-offset:2px; border-radius:8px; }
-    .faq-item summary h3 { margin:0; font-size:19px; font-weight:600; color:#1a1a2e; line-height:1.5; }
-    .faq-icon { display:inline-block; font-size:14px; color:#1a1a2e; flex:0 0 auto; }
-    .faq-item[open] .faq-icon { transform:rotate(90deg); }
-    .faq-answer { padding:2px 22px 20px 48px; color:#333; line-height:1.7; }
-    .faq-answer p { margin:0; }
-    @media (max-width:640px) {
-        .faq-item summary { padding:14px 14px; font-size:16px; }
-        .faq-item summary h3 { font-size:16px; }
-        .faq-answer { padding:2px 14px 16px 40px; }
-    }
-    </style>
 </head>
 <body>
 <header class="header">
@@ -143,12 +222,11 @@
         </nav>
     </div>
 </header>
-<article class="content">
-    <div class="container">
+<article class="article-content article-fast-withdrawal container" style="max-width: 900px; margin: 0 auto; padding: 20px;">
                         <nav class="breadcrumb"><a href="/">首頁</a> > <a href="/articles/">攻略文章</a> > <span>快速出金攻略</span></nav>
 <h1>2026娛樂城快速出金攻略｜實測比較、卡審核原因與加速技巧</h1>
         
-            <div class="article-hero-image" style="aspect-ratio: 1200 / 675;">
+            <div class="article-hero-image">
                 <img src="/static/images/articles/tech/fast-withdrawal-cover-1200x675.png" 
                      alt="2026娛樂城快速出金攻略：實測比較、卡審核原因與加速技巧" 
                      loading="eager"
@@ -181,7 +259,7 @@
 
         <h2>五家平台提款規則比較</h2>
         <p>以下依固定順序整理五家平台公開的提款限制；平台可能隨時調整，實際以會員後台當日顯示為準。</p>
-        <div style="overflow-x:auto; -webkit-overflow-scrolling:touch;">
+        <div class="table-wrap">
         <table>
             <caption>五家平台提款規則比較（鉅城、3A、大老爺、財神、SWAG）</caption>
             <thead>
@@ -237,7 +315,9 @@
             <li>註冊當天就完成身分證與銀行帳戶驗證。</li>
             <li>搬家、改名等資料異動時，先更新會員資料再申請出金。</li>
         </ul>
-        <p><strong>警告：</strong>不要等到要出金才處理認證。</p>
+        <div class="warning-box" style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid #FFC107; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0;">
+            <p><strong>警告：</strong>不要等到要出金才處理認證。</p>
+        </div>
         
         <h3>因素2：出金金額大小</h3>
         <p><strong>金額越大，通常需要越多層的審核。</strong></p>
@@ -245,7 +325,9 @@
             <li>小額出金多為系統自動審核。</li>
             <li>大額出金常需人工複核與補件。</li>
         </ul>
-        <p><strong>警告：</strong>單筆與每日限額以平台公告為準，超過上限的申請會被退回。</p>
+        <div class="warning-box" style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid #FFC107; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0;">
+            <p><strong>警告：</strong>單筆與每日限額以平台公告為準，超過上限的申請會被退回。</p>
+        </div>
         
         <h3>因素3：提款通道是否正常</h3>
         <p><strong>提款能否正常送出，應以平台當下開放的銀行、電子支付或USDT通道為準。</strong></p>
@@ -255,7 +337,9 @@
             <li>若頁面顯示維護或無法送出，先保存畫面並詢問客服。</li>
             <li>已送出申請時，保留申請時間、金額與交易編號。</li>
         </ul>
-        <p><strong>提醒：</strong>各平台與提款通道的處理方式不同，目前沒有資料證明週五晚上、週末或國定假日一定會延遲。實際狀態應以會員後台與當日公告為準。</p>
+        <div class="warning-box" style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid #FFC107; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0;">
+            <p><strong>提醒：</strong>各平台與提款通道的處理方式不同，目前沒有資料證明週五晚上、週末或國定假日一定會延遲。實際狀態應以會員後台與當日公告為準。</p>
+        </div>
         
         <h3>因素4：流水（投注倍數）是否達標</h3>
         <p><strong>娛樂城提款卡審核最常見的原因之一，是有效投注流水尚未達標。</strong></p>
@@ -264,7 +348,9 @@
             <li>步驟2：對照儲值或優惠活動的流水要求。</li>
             <li>步驟3：向客服確認尚缺多少有效流水。</li>
         </ul>
-        <p><strong>警告：</strong>未確認原因前，不要頻繁取消並重新申請。</p>
+        <div class="warning-box" style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid #FFC107; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0;">
+            <p><strong>警告：</strong>未確認原因前，不要頻繁取消並重新申請。</p>
+        </div>
         
         <h3>因素5：帳戶行為是否異常</h3>
         <p><strong>風控系統會對異常行為啟動額外審核。</strong></p>
@@ -273,7 +359,9 @@
             <li>頻繁更改綁定帳戶或異地登入。</li>
             <li>短時間內多次大額儲值後立即出金。</li>
         </ul>
-        <p><strong>警告：</strong>保持正常遊戲模式，不要使用他人帳戶。</p>
+        <div class="warning-box" style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid #FFC107; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0;">
+            <p><strong>警告：</strong>保持正常遊戲模式，不要使用他人帳戶。</p>
+        </div>
         
         <h3>因素6：銀行端處理速度</h3>
         <p><strong>平台審核完成後，款項仍須經過銀行轉帳作業。</strong></p>
@@ -281,7 +369,9 @@
             <li>同銀行轉帳通常較快，跨行與假日可能順延。</li>
             <li>各銀行作業時間不同，以收款行實際處理為準。</li>
         </ul>
-        <p><strong>警告：</strong>平台顯示「完成」不等於銀行已入帳。</p>
+        <div class="warning-box" style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid #FFC107; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0;">
+            <p><strong>警告：</strong>平台顯示「完成」不等於銀行已入帳。</p>
+        </div>
         
         <h3>因素7：VIP等級</h3>
         <p><strong>部分平台依會員等級安排處理順位，實際待遇以各平台公告為準。</strong></p>
@@ -289,7 +379,9 @@
             <li>一般會員：依序處理。</li>
             <li>高階會員：部分平台提供優先或專人處理。</li>
         </ul>
-        <p><strong>警告：</strong>VIP待遇差異依平台而異，沒有統一標準。</p>
+        <div class="warning-box" style="background: rgba(255, 193, 7, 0.1); border-left: 4px solid #FFC107; padding: 20px; margin: 20px 0; border-radius: 0 8px 8px 0;">
+            <p><strong>警告：</strong>VIP待遇差異依平台而異，沒有統一標準。</p>
+        </div>
         
         <h2>二、娛樂城提款卡審核的五個常見原因</h2>
         
@@ -366,31 +458,31 @@
 <h2 id="faq">常見問題FAQ</h2>
         <div class="faq-section">
             <details class="faq-item">
-                <summary><span class="faq-icon" aria-hidden="true">&#9654;</span><h3>娛樂城提款一直顯示審核中，第一步該做什麼？</h3></summary>
+                <summary><h3>娛樂城提款一直顯示審核中，第一步該做什麼？</h3></summary>
                 <div class="faq-answer"><p><strong>先停止追加儲值與反覆取消申請，並立即截圖保存提款狀態。</strong>接著核對有效流水、本人資料與提款限額，再向客服詢問預計完成時間，全程保留對話紀錄。</p></div>
             </details>
             <details class="faq-item">
-                <summary><span class="faq-icon" aria-hidden="true">&#9654;</span><h3>娛樂城流水不足時，要怎麼確認還差多少？</h3></summary>
+                <summary><h3>娛樂城流水不足時，要怎麼確認還差多少？</h3></summary>
                 <div class="faq-answer"><p><strong>到會員中心查詢「有效投注額」，再對照儲值或優惠活動的流水要求。</strong>兩者的差額就是尚缺流水；不同遊戲的計算比例可能不同，以平台公告為準，或直接向客服確認。</p></div>
             </details>
             <details class="faq-item">
-                <summary><span class="faq-icon" aria-hidden="true">&#9654;</span><h3>為什麼娛樂城會要求重新驗證身分？</h3></summary>
+                <summary><h3>為什麼娛樂城會要求重新驗證身分？</h3></summary>
                 <div class="faq-answer"><p><strong>多數情況是安全審核或大額提款的標準程序，平台需要確認帳戶為本人使用。</strong>透過官方管道提交證件即可；若同時被要求繳交保證金或解凍金，應立即停止並查證。</p></div>
             </details>
             <details class="faq-item">
-                <summary><span class="faq-icon" aria-hidden="true">&#9654;</span><h3>平台顯示提款完成，是否代表銀行已經入帳？</h3></summary>
+                <summary><h3>平台顯示提款完成，是否代表銀行已經入帳？</h3></summary>
                 <div class="faq-answer"><p><strong>不一定。</strong>平台顯示完成僅代表平台後台已撥款，跨行轉帳與銀行作業仍需時間。若長時間未入帳，先向平台索取匯款證明，再向收款銀行查詢款項狀態。</p></div>
             </details>
             <details class="faq-item">
-                <summary><span class="faq-icon" aria-hidden="true">&#9654;</span><h3>如果娛樂城出金很多錢到台灣銀行，銀行會追問資金來源嗎？</h3></summary>
+                <summary><h3>如果娛樂城出金很多錢到台灣銀行，銀行會追問資金來源嗎？</h3></summary>
                 <div class="faq-answer"><p><strong>有可能。</strong>依洗錢防制規定，銀行可能關注大額或異常入帳。建議保留完整交易資料，直接向收款銀行及合格的稅務或法律專業人士確認，本站在此不提供確定的稅務或法律結論。</p></div>
             </details>
             <details class="faq-item">
-                <summary><span class="faq-icon" aria-hidden="true">&#9654;</span><h3>客服要求繳解凍金或保證金才能提款，應該怎麼辦？</h3></summary>
+                <summary><h3>客服要求繳解凍金或保證金才能提款，應該怎麼辦？</h3></summary>
                 <div class="faq-answer"><p><strong>應停止付款，這是高度風險警訊。</strong>正規平台不會要求先付款才能領回自己的款項；請保留對話與交易紀錄，向165或警方查證。</p></div>
             </details>
             <details class="faq-item">
-                <summary><span class="faq-icon" aria-hidden="true">&#9654;</span><h3>娛樂城提款等多久才需要聯絡客服？</h3></summary>
+                <summary><h3>娛樂城提款等多久才需要聯絡客服？</h3></summary>
                 <div class="faq-answer"><p><strong>先依平台公告的處理時間為準，各家規定不同，本站不自訂統一等待時限。</strong>超過公告時間仍未完成時，保存申請畫面後再聯絡客服查詢。</p></div>
             </details>
         </div>
@@ -451,7 +543,6 @@
             </div>
         </div>
 
-    </div>
 </article>
 
     <!-- Footer -->
