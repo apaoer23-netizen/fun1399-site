@@ -54,6 +54,24 @@
     .article-mbm-review .faq-item p { margin: 0; line-height: 1.8; }
     .article-mbm-review .mbm-cta { text-align: center; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 22px; margin: 28px 0; }
     .article-mbm-review .mbm-cta a { display: inline-block; min-height: 44px; line-height: 44px; padding: 0 24px; background: #1f2937; color: #fff!important; border-radius: 8px; text-decoration: none; font-weight: 700; }
+    /* 文末 CTA：深藍→橘品牌漸層橫幅 */
+    .article-mbm-review .article-cta { background: linear-gradient(115deg, #1a1a2e 0%, #25324f 58%, #ff6b35 100%); color: #fff; text-align: center; border-radius: 16px; padding: 42px 28px 32px; margin: 38px 0 0; }
+    .article-mbm-review .article-cta .cta-title { font-size: 23px; line-height: 1.4; font-weight: 800; margin: 0 0 12px; color: #fff; }
+    .article-mbm-review .article-cta .cta-text { max-width: 590px; margin: 0 auto 24px; color: #f4f5fa; line-height: 1.75; }
+    .article-mbm-review .article-cta .cta-actions { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 14px; }
+    .article-mbm-review .article-cta .cta-actions a { display: inline-flex; justify-content: center; align-items: center; min-width: 165px; min-height: 50px; padding: 10px 23px; border-radius: 999px; text-decoration: none; font-weight: 750; line-height: 1.4; transition: transform .15s, background .15s; }
+    .article-mbm-review .article-cta .cta-actions a:hover { transform: translateY(-2px); }
+    .article-mbm-review .article-cta .cta-contact { background: #fff; color: #1a1a2e !important; }
+    .article-mbm-review .article-cta .cta-register { border: 2px solid #fff; color: #fff !important; }
+    .article-mbm-review .article-cta .cta-register:hover { background: rgba(255,255,255,0.13); }
+    .article-mbm-review .article-cta .cta-note { font-size: 13px; color: #ffe3d3; margin: 19px 0 0; line-height: 1.65; }
+    @media (max-width: 470px) {
+        .article-mbm-review .article-cta { padding: 29px 18px 24px; }
+        .article-mbm-review .article-cta .cta-title { font-size: 20px; }
+        .article-mbm-review .article-cta .cta-actions { flex-direction: column; gap: 10px; }
+        .article-mbm-review .article-cta .cta-actions a { width: 100%; max-width: 320px; }
+        .article-mbm-review .article-cta .cta-note { margin-top: 16px; }
+    }
     @media (max-width: 768px) { .article-mbm-review .fact-grid { grid-template-columns: 1fr; } }
     </style>
 
@@ -90,7 +108,7 @@
             { "@type": "Question", "name": "MBM最低與單日最高提款是多少？", "acceptedAnswer": { "@type": "Answer", "text": "銀行帳戶提款依平台FAQ最低1,000點，會員單日最高100萬點。USDT與MCOIN託售則依客服說明為新台幣1元至100萬元，別把兩種門檻混在一起。" } },
             { "@type": "Question", "name": "MBM支援USDT嗎？", "acceptedAnswer": { "@type": "Answer", "text": "支援。儲值頁能看到USDT-TRC20，提款頁也有這個選項；客服說明託售依當日匯率，每日一次，免手續費與額外礦工費。" } },
             { "@type": "Question", "name": "MBM的0.8%返水所有會員都有嗎？", "acceptedAnswer": { "@type": "Answer", "text": "體育返水目前不分等級皆為0.8%；但電子與真人遊戲則會依VIP等級有所差異（0.4%～0.8%），因此仍要看您遊玩的遊戲類別而定。" } },
-            { "@type": "Question", "name": "MBM真的可以2分鐘提款嗎？", "acceptedAnswer": { "@type": "Answer", "text": "「約2分鐘」是平台對財務審核完畢後的說法。13筆後台成功託售紀錄從轉點到交易完成，平均約28分19秒，最快3分53秒，最慢1小時51分53秒；資料沒有逐筆銀行入帳時間。" } },
+            { "@type": "Question", "name": "MBM真的可以2分鐘提款嗎？", "acceptedAnswer": { "@type": "Answer", "text": "不能把「2分鐘」當成每筆提款的固定到帳時間。我看了13筆成功託售紀錄，從轉點到交易完成平均約28分鐘，最快約4分鐘、最慢接近2小時；這些紀錄沒有逐筆銀行入帳時間。" } },
             { "@type": "Question", "name": "MBM首存1,000送1,000需要多少流水？", "acceptedAnswer": { "@type": "Answer", "text": "目前活動表列台幣方案1倍、USDT方案10倍。活動頁標示期限至2026年12月31日，申請前再看本次可計入流水的遊戲及最新條款。" } },
             { "@type": "Question", "name": "如何辨識MBM仿冒網站或異常連結？", "acceptedAnswer": { "@type": "Answer", "text": "遇到私訊網址或短連結，先看跳轉後的完整網域，別只信HTTPS鎖頭；有額外「解鎖費」要求就先停止付款。可保留網址與對話，向原本的客服入口或165全民防騙網確認。" } }
           ]
@@ -321,7 +339,7 @@
                 <div class="faq-item"><h3>MBM最低與單日最高提款是多少？</h3><p>銀行帳戶提款依平台FAQ最低1,000點，會員單日最高100萬點。USDT與MCOIN託售則依客服說明為新台幣1元至100萬元，別把兩種門檻混在一起。</p></div>
                 <div class="faq-item"><h3>MBM支援USDT嗎？</h3><p>支援。儲值頁能看到USDT-TRC20，提款頁也有這個選項；客服說明託售依當日匯率，每日一次，免手續費與額外礦工費。</p></div>
                 <div class="faq-item"><h3>MBM的0.8%返水所有會員都有嗎？</h3><p><strong>體育返水目前不分等級皆為0.8%</strong>；但電子與真人遊戲則會依VIP等級有所差異（0.4%～0.8%），因此仍要看您遊玩的遊戲類別而定。</p></div>
-                <div class="faq-item"><h3>MBM真的可以2分鐘提款嗎？</h3><p>「約2分鐘」是平台對財務審核完畢後的說法。13筆後台成功託售紀錄從轉點到交易完成，平均約28分19秒，最快3分53秒，最慢1小時51分53秒；資料沒有逐筆銀行入帳時間。</p></div>
+                <div class="faq-item"><h3>MBM真的可以2分鐘提款嗎？</h3><p>不能把「2分鐘」當成每筆提款的固定到帳時間。我看了13筆成功託售紀錄，從轉點到交易完成平均約28分鐘，最快約4分鐘、最慢接近2小時；這些紀錄沒有逐筆銀行入帳時間。</p></div>
                 <div class="faq-item"><h3>MBM首存1,000送1,000需要多少流水？</h3><p>目前活動表列台幣方案1倍、USDT方案10倍。活動頁標示期限至2026年12月31日，申請前再看本次可計入流水的遊戲及最新條款。</p></div>
                 <div class="faq-item"><h3>如何辨識MBM仿冒網站或異常連結？</h3><p>遇到私訊網址或短連結，先看跳轉後的完整網域，別只信HTTPS鎖頭；有額外「解鎖費」要求就先停止付款。可保留網址與對話，向原本的客服入口或165全民防騙網確認。</p></div>
             </section>
@@ -338,6 +356,13 @@
                 <p style="margin:0 0 8px;font-weight:700;">關於作者：<a href="/author#hans">Hans／學哥</a></p>
                 <p style="margin:0;color:#475569;line-height:1.75;">負責平台規則、提款條件與活動資料整理，本文依可追溯畫面標註查核日期，未取得的項目不以推測補寫。</p>
             </div>
+
+            <aside class="article-cta" aria-label="MBM 註冊與諮詢">
+                <p class="cta-title">想進一步了解 MBM？</p>
+                <p class="cta-text">註冊前先看看目前的活動、流水和提款條件。有疑問，也可以先找 FUN1399 聊聊。</p>
+                <div class="cta-actions"><a class="cta-contact" href="https://lin.ee/Mc1pb7z" target="_blank" rel="noopener">聯繫 FUN1399</a><a class="cta-register" href="https://fun1399.mbm88.net/" target="_blank" rel="sponsored nofollow noopener">前往 MBM 註冊</a></div>
+                <p class="cta-note">⚠️ 投注有風險，請量力而為；未成年人請勿參與。</p>
+            </aside>
         </div>
     </article>
 
