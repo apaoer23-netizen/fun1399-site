@@ -164,9 +164,57 @@
             .article-content div[style*="color: #888"] {
                 color: #555 !important;
             }
-            details summary::-webkit-details-marker { display: none; }
-            summary::after { content: '▼'; margin-left: auto; color: #6c757d; font-size: 14px; transition: transform 0.2s; }
-            details[open] summary::after { transform: rotate(180deg); }
+            .source-audit-table-wrap {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 24px 0;
+                border-radius: 12px;
+            }
+            .source-audit-table {
+                width: 100%;
+                min-width: 780px;
+                table-layout: fixed;
+                border-collapse: collapse;
+                background: #fff;
+                margin: 0;
+                box-shadow: none;
+                font-size: 15px;
+            }
+            .source-audit-table caption {
+                caption-side: top;
+                text-align: left;
+                font-weight: 600;
+                color: #1a1a2e;
+                padding: 12px 4px;
+                font-size: 15px;
+            }
+            .source-audit-table th,
+            .source-audit-table td {
+                padding: 14px 16px;
+                vertical-align: top;
+                line-height: 1.65;
+                border: 1px solid #e9ecef;
+                word-break: normal;
+                overflow-wrap: anywhere;
+                text-align: left;
+            }
+            .source-audit-table thead th {
+                background: #1a1a2e;
+                color: #fff;
+                font-weight: 600;
+            }
+            .source-audit-table tbody th {
+                background: #233252;
+                color: #fff;
+                font-weight: 600;
+            }
+            .source-audit-table tbody td {
+                background: #fff;
+                color: #111;
+            }
+            .source-audit-table tbody tr:nth-child(even) td {
+                background: #fafbfc;
+            }
         </style>
         <header style="margin-bottom: 40px;">
             <h1 style="font-size: 36px; color: #1a1a2e; margin-bottom: 20px; line-height: 1.3;">必贏娛樂城倒了？詐騙爭議整理：玩家投訴與風險觀察（2026）</h1>
@@ -216,59 +264,65 @@
 
         <p>先把手上這幾筆資料攤開來看。每一筆能確認到什麼、又不能推論到什麼，界線其實很清楚：</p>
 
-        <div style="overflow-x: auto; margin: 20px 0;">
-        <table style="width: 100%; border-collapse: collapse; background: #fff; font-size: 15px;">
-            <caption style="text-align: left; font-weight: 600; color: #1a1a2e; padding: 10px 0;">表：必贏娛樂城相關爭議資料查核表（查核日期：2026-10-01）</caption>
+        <div class="table-scroll source-audit-table-wrap" role="region" aria-label="必贏娛樂城爭議來源查核表" tabindex="0">
+        <table class="source-audit-table">
+            <colgroup>
+                <col style="width:22%">
+                <col style="width:18%">
+                <col style="width:30%">
+                <col style="width:30%">
+            </colgroup>
+            <caption>表：必贏娛樂城相關爭議資料查核表（查核日期：2026-10-01）</caption>
             <thead>
-                <tr style="background: #f8f9fa;">
-                    <th scope="col" style="padding: 12px; border: 1px solid #e9ecef; text-align: left; color: #1a1a2e; white-space: nowrap;">資料來源</th>
-                    <th scope="col" style="padding: 12px; border: 1px solid #e9ecef; text-align: left; color: #1a1a2e; white-space: nowrap;">來源性質</th>
-                    <th scope="col" style="padding: 12px; border: 1px solid #e9ecef; text-align: left; color: #1a1a2e;">目前能確認</th>
-                    <th scope="col" style="padding: 12px; border: 1px solid #e9ecef; text-align: left; color: #1a1a2e;">不能直接推論</th>
+                <tr>
+                    <th scope="col">資料來源</th>
+                    <th scope="col">來源性質</th>
+                    <th scope="col">目前能確認</th>
+                    <th scope="col">不能直接推論</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row" style="padding: 12px; border: 1px solid #e9ecef; text-align: left; color: #1a1a2e; font-weight: 600; white-space: nowrap;">使用者提供的 Facebook 截圖</th>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">使用者提供</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">畫面日期為2026年5月3日，發文者詢問網站維護時間過長是否代表倒閉</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">截圖裁切範圍沒有顯示平台名稱，不能獨立證明對象就是必贏，也不能證明平台已倒閉</td>
+                    <th scope="row">使用者提供的 Facebook 截圖</th>
+                    <td>使用者提供</td>
+                    <td>畫面日期為2026年5月3日，發文者詢問網站維護時間過長是否代表倒閉</td>
+                    <td>截圖裁切範圍沒有顯示平台名稱，不能獨立證明對象就是必贏，也不能證明平台已倒閉</td>
                 </tr>
                 <tr>
-                    <th scope="row" style="padding: 12px; border: 1px solid #e9ecef; text-align: left; color: #1a1a2e; font-weight: 600; white-space: nowrap;">bwin5799.com 連線逾時截圖</th>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">使用者提供、FUN1399於2026年9月24日依該網址查核</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">查核當下網址顯示 ERR_CONNECTION_TIMED_OUT</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">永久關站、倒閉、遭查封或必然不出金</td>
+                    <th scope="row">bwin5799.com 連線逾時截圖</th>
+                    <td>使用者提供、FUN1399於2026年9月24日依該網址查核</td>
+                    <td>查核當下網址顯示 ERR_CONNECTION_TIMED_OUT</td>
+                    <td>永久關站、倒閉、遭查封或必然不出金</td>
                 </tr>
                 <tr>
-                    <th scope="row" style="padding: 12px; border: 1px solid #e9ecef; text-align: left; color: #1a1a2e; font-weight: 600; white-space: nowrap;">數位發展部網路詐騙通報查詢網</th>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">官方通報系統</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">一則使用必贏娛樂城名義的促銷訊息，被臺中市政府警察局確認為詐騙訊息並通知移除</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">頁面網址遭部分遮蔽，不能確認它與所有必贏網域或目前討論的平台為同一營運者</td>
+                    <th scope="row">數位發展部網路詐騙通報查詢網</th>
+                    <td>官方通報系統</td>
+                    <td>一則使用必贏娛樂城名義的促銷訊息，被臺中市政府警察局確認為詐騙訊息並通知移除</td>
+                    <td>頁面網址遭部分遮蔽，不能確認它與所有必贏網域或目前討論的平台為同一營運者</td>
                 </tr>
                 <tr>
-                    <th scope="row" style="padding: 12px; border: 1px solid #e9ecef; text-align: left; color: #1a1a2e; font-weight: 600; white-space: nowrap;">娛樂城情報站必贏評測</th>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">第三方評測及商業內容網站</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">該站整理出多個自稱必贏官方的網域，並表示沒有找到可核對的牌照編號或與國際 bwin 的授權關係</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">不能把該站評分、出金速度、優惠或市場比較當成 FUN1399 實測；該站同時表示沒有查到可驗證的詐騙紀錄</td>
+                    <th scope="row">娛樂城情報站必贏評測</th>
+                    <td>第三方評測及商業內容網站</td>
+                    <td>該站整理出多個自稱必贏官方的網域，並表示沒有找到可核對的牌照編號或與國際 bwin 的授權關係</td>
+                    <td>不能把該站評分、出金速度、優惠或市場比較當成 FUN1399 實測；該站同時表示沒有查到可驗證的詐騙紀錄</td>
                 </tr>
                 <tr>
-                    <th scope="row" style="padding: 12px; border: 1px solid #e9ecef; text-align: left; color: #1a1a2e; font-weight: 600; white-space: nowrap;">tw24h888 的 PTT 負評文章</th>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">第三方平台文章</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">2026年4月6日有網站整理必贏相關的出金、風控與客服爭議說法</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">頁面沒有提供可公開核對的原始 PTT 貼文網址，因此不能確認個別玩家案例、金額或等待時間</td>
+                    <th scope="row">tw24h888 的 PTT 負評文章</th>
+                    <td>第三方平台文章</td>
+                    <td>2026年4月6日有網站整理必贏相關的出金、風控與客服爭議說法</td>
+                    <td>頁面沒有提供可公開核對的原始 PTT 貼文網址，因此不能確認個別玩家案例、金額或等待時間</td>
                 </tr>
                 <tr>
-                    <th scope="row" style="padding: 12px; border: 1px solid #e9ecef; text-align: left; color: #1a1a2e; font-weight: 600; white-space: nowrap;">UDN 部落格文章</th>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">使用者部落格，不是聯合新聞網新聞報導</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">網路上存在以必贏提款及追回款項為題的文章</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">不能證明作者確實受害、款項成功追回或文中聯絡方式可信</td>
+                    <th scope="row">UDN 部落格文章</th>
+                    <td>使用者部落格，不是聯合新聞網新聞報導</td>
+                    <td>網路上存在以必贏提款及追回款項為題的文章</td>
+                    <td>不能證明作者確實受害、款項成功追回或文中聯絡方式可信</td>
                 </tr>
                 <tr>
-                    <th scope="row" style="padding: 12px; border: 1px solid #e9ecef; text-align: left; color: #1a1a2e; font-weight: 600; white-space: nowrap;">自由時報「必贏博彩集團」舊聞</th>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">新聞媒體舊聞</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">報導內容涉及早期自稱「英國必贏博彩集團（Bwin）」的投資吸金案件</td>
-                    <td style="padding: 12px; border: 1px solid #e9ecef; color: #111;">目前沒有證據證明該案件與2026年台灣網路上的必贏娛樂城、bwin5799.com或其他同名網域為同一營運主體</td>
+                    <th scope="row">自由時報「必贏博彩集團」舊聞</th>
+                    <td>新聞媒體舊聞</td>
+                    <td>報導內容涉及早期自稱「英國必贏博彩集團（Bwin）」的投資吸金案件</td>
+                    <td>目前沒有證據證明該案件與2026年台灣網路上的必贏娛樂城、bwin5799.com或其他同名網域為同一營運主體</td>
                 </tr>
             </tbody>
         </table>
@@ -460,36 +514,39 @@
 
         <!-- 常見問題 FAQ -->
         <h2 id="faq" style="color: #1a1a2e; margin: 40px 0 20px; font-size: 26px;">❓ 常見問題 FAQ</h2>
-        <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;" open>
-            <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px;">請問網路流傳的必贏娛樂城詐騙投訴是真的嗎？</summary>
-            <div class="faq-a" style="padding: 0 25px 20px; line-height: 1.8; color: #111;">
-                <p>目前網路討論缺乏可公開核對的原始貼文、發文日期與對應的提款紀錄，因此無法判定其真偽。建議玩家在面對任何正面或負面轉述時，均應要求對方提出完整的交易紀錄與時間軸作為憑證，保持理性查證。</p>
-            </div>
-        </details>
-        <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
-            <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px;">如果遇到娛樂城出金審核時間過長，該如何保障自身權益？</summary>
-            <div class="faq-a" style="padding: 0 25px 20px; line-height: 1.8; color: #111;">
-                <p>玩家應立即進行以下三步驟自救：第一，完整截圖保留所有交易紀錄、帳號餘額與客服對話；第二，要求官方客服提出具體的條款依據；第三，若懷疑遭遇詐騙，請立刻撥打 165 反詐騙專線或尋求法律諮詢。</p>
-            </div>
-        </details>
-        <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
-            <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px;">必贏娛樂城倒了嗎？</summary>
-            <div class="faq-a" style="padding: 0 25px 20px; line-height: 1.8; color: #111;">
-                <p>目前沒有足夠證據能確認必贏娛樂城已經倒閉。使用者提供的資料顯示，2026年5月3日有人反映網站長時間維護，2026年9月24日提供的 bwin5799.com 則出現連線逾時；這些只能證明特定時間無法正常使用，不能單獨證明永久關站或倒閉。</p>
-            </div>
-        </details>
-        <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
-            <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px;">官方防詐網站的紀錄，代表必贏娛樂城就是詐騙嗎？</summary>
-            <div class="faq-a" style="padding: 0 25px 20px; line-height: 1.8; color: #111;">
-                <p>不能直接這樣判定。官方通報系統確認的是一則使用「必贏娛樂城」名義的促銷訊息，且頁面只顯示部分網址，因此只能確認該則訊息被認定為詐騙，不能擴大推論所有同名網站或平台營運者都已被認定為詐騙。</p>
-            </div>
-        </details>
-        <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
-            <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px;">自由時報報導的必贏博彩集團，是現在這個必贏娛樂城嗎？</summary>
-            <div class="faq-a" style="padding: 0 25px 20px; line-height: 1.8; color: #111;">
-                <p>目前無法確認。舊聞涉及自稱「英國必贏博彩集團」的投資吸金案件，但現有資料無法證明它與2026年台灣網路上的必贏娛樂城、bwin5799.com或其他同名網域為同一營運主體。</p>
-            </div>
-        </details>
+
+        <div class="faq-section" style="margin: 20px 0;">
+            <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;" open>
+                <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px;">▶ 請問網路流傳的必贏娛樂城詐騙投訴是真的嗎？</summary>
+                <div class="faq-answer" style="padding: 0 25px 20px 50px; color: #333; line-height: 1.75;">
+                    <p>目前網路討論缺乏可公開核對的原始貼文、發文日期與對應的提款紀錄，因此無法判定其真偽。建議玩家在面對任何正面或負面轉述時，均應要求對方提出完整的交易紀錄與時間軸作為憑證，保持理性查證。</p>
+                </div>
+            </details>
+            <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
+                <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px;">▶ 如果遇到娛樂城出金審核時間過長，該如何保障自身權益？</summary>
+                <div class="faq-answer" style="padding: 0 25px 20px 50px; color: #333; line-height: 1.75;">
+                    <p>玩家應立即進行以下三步驟自救：第一，完整截圖保留所有交易紀錄、帳號餘額與客服對話；第二，要求官方客服提出具體的條款依據；第三，若懷疑遭遇詐騙，請立刻撥打 165 反詐騙專線或尋求法律諮詢。</p>
+                </div>
+            </details>
+            <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
+                <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px;">▶ 必贏娛樂城倒了嗎？</summary>
+                <div class="faq-answer" style="padding: 0 25px 20px 50px; color: #333; line-height: 1.75;">
+                    <p>目前沒有足夠證據能確認必贏娛樂城已經倒閉。使用者提供的資料顯示，2026年5月3日有人反映網站長時間維護，2026年9月24日提供的 bwin5799.com 則出現連線逾時；這些只能證明特定時間無法正常使用，不能單獨證明永久關站或倒閉。</p>
+                </div>
+            </details>
+            <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
+                <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px;">▶ 官方防詐網站的紀錄，代表必贏娛樂城就是詐騙嗎？</summary>
+                <div class="faq-answer" style="padding: 0 25px 20px 50px; color: #333; line-height: 1.75;">
+                    <p>不能直接這樣判定。官方通報系統確認的是一則使用「必贏娛樂城」名義的促銷訊息，且頁面只顯示部分網址，因此只能確認該則訊息被認定為詐騙，不能擴大推論所有同名網站或平台營運者都已被認定為詐騙。</p>
+                </div>
+            </details>
+            <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
+                <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px;">▶ 自由時報報導的必贏博彩集團，是現在這個必贏娛樂城嗎？</summary>
+                <div class="faq-answer" style="padding: 0 25px 20px 50px; color: #333; line-height: 1.75;">
+                    <p>目前無法確認。舊聞涉及自稱「英國必贏博彩集團」的投資吸金案件，但現有資料無法證明它與2026年台灣網路上的必贏娛樂城、bwin5799.com或其他同名網域為同一營運主體。</p>
+                </div>
+            </details>
+        </div>
 
         <!-- 延伸閱讀 -->
         <div style="margin-top: 50px;">
