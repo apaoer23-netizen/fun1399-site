@@ -118,6 +118,20 @@
         .data-table th, .data-table td { border: 1px solid #e9ecef; padding: 10px 12px; text-align: left; vertical-align: top; }
         .data-table th { background: #f8f9fa; color: #1a1a2e; white-space: nowrap; }
         .data-table td { color: #333; }
+        .shot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin: 16px 0 8px; }
+        .shot-thumb { display: flex; flex-direction: column; padding: 0; border: 1px solid #e9ecef; border-radius: 8px; overflow: hidden; background: #fff; cursor: zoom-in; font: inherit; text-align: left; }
+        .shot-thumb:hover, .shot-thumb:focus-visible { border-color: #adb5bd; }
+        .shot-thumb img { width: 100%; height: auto; display: block; }
+        .shot-cap { font-size: 12px; color: #555; padding: 6px 8px; line-height: 1.4; }
+        .shot-lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.88); display: none; align-items: center; justify-content: center; z-index: 9999; padding: 24px; }
+        .shot-lightbox.open { display: flex; }
+        .shot-lightbox figure { margin: 0; max-width: min(94vw, 590px); }
+        .shot-lightbox img { width: 100%; max-height: 80vh; object-fit: contain; border-radius: 8px; background: #000; display: block; }
+        .shot-lightbox figcaption { color: #ddd; font-size: 14px; text-align: center; padding: 10px 4px 0; }
+        .shot-lb-close { position: absolute; top: 14px; right: 16px; width: 42px; height: 42px; border-radius: 50%; border: none; background: #fff; font-size: 18px; cursor: pointer; }
+        @media (max-width: 768px) {
+            .shot-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        }
     </style>
 </head>
 <body>
@@ -143,7 +157,7 @@
     <article class="content article-content container" style="max-width: 900px; margin: 0 auto; padding: 20px; box-sizing: border-box;">
         <header style="margin-bottom: 40px;">
             <h1 style="font-size: 36px; color: #1a1a2e; margin-bottom: 20px; line-height: 1.3;">娛樂城假客服詐騙：LINE 官方帳號辨識與防詐指南（2026）</h1>
-            <div class="article-hero-image">
+            <div class="article-hero-image" style="aspect-ratio: 1280 / 800;">
                 <img src="/static/images/articles/scam/fake-line-official-account-cover-2026-v2.webp" alt="娛樂城假客服詐騙與 LINE 官方帳號辨識防詐指南" loading="eager" width="1280" height="800" style="width: 100%; height: auto; display: block;">
             </div>
             <div class="article-meta" style="display: flex; align-items: center; gap: 20px; margin: 20px 0 30px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px;">
@@ -256,7 +270,7 @@
 
         <h2 id="platforms" style="color: #1a1a2e; margin: 40px 0 20px; font-size: 26px;">🏢 六大平台客服入口整理</h2>
 
-        <p>以下平台網址與 LINE ID 由使用者於 2026 年 9 月 30 日提供，FUN1399 本次僅整理並核對連結格式，沒有登入帳號、測試客服身分或驗證平台安全性。實際聯絡前，仍應從平台目前官網重新確認客服入口。</p>
+        <p>以下平台網址與 LINE ID 由使用者提供（鉅城、MBM、HG、大老爺、3A 於 2026 年 9 月 30 日提供；優塔於 2026 年 10 月 5 日更新），FUN1399 本次僅整理並核對連結格式，沒有登入帳號、測試客服身分或驗證平台安全性。實際聯絡前，仍應從平台目前官網重新確認客服入口。</p>
 
         <div style="overflow-x: auto; margin: 20px 0;">
             <table class="data-table">
@@ -302,12 +316,94 @@
                     <tr>
                         <td>優塔</td>
                         <td><a href="https://u.town/3006" target="_blank" rel="sponsored nofollow noopener noreferrer">https://u.town/3006</a></td>
-                        <td>@ts775</td>
-                        <td><a href="https://line.me/ti/p/@ts775" target="_blank" rel="sponsored nofollow noopener noreferrer">https://line.me/ti/p/@ts775</a></td>
+                        <td>@150uijjh</td>
+                        <td><a href="https://line.me/R/ti/p/@150uijjh" target="_blank" rel="sponsored nofollow noopener noreferrer">https://line.me/R/ti/p/@150uijjh</a></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
+        <h3 style="color: #1a1a2e; margin: 32px 0 12px; font-size: 20px;">📷 使用者提供的 LINE 客服畫面（2026-10-05）</h3>
+        <p style="font-size: 13px; color: #777; margin: 0 0 4px;">以下截圖由使用者於 2026-10-05 提供，僅反映拍攝當下畫面上的帳號名稱與可見內容；截圖沒有顯示的 LINE ID，不代表已由圖片證實。部分截圖頂部的 Telegram 返回入口是截圖開啟來源，不是畫面主體的平台。FUN1399 未獨立驗證這些帳號的官方身分、平台安全性或出金能力。點圖可放大檢視，按 Esc 或 ✕ 關閉。</p>        <div class="shot-grid">
+            <button type="button" class="shot-thumb" data-full="/static/images/articles/scam/fake-line-screenshots/01_jucheng_profile.jpg" data-alt="鉅城 LINE 客服帳號頁截圖（使用者提供）" data-cap="鉅城｜LINE 客服帳號頁（使用者提供，2026-10-05）">
+                <img src="/static/images/articles/scam/fake-line-screenshots/01_jucheng_profile.webp" alt="鉅城 LINE 客服帳號頁截圖（使用者提供）" loading="lazy" width="360" height="781">
+                <span class="shot-cap">鉅城｜LINE 客服帳號頁（使用者提供，2026-10-05）</span>
+            </button>
+            <button type="button" class="shot-thumb" data-full="/static/images/articles/scam/fake-line-screenshots/02_jucheng_chat.jpg" data-alt="鉅城 LINE 客服對話畫面截圖（使用者提供）" data-cap="鉅城｜LINE 客服對話畫面（使用者提供）">
+                <img src="/static/images/articles/scam/fake-line-screenshots/02_jucheng_chat.webp" alt="鉅城 LINE 客服對話畫面截圖（使用者提供）" loading="lazy" width="360" height="781">
+                <span class="shot-cap">鉅城｜LINE 客服對話畫面（使用者提供）</span>
+            </button>
+            <button type="button" class="shot-thumb" data-full="/static/images/articles/scam/fake-line-screenshots/03_mbm_profile.jpg" data-alt="MBM LINE 客服帳號頁截圖（使用者提供）" data-cap="MBM｜LINE 客服帳號頁（使用者提供，2026-10-05）">
+                <img src="/static/images/articles/scam/fake-line-screenshots/03_mbm_profile.webp" alt="MBM LINE 客服帳號頁截圖（使用者提供）" loading="lazy" width="360" height="781">
+                <span class="shot-cap">MBM｜LINE 客服帳號頁（使用者提供，2026-10-05）</span>
+            </button>
+            <button type="button" class="shot-thumb" data-full="/static/images/articles/scam/fake-line-screenshots/04_mbm_chat.jpg" data-alt="MBM LINE 客服對話畫面截圖（使用者提供，頂部私人通知已遮蔽）" data-cap="MBM｜LINE 客服對話畫面（使用者提供；頂部私人通知已遮蔽）">
+                <img src="/static/images/articles/scam/fake-line-screenshots/04_mbm_chat.webp" alt="MBM LINE 客服對話畫面截圖（使用者提供，頂部私人通知已遮蔽）" loading="lazy" width="360" height="781">
+                <span class="shot-cap">MBM｜LINE 客服對話畫面（使用者提供；頂部私人通知已遮蔽）</span>
+            </button>
+            <button type="button" class="shot-thumb" data-full="/static/images/articles/scam/fake-line-screenshots/05_hg_profile.jpg" data-alt="HG LINE 客服帳號頁截圖（使用者提供）" data-cap="HG｜LINE 客服帳號頁（使用者提供，2026-10-05）">
+                <img src="/static/images/articles/scam/fake-line-screenshots/05_hg_profile.webp" alt="HG LINE 客服帳號頁截圖（使用者提供）" loading="lazy" width="360" height="781">
+                <span class="shot-cap">HG｜LINE 客服帳號頁（使用者提供，2026-10-05）</span>
+            </button>
+            <button type="button" class="shot-thumb" data-full="/static/images/articles/scam/fake-line-screenshots/06_hg_chat.jpg" data-alt="HG LINE 客服對話畫面截圖（使用者提供）" data-cap="HG｜LINE 客服對話畫面（使用者提供）">
+                <img src="/static/images/articles/scam/fake-line-screenshots/06_hg_chat.webp" alt="HG LINE 客服對話畫面截圖（使用者提供）" loading="lazy" width="360" height="781">
+                <span class="shot-cap">HG｜LINE 客服對話畫面（使用者提供）</span>
+            </button>
+            <button type="button" class="shot-thumb" data-full="/static/images/articles/scam/fake-line-screenshots/07_gm_profile.jpg" data-alt="大老爺 LINE 客服帳號頁截圖（使用者提供）" data-cap="大老爺｜LINE 客服帳號頁（使用者提供，2026-10-05）">
+                <img src="/static/images/articles/scam/fake-line-screenshots/07_gm_profile.webp" alt="大老爺 LINE 客服帳號頁截圖（使用者提供）" loading="lazy" width="360" height="781">
+                <span class="shot-cap">大老爺｜LINE 客服帳號頁（使用者提供，2026-10-05）</span>
+            </button>
+            <button type="button" class="shot-thumb" data-full="/static/images/articles/scam/fake-line-screenshots/08_gm_chat.jpg" data-alt="大老爺 LINE 客服對話畫面截圖（使用者提供）" data-cap="大老爺｜LINE 客服對話畫面（使用者提供）">
+                <img src="/static/images/articles/scam/fake-line-screenshots/08_gm_chat.webp" alt="大老爺 LINE 客服對話畫面截圖（使用者提供）" loading="lazy" width="360" height="781">
+                <span class="shot-cap">大老爺｜LINE 客服對話畫面（使用者提供）</span>
+            </button>
+            <button type="button" class="shot-thumb" data-full="/static/images/articles/scam/fake-line-screenshots/09_3a_profile.jpg" data-alt="3A LINE 客服帳號頁截圖（使用者提供）" data-cap="3A｜LINE 客服帳號頁（使用者提供，2026-10-05）">
+                <img src="/static/images/articles/scam/fake-line-screenshots/09_3a_profile.webp" alt="3A LINE 客服帳號頁截圖（使用者提供）" loading="lazy" width="360" height="781">
+                <span class="shot-cap">3A｜LINE 客服帳號頁（使用者提供，2026-10-05）</span>
+            </button>
+            <button type="button" class="shot-thumb" data-full="/static/images/articles/scam/fake-line-screenshots/10_utown_profile.jpg" data-alt="優塔 LINE 客服帳號頁截圖（使用者提供）" data-cap="優塔｜LINE 客服帳號頁（使用者提供，2026-10-05）">
+                <img src="/static/images/articles/scam/fake-line-screenshots/10_utown_profile.webp" alt="優塔 LINE 客服帳號頁截圖（使用者提供）" loading="lazy" width="360" height="781">
+                <span class="shot-cap">優塔｜LINE 客服帳號頁（使用者提供，2026-10-05）</span>
+            </button>
+        </div>
+        <div class="shot-lightbox" id="shotLightbox" role="dialog" aria-modal="true" aria-label="截圖放大檢視">
+            <button type="button" class="shot-lb-close" aria-label="關閉放大檢視">✕</button>
+            <figure>
+                <img id="shotLbImg" src="" alt="">
+                <figcaption id="shotLbCap"></figcaption>
+            </figure>
+        </div>
+        <script>
+            (function () {
+                var lb = document.getElementById('shotLightbox');
+                var img = document.getElementById('shotLbImg');
+                var cap = document.getElementById('shotLbCap');
+                var lastFocus = null;
+                function openLb(btn) {
+                    lastFocus = document.activeElement;
+                    img.src = btn.dataset.full;
+                    img.alt = btn.dataset.alt;
+                    cap.textContent = btn.dataset.cap;
+                    lb.classList.add('open');
+                    document.body.style.overflow = 'hidden';
+                    lb.querySelector('.shot-lb-close').focus();
+                }
+                function closeLb() {
+                    lb.classList.remove('open');
+                    img.src = '';
+                    document.body.style.overflow = '';
+                    if (lastFocus) { lastFocus.focus(); }
+                }
+                document.querySelectorAll('.shot-thumb').forEach(function (btn) {
+                    btn.addEventListener('click', function () { openLb(btn); });
+                });
+                lb.querySelector('.shot-lb-close').addEventListener('click', closeLb);
+                lb.addEventListener('click', function (e) { if (e.target === lb) { closeLb(); } });
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape' && lb.classList.contains('open')) { closeLb(); }
+                });
+            })();
+        </script>
 
         <h2 id="verify" style="color: #1a1a2e; margin: 40px 0 20px; font-size: 26px;">🔍 收到娛樂城客服訊息，怎麼確認是不是本人？</h2>
 
