@@ -29,7 +29,7 @@
         "name": "娛樂城玩家俱樂部"
       },
       "datePublished": "2026-03-18",
-      "dateModified": "2026-10-06T13:30:00+08:00",
+      "dateModified": "2026-10-06T14:00:00+08:00",
       "image": "https://fun1399.com/static/images/articles/articles/casino-registration-guide-cover-1280x672.webp",
       "url": "https://fun1399.com/articles/casino-registration-guide",
       "mainEntityOfPage": "https://fun1399.com/articles/casino-registration-guide"
@@ -94,7 +94,7 @@
           "name": "娛樂城註冊需要準備哪些資料？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "這次查核的三個平台，都需要可接收簡訊的手機門號。鉅城、HG樂遊與3A的公開註冊頁另會要求帳號、密碼、LINE或經銷號等不同欄位；實際要填哪些資料，以當下註冊頁為準。"
+            "text": "這次查核的三個平台，必備可接收簡訊的手機門號。鉅城、HG樂遊與3A的公開註冊頁另會要求帳號、密碼、LINE或經銷號等不同欄位；實際要填哪些資料，以當下註冊頁為準。"
           }
         },
         {
@@ -102,7 +102,7 @@
           "name": "娛樂城註冊一定要上傳身分證嗎？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "這次查核的三個公開註冊頁，開戶畫面都沒有直接要求上傳身分證。不過，首次交易、綁定銀行資料或使用存提款功能時，平台仍可能要求實名驗證；提交前應確認官方網址、資料用途與最新規則。"
+            "text": "這次查核的三個平台，開戶頁面都沒有直接要求上傳身分證。不過，首次交易、綁定銀行資料或使用存提款功能時，平台仍可能要求實名驗證；提交前應確認官方網址、資料用途與最新規則。"
           }
         },
         {
@@ -110,7 +110,7 @@
           "name": "一個人可以註冊多個帳號嗎？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "這次查核的三個平台，都有限制多帳號或同IP多帳的公開規則。重複註冊可能觸發帳號、交易或優惠資格審查；是否涉及家庭、裝置、電話或銀行帳戶，仍以平台當期條款為準。"
+            "text": "不行，這次查核的三個平台都有限制多帳號或同IP多帳的公開規則。重複註冊可能觸發帳號、交易或優惠資格審查；是否涉及家庭、裝置、電話或銀行帳戶，仍以平台當期條款為準。"
           }
         },
         {
@@ -166,6 +166,27 @@
         @media (max-width: 640px) {
             .article-content details summary { padding: 12px 38px 12px 12px; font-size: 15px; }
             .article-content .faq-a { padding: 10px 12px; }
+        }
+        /* R4 表格重做（本篇專屬）：桌機三欄軸線，手機直向卡片 */
+        .article-content .table-wrap table.data-table { width: 100%; }
+        .article-content .table-wrap th,
+        .article-content .table-wrap td { vertical-align: top; padding: 16px 18px; }
+        .article-content .table-wrap .col-platform { white-space: nowrap; word-break: keep-all; font-weight: 700; }
+        .article-content .table-wrap .col-id { vertical-align: middle; text-align: center; }
+        @media (max-width: 768px) {
+            .article-content .table-wrap { overflow-x: visible; }
+            .article-content .table-wrap table.data-table,
+            .article-content .table-wrap tbody,
+            .article-content .table-wrap tr,
+            .article-content .table-wrap td { display: block; width: 100%; box-sizing: border-box; }
+            .article-content .table-wrap thead { display: none; }
+            .article-content .table-wrap table.data-table { border-collapse: separate; border-spacing: 0 14px; margin: -14px 0 6px; }
+            .article-content .table-wrap tr { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; }
+            .article-content .table-wrap td { border: none; border-bottom: 1px solid #eef2f7; padding: 12px 16px; text-align: left !important; }
+            .article-content .table-wrap tr td:last-child { border-bottom: none; }
+            .article-content .table-wrap td:not(.col-platform)::before { content: attr(data-label); display: block; font-size: 12px; font-weight: 600; color: #64748b; margin-bottom: 4px; }
+            .article-content .table-wrap td.col-platform { font-size: 16px; padding-bottom: 6px; }
+            .article-content .table-wrap td.col-id { vertical-align: top; }
         }
     </style>
 </head>
@@ -225,30 +246,35 @@
 
             <h2 id="prepare" style="color: #1a1a2e; margin: 40px 0 20px; font-size: 26px;">📝 註冊前需要準備什麼？</h2>
             <p>各家平台的註冊欄位不完全一樣，但手機號碼與簡訊驗證幾乎是共通要求。這次查核了鉅城、HG樂遊與 3A 三個平台的公開註冊頁，欄位整理如下：</p>
-            <div style="overflow-x: auto; margin: 20px 0;">
+            <div class="table-wrap" style="overflow-x: auto; margin: 20px 0;">
                 <table class="data-table">
+                    <colgroup>
+                        <col style="width: 14%">
+                        <col style="width: 58%">
+                        <col style="width: 28%">
+                    </colgroup>
                     <thead>
-                        <tr>
+                        	r>
                             <th>平台</th>
                             <th>公開註冊頁可見欄位</th>
-                            <th>註冊頁當下是否直接要求上傳身分證</th>
+                            <th>註冊時需上傳身分證？</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>鉅城</td>
-                            <td>台灣手機、簡訊驗證碼、密碼、確認密碼、LINE；另須勾選年滿 18 歲並同意條款／隱私政策</td>
-                            <td>否</td>
+                            <td class="col-platform" data-label="平台">鉅城</td>
+                            <td data-label="公開註冊頁可見欄位">台灣手機、簡訊驗證碼、密碼、確認密碼、LINE；另須勾選年滿18歲並同意條款與隱私政策</td>
+                            <td class="col-id" data-label="註冊時需上傳身分證？">否</td>
                         </tr>
                         <tr>
-                            <td>HG樂遊</td>
-                            <td>經銷／代理代碼、帳號、手機、簡訊驗證碼、密碼、確認密碼；另須勾選年滿 18 歲</td>
-                            <td>否</td>
+                            <td class="col-platform" data-label="平台">HG樂遊</td>
+                            <td data-label="公開註冊頁可見欄位">經銷／代理代碼、帳號、手機、簡訊驗證碼、密碼、確認密碼；另須勾選年滿18歲</td>
+                            <td class="col-id" data-label="註冊時需上傳身分證？">否</td>
                         </tr>
                         <tr>
-                            <td>3A</td>
-                            <td>手機、簡訊驗證碼、帳號、密碼、確認密碼、LINE；另須勾選年滿 18 歲</td>
-                            <td>否</td>
+                            <td class="col-platform" data-label="平台">3A</td>
+                            <td data-label="公開註冊頁可見欄位">手機、簡訊驗證碼、帳號、密碼、確認密碼、LINE；另須勾選年滿18歲</td>
+                            <td class="col-id" data-label="註冊時需上傳身分證？">否</td>
                         </tr>
                     </tbody>
                 </table>
@@ -257,9 +283,9 @@
             <p>建立帳號時沒有上傳證件，不代表後續交易或存提款一定不用KYC。本文的欄位與帳號規則，分別查自鉅城、HG樂遊與3A的公開註冊頁、服務條款及KYC公告；實際要求仍以平台當下頁面為準。</p>
             <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px 20px; margin: 16px 0; font-size: 14px; color: #334155;">
                 <p style="margin: 0 0 10px; font-weight: 600; color: #1a1a2e;">本次查核來源</p>
-                <p style="margin: 0 0 6px;"><strong>鉅城</strong>：<a href="https://www.ofa177.net/login?id=register" target="_blank" rel="sponsored nofollow noopener noreferrer">註冊頁</a>、<a href="https://www.ofa177.net/service/about?id=terms" target="_blank" rel="sponsored nofollow noopener noreferrer">服務條款</a>、<a href="https://www.ofa177.net/service/about?id=privacy" target="_blank" rel="sponsored nofollow noopener noreferrer">隱私政策</a></p>
+                <p style="margin: 0 0 6px;"><strong>鉅城</strong>：<a href="https://www.ofa177.net/login?id=register" target="_blank" rel="sponsored nofollow noopener noreferrer">註冊頁</a>、<a href="https://www.ofa177.net/service/about?id=terms" target="_blank" rel="sponsored nofollow noopener noreferrer">服務條款</a></p>
                 <p style="margin: 0 0 6px;"><strong>HG樂遊</strong>：<a href="https://blog.leyo.tw/blog/hg-register/" target="_blank" rel="sponsored nofollow noopener noreferrer">官方註冊教學</a>、<a href="https://www.leyo.tw/login/?q=register" target="_blank" rel="sponsored nofollow noopener noreferrer">註冊頁</a>、<a href="https://happy-games.tw/hg-announcement/" target="_blank" rel="sponsored nofollow noopener noreferrer">2026-01-02 KYC公告</a>、<a href="https://happy-games.tw/hg-bank-and-wallet-kyc/" target="_blank" rel="sponsored nofollow noopener noreferrer">KYC資料說明</a></p>
-                <p style="margin: 0;"><strong>3A</strong>：<a href="https://fun1399.3a1788.bet/login?id=register" target="_blank" rel="sponsored nofollow noopener noreferrer">註冊頁</a>、<a href="https://fun1399.3a1788.bet/problem/company?id=terms" target="_blank" rel="sponsored nofollow noopener noreferrer">服務條款</a>、<a href="https://fun1399.3a1788.bet/problem/company?id=privacy" target="_blank" rel="sponsored nofollow noopener noreferrer">隱私政策</a></p>
+                <p style="margin: 0;"><strong>3A</strong>：<a href="https://fun1399.3a1788.bet/login?id=register" target="_blank" rel="sponsored nofollow noopener noreferrer">註冊頁</a>、<a href="https://fun1399.3a1788.bet/problem/company?id=terms" target="_blank" rel="sponsored nofollow noopener noreferrer">服務條款</a></p>
             </div>
 
             <h2 id="steps" style="color: #1a1a2e; margin: 40px 0 20px; font-size: 26px;">🪜 娛樂城註冊五個步驟</h2>
@@ -272,26 +298,35 @@
 
             <h2 id="kyc" style="color: #1a1a2e; margin: 40px 0 20px; font-size: 26px;">🪪 註冊完成後一定要做 KYC 嗎？</h2>
             <p>不一定在建立帳號時就要做，但部分平台會在首次交易、綁定銀行資料或使用存提款功能前要求核對身分。這次查核的三個平台，公開規則寫得不太一樣：</p>
-            <div style="overflow-x: auto; margin: 20px 0;">
+            <div class="table-wrap" style="overflow-x: auto; margin: 20px 0;">
                 <table class="data-table">
+                    <colgroup>
+                        <col style="width: 14%">
+                        <col style="width: 30%">
+                        <col style="width: 56%">
+                    </colgroup>
                     <thead>
                         <tr>
                             <th>平台</th>
-                            <th>公開規則可確認的 KYC 時點／內容</th>
+                            <th>何時可能要求KYC</th>
+                            <th>公開規則內容</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>鉅城</td>
-                            <td>公開條款寫明，首次交易前需聯絡線上客服完成一次實名驗證</td>
+                            <td class="col-platform" data-label="平台">鉅城</td>
+                            <td data-label="何時可能要求KYC">首次交易前</td>
+                            <td data-label="公開規則內容">公開條款寫明，需聯絡線上客服完成一次實名驗證。</td>
                         </tr>
                         <tr>
-                            <td>HG樂遊</td>
-                            <td>2026-01-02 公告寫明，使用存提款功能需完成手持身分證照片驗證；詳細頁另列證件正反面與銀行／存摺資料</td>
+                            <td class="col-platform" data-label="平台">HG樂遊</td>
+                            <td data-label="何時可能要求KYC">使用存提款功能前</td>
+                            <td data-label="公開規則內容">2026-01-02公告寫明，需完成手持身分證照片驗證；詳細說明另列證件正反面與銀行／存摺資料。</td>
                         </tr>
                         <tr>
-                            <td>3A</td>
-                            <td>公開條款寫明，首次交易前需聯絡客服完成實名驗證</td>
+                            <td class="col-platform" data-label="平台">3A</td>
+                            <td data-label="何時可能要求KYC">首次交易前</td>
+                            <td data-label="公開規則內容">公開條款寫明，需聯絡客服完成實名驗證。</td>
                         </tr>
                     </tbody>
                 </table>
@@ -314,9 +349,9 @@
             <p>領優惠前先分清楚是「開戶就能領」，還是「完成首存後才送」。以2026-10-06可查看的<a href="https://blog.leyo.tw/blog/hg-register/" target="_blank" rel="sponsored nofollow noopener noreferrer">HG官方註冊教學</a>為例，頁面列的是首存1,000送1,000、流水1倍，這不是單純註冊就送的體驗金。活動可能調整，申請前還是要回到當期頁面確認。</p>
             <p style="font-size: 14px; color: #64748b; margin-top: -8px;">查核日期：2026-10-06；活動可能調整，以平台當期頁面為準。</p>
             <ol style="line-height: 1.9; padding-left: 22px; color: #334155;">
-                <li><strong>先看活動類型：</strong>是註冊即贈、完成驗證，還是要先儲值。</li>
-                <li><strong>再算流水：</strong>確認計算基礎、倍數及哪些遊戲會列入。</li>
-                <li><strong>確認申請方式：</strong>自動發放、活動頁領取，或需要從官方客服申請。</li>
+                <li><strong>先分活動類型：</strong>是註冊即贈、完成驗證，還是要先儲值。</li>
+                <li><strong>再看門檻與流水：</strong>確認計算基礎、倍數及哪些遊戲會列入。</li>
+                <li><strong>確認申請管道：</strong>自動發放、活動頁領取，或需要從官方客服申請。</li>
                 <li><strong>最後看提領限制：</strong>留意期限、最高可提領金額、不可併用活動及其他限制。</li>
             </ol>
             <p>想再深入，可以看我們整理的<a href="/articles/free-credit-guide">娛樂城體驗金完整指南：免費試玩與提款條件解析</a>，裡面把流水與提領條件拆開說明。</p>
@@ -329,15 +364,28 @@
             <h2 id="conclusion" style="color: #1a1a2e; margin: 40px 0 20px; font-size: 26px;">🏁 結語</h2>
             <p>註冊這件事不難：先確認官方入口與帳號規則，再依畫面完成簡訊驗證。遇到 KYC 或優惠時，回頭看當期條款，不急著交資料或匯款，就能避開大多數不必要的風險。</p>
 
-            <!-- 文末 CTA -->
-            <div class="final-cta" style="background: linear-gradient(135deg, #1e3a5f 0%, #0d2137 100%); border-radius: 12px; padding: 30px; margin: 35px 0; text-align: center; border: 2px solid #FFD700;">
-                <h3 style="color: #FFD700; margin: 0 0 15px 0; font-size: 22px;">註冊前，先把平台與優惠規則確認清楚</h3>
-                <p style="color: #e0e0e0; margin: 0 0 20px 0; line-height: 1.7; font-size: 16px;">先核對官方入口、帳號限制、KYC與流水條件；如果規則看不懂，再透過 FUN1399 的聯繫管道詢問。</p>
-                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                    <a href="/recommend/2026" style="display: inline-block; background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); color: #000; font-weight: 700; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-size: 17px;">查看2026推薦平台</a>
-                    <a href="https://lin.ee/Mc1pb7z" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display: inline-block; background: rgba(255,255,255,0.15); color: #fff; font-weight: 600; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-size: 17px; border: 1px solid rgba(255,255,255,0.3);">聯繫我們</a>
-                </div>
-            </div>
+            <!-- 常見問題 FAQ -->
+            <h2 id="faq" style="color: #1a1a2e; margin: 40px 0 20px; font-size: 26px;">❓ 常見問題 FAQ</h2>
+            <details>
+                <summary>娛樂城註冊需要準備哪些資料？</summary>
+                <div class="faq-a">這次查核的三個平台，必備可接收簡訊的手機門號。鉅城、HG樂遊與3A的公開註冊頁另會要求帳號、密碼、LINE或經銷號等不同欄位；實際要填哪些資料，以當下註冊頁為準。</div>
+            </details>
+            <details>
+                <summary>娛樂城註冊一定要上傳身分證嗎？</summary>
+                <div class="faq-a">這次查核的三個平台，開戶頁面都沒有直接要求上傳身分證。不過，首次交易、綁定銀行資料或使用存提款功能時，平台仍可能要求實名驗證；提交前應確認官方網址、資料用途與最新規則。</div>
+            </details>
+            <details>
+                <summary>一個人可以註冊多個帳號嗎？</summary>
+                <div class="faq-a">不行，這次查核的三個平台都有限制多帳號或同IP多帳的公開規則。重複註冊可能觸發帳號、交易或優惠資格審查；是否涉及家庭、裝置、電話或銀行帳戶，仍以平台當期條款為準。</div>
+            </details>
+            <details>
+                <summary>收不到簡訊驗證碼怎麼辦？</summary>
+                <div class="faq-a">先確認手機號碼、國碼、訊號與簡訊攔截設定，再等待頁面允許後重新發送。仍收不到時，只透過官網公開客服管道詢問，不要把驗證碼交給任何人。</div>
+            </details>
+            <details>
+                <summary>註冊後一定要馬上儲值或領體驗金嗎？</summary>
+                <div class="faq-a">不用，註冊、儲值與申請優惠是不同步驟。可以先看清楚平台與活動規則，再決定是否儲值或領取優惠；是否提供免費試玩，則以各平台當下功能為準。</div>
+            </details>
 
             <!-- 延伸閱讀 -->
             <div class="related-articles" style="background: #f8fafc; border-radius: 10px; padding: 25px; margin: 30px 0;">
@@ -349,28 +397,15 @@
                 </ul>
             </div>
 
-            <!-- 常見問題 FAQ -->
-            <h2 id="faq" style="color: #1a1a2e; margin: 40px 0 20px; font-size: 26px;">❓ 常見問題 FAQ</h2>
-            <details>
-                <summary>娛樂城註冊需要準備哪些資料？</summary>
-                <div class="faq-a">這次查核的三個平台，都需要可接收簡訊的手機門號。鉅城、HG樂遊與3A的公開註冊頁另會要求帳號、密碼、LINE或經銷號等不同欄位；實際要填哪些資料，以當下註冊頁為準。</div>
-            </details>
-            <details>
-                <summary>娛樂城註冊一定要上傳身分證嗎？</summary>
-                <div class="faq-a">這次查核的三個公開註冊頁，開戶畫面都沒有直接要求上傳身分證。不過，首次交易、綁定銀行資料或使用存提款功能時，平台仍可能要求實名驗證；提交前應確認官方網址、資料用途與最新規則。</div>
-            </details>
-            <details>
-                <summary>一個人可以註冊多個帳號嗎？</summary>
-                <div class="faq-a">這次查核的三個平台，都有限制多帳號或同IP多帳的公開規則。重複註冊可能觸發帳號、交易或優惠資格審查；是否涉及家庭、裝置、電話或銀行帳戶，仍以平台當期條款為準。</div>
-            </details>
-            <details>
-                <summary>收不到簡訊驗證碼怎麼辦？</summary>
-                <div class="faq-a">先確認手機號碼、國碼、訊號與簡訊攔截設定，再等待頁面允許後重新發送。仍收不到時，只透過官網公開客服管道詢問，不要把驗證碼交給任何人。</div>
-            </details>
-            <details>
-                <summary>註冊後一定要馬上儲值或領體驗金嗎？</summary>
-                <div class="faq-a">不用，註冊、儲值與申請優惠是不同步驟。可以先看清楚平台與活動規則，再決定是否儲值或領取優惠；是否提供免費試玩，則以各平台當下功能為準。</div>
-            </details>
+            <!-- 文末 CTA -->
+            <div class="final-cta" style="background: linear-gradient(135deg, #1e3a5f 0%, #0d2137 100%); border-radius: 12px; padding: 30px; margin: 35px 0; text-align: center; border: 2px solid #FFD700;">
+                <h3 style="color: #FFD700; margin: 0 0 15px 0; font-size: 22px;">註冊前，先把平台與優惠規則確認清楚</h3>
+                <p style="color: #e0e0e0; margin: 0 0 20px 0; line-height: 1.7; font-size: 16px;">先核對官方入口、帳號限制、KYC與流水條件；如果規則看不懂，再透過 FUN1399 的聯繫管道詢問。</p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="/recommend/2026" style="display: inline-block; background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); color: #000; font-weight: 700; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-size: 17px;">查看2026推薦平台</a>
+                    <a href="https://lin.ee/Mc1pb7z" target="_blank" rel="sponsored nofollow noopener noreferrer" style="display: inline-block; background: rgba(255,255,255,0.15); color: #fff; font-weight: 600; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-size: 17px; border: 1px solid rgba(255,255,255,0.3);">聯繫我們</a>
+                </div>
+            </div>
 
         </article>
 
