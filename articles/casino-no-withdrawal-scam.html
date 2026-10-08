@@ -26,13 +26,10 @@
     <!-- 本篇局部版型：900px 內容軸線、可收合 FAQ、核對表格（含手機卡片版）、來源區塊 -->
     <style>
         article.content .container { max-width: 900px; }
-        .nw-faq { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
-        .nw-faq summary { color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center; gap: 12px; }
-        .nw-faq summary::-webkit-details-marker { display: none; }
-        .nw-faq summary::after { content: '▼'; margin-left: auto; color: #6c757d; font-size: 14px; transition: transform 0.2s; flex-shrink: 0; }
-        .nw-faq[open] summary::after { transform: rotate(180deg); }
-        .nw-faq summary:focus-visible { outline: 2px solid #ff6b35; outline-offset: -2px; border-radius: 12px; }
-        .nw-faq .faq-a { padding: 0 25px 20px; line-height: 1.8; color: #333; }
+        .faq-section details.faq-item summary::before { content: '▶'; color: #ff6b35; font-size: 14px; margin-right: 10px; transition: transform 0.2s; flex-shrink: 0; }
+        .faq-section details.faq-item[open] summary::before { transform: rotate(90deg); }
+        .faq-section details.faq-item summary::-webkit-details-marker { display: none; }
+        .faq-section details.faq-item summary:focus-visible { outline: 2px solid #ff6b35; outline-offset: -2px; border-radius: 12px; }
         .nw-table-wrap { overflow-x: auto; margin: 20px 0; }
         table.nw-table { width: 100%; border-collapse: collapse; font-size: 15px; }
         table.nw-table th { background: #16213e; color: #fff; padding: 12px 14px; text-align: left; font-weight: 600; }
@@ -83,7 +80,7 @@
         }
       },
       "datePublished": "2026-04-01",
-      "dateModified": "2026-10-08T13:45:00+08:00",
+      "dateModified": "2026-10-08T14:35:00+08:00",
       "image": "https://fun1399.com/static/images/articles/articles/casino-no-withdrawal-scam-cover.jpg",
       "url": "https://fun1399.com/articles/casino-no-withdrawal-scam",
       "mainEntityOfPage": {
@@ -199,7 +196,7 @@
             <div class="article-hero-image">
                 <img src="/static/images/articles/articles/casino-no-withdrawal-scam-cover.jpg"
                      alt="娛樂城不出金詐騙：贏了錢卻領不出來怎麼辦？完整自救指南"
-                     loading="eager" width="1280" height="720" style="width: 100%; height: auto; display: block;">
+                     loading="eager" width="1280" height="672" style="width: 100%; height: auto; display: block;">
             </div>
 
             <div class="article-meta">
@@ -322,26 +319,38 @@
             <p>提款卡住時，先把「對方怎麼說」與「你手上有什麼紀錄」分開。規則問題要核對，要求追加付款的情況要停下來查證；已經付款且疑似遭詐，儘速聯繫付款機構與警方。不要為了拿回帳面餘額，再付一筆新的錢。</p>
 
             <h2 id="faq">常見問題 FAQ</h2>
-            <details class="nw-faq">
-                <summary>所有不出金都是詐騙嗎？</summary>
-                <div class="faq-a"><p>不一定。提款延遲可能涉及規則、資料或付款狀態，仍須核對具體原因；若對方要求另外支付解凍金、保證金或再儲值才能提款，先停止付款，保留紀錄並向165查證。</p></div>
+            <div class="faq-section" style="margin: 20px 0;">
+            <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
+                <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center;">所有不出金都是詐騙嗎？</summary>
+                <div class="faq-answer" style="padding: 0 25px 20px 50px; color: #333; line-height: 1.75;">
+                    <p>不一定。提款延遲可能涉及規則、資料或付款狀態，仍須核對具體原因；若對方要求另外支付解凍金、保證金或再儲值才能提款，先停止付款，保留紀錄並向165查證。</p>
+                </div>
             </details>
-            <details class="nw-faq">
-                <summary>被不出金詐騙，報警有用嗎？</summary>
-                <div class="faq-a"><p>有，疑似遭詐時應儘速報案並聯繫付款機構。報案可以讓警方受理與調查，是否能攔阻或追回款項，要看資金流向與案件情況，不能保證凍結帳戶或拿回全部款項。</p></div>
+            <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
+                <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center;">被不出金詐騙，報警有用嗎？</summary>
+                <div class="faq-answer" style="padding: 0 25px 20px 50px; color: #333; line-height: 1.75;">
+                    <p>有，疑似遭詐時應儘速報案並聯繫付款機構。報案可以讓警方受理與調查，是否能攔阻或追回款項，要看資金流向與案件情況，不能保證凍結帳戶或拿回全部款項。</p>
+                </div>
             </details>
-            <details class="nw-faq">
-                <summary>如何分辨提款規則問題與詐騙警訊？</summary>
-                <div class="faq-a"><p>先核對提款申請、原活動條款、驗證規則與收款紀錄。事後反覆更改條件、要求另外匯款或索取網銀密碼及驗證碼，都是應停止操作並查證的警訊；網站外觀、客服態度或曾成功小額提款，都不能單獨證明安全。</p></div>
+            <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
+                <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center;">如何分辨提款規則問題與詐騙警訊？</summary>
+                <div class="faq-answer" style="padding: 0 25px 20px 50px; color: #333; line-height: 1.75;">
+                    <p>先核對提款申請、原活動條款、驗證規則與收款紀錄。事後反覆更改條件、要求另外匯款或索取網銀密碼及驗證碼，都是應停止操作並查證的警訊；網站外觀、客服態度或曾成功小額提款，都不能單獨證明安全。</p>
+                </div>
             </details>
-            <details class="nw-faq">
-                <summary>我已經匯款了，現在該怎麼辦？</summary>
-                <div class="faq-a"><p>立即停止追加付款，保存客服對話、平台網址、提款申請與付款紀錄，儘速聯繫使用的銀行或支付業者，並向165或警方求助。若使用USDT，另保存網路、錢包地址、交易雜湊與交易所紀錄，不要把助記詞或私鑰交給任何人。</p></div>
+            <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
+                <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center;">我已經匯款了，現在該怎麼辦？</summary>
+                <div class="faq-answer" style="padding: 0 25px 20px 50px; color: #333; line-height: 1.75;">
+                    <p>立即停止追加付款，保存客服對話、平台網址、提款申請與付款紀錄，儘速聯繫使用的銀行或支付業者，並向165或警方求助。若使用USDT，另保存網路、錢包地址、交易雜湊與交易所紀錄，不要把助記詞或私鑰交給任何人。</p>
+                </div>
             </details>
-            <details class="nw-faq">
-                <summary>小額出金正常，大額就不出金，這是詐騙嗎？</summary>
-                <div class="faq-a"><p>不能只憑金額差異認定，但小額成功不代表後續提款有保障。核對大額申請的規則、狀態與客服說明；若被要求追加付款或條件反覆改變，先停止付款並向165或警方查證。</p></div>
+            <details class="faq-item" style="background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; margin-bottom: 12px; overflow: hidden;">
+                <summary style="color: #1a1a2e; font-size: 18px; font-weight: 600; padding: 20px 25px; cursor: pointer; list-style: none; display: flex; align-items: center;">小額出金正常，大額就不出金，這是詐騙嗎？</summary>
+                <div class="faq-answer" style="padding: 0 25px 20px 50px; color: #333; line-height: 1.75;">
+                    <p>不能只憑金額差異認定，但小額成功不代表後續提款有保障。核對大額申請的規則、狀態與客服說明；若被要求追加付款或條件反覆改變，先停止付款並向165或警方查證。</p>
+                </div>
             </details>
+            </div>
 
             <!-- 延伸閱讀 -->
             <div style="margin-top: 50px;">
