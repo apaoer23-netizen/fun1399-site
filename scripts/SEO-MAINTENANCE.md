@@ -14,7 +14,7 @@ git diff --check
 
 `sync_sitemap.py` 預設只檢查，有待同步項目時以非零狀態結束。確認文章原有日期可保留後，再執行 `python3 scripts/sync_sitemap.py --write`。它沿用內容中已宣告的實質更新日期，不以檔案修改時間或今日日期全面刷新。
 
-`check_seo.py` 檢查主站 HTML 的 H1、description、canonical 數量、JSON-LD 語法、站內目標與錨點、引用資產、指定推薦網域的連結關係標示，以及 sitemap 重複與 noindex。它允許 404 頁保留 noindex，排除原型區、測試頁與驗證檔，另確認測試頁維持 noindex。
+`check_seo.py` 檢查主站 HTML 的 H1、description、canonical 數量、JSON-LD 語法與本站圖片／logo 引用、站內目標與錨點、引用資產、指定推薦網域的連結關係標示，以及 sitemap 重複與 noindex。它允許 404 頁保留 noindex，排除原型區、測試頁與驗證檔，另確認測試頁維持 noindex。
 
 這些檢查無法取代來源查核、完整結構化資料資格測試或瀏覽器驗收。未命中錯誤不代表頁面內容真實、所有商業關係已辨識，或未經同意的新測試檔可直接加入正式輸出。
 

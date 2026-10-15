@@ -19,6 +19,18 @@ def target(path):
     if (exact/'index.html').is_file():return exact/'index.html'
     return ROOT/(path.lstrip('/').rstrip('/')+'.html')
 def commercial(host):return bool(host and (host.startswith('fun1399.') and host!='fun1399.com' or host in ['u.town','www.leyo.tw']))
+def schema_assets(node, image_context=False):
+    """Yield image references, without treating ordinary page URLs as assets."""
+    if isinstance(node,str):
+        if image_context:yield node
+    elif isinstance(node,list):
+        for value in node:yield from schema_assets(value,image_context)
+    elif isinstance(node,dict):
+        types=node.get('@type',[])
+        is_image=types=='ImageObject' or (isinstance(types,list) and 'ImageObject' in types)
+        for key,value in node.items():
+            context=key in ['image','logo','thumbnailUrl'] or (key in ['url','contentUrl'] and (image_context or is_image))
+            yield from schema_assets(value,context)
 def main():
     errors=[];warnings=[];stats=Counter();pages={}
     for p in sorted(ROOT.rglob('*.html')):
@@ -32,7 +44,13 @@ def main():
         if not meta.get('description'):errors.append(f'{rel}: missing description')
         if sum(t=='h1' for t,a in tags)!=1:errors.append(f'{rel}: expected one H1')
         for raw in re.findall(r'<script\b[^>]*type=[\"\']application/ld\+json[\"\'][^>]*>(.*?)</script>',source,re.S|re.I):
-            try:json.loads(raw);stats['jsonld']+=1
+            try:
+                data=json.loads(raw);stats['jsonld']+=1
+                for asset in schema_assets(data):
+                    dest=urlsplit(urljoin(DOMAIN,asset))
+                    if dest.hostname=='fun1399.com':
+                        stats['schema_image_refs']+=1
+                        if not (ROOT/unquote(dest.path).lstrip('/')).is_file():errors.append(f'{rel}: missing schema image {asset}')
             except ValueError:errors.append(f'{rel}: invalid JSON-LD')
         for tag,a in tags:
             href=a.get('href','')
@@ -66,6 +84,13 @@ def main():
     about=(ROOT/'about.html').read_text()
     for claim in ['10K+','24小時內回覆','24 小時內完成修正','所有評測都經過實際測試','台灣最專業']:
         if claim in about:errors.append(f'about.html: unsupported site-wide claim {claim}')
+    for slug,claims in {
+        'casino-withdrawal-fast':['FUN1399娛樂城','50家以上','平均出金時間：','分散大額提款'],
+        'casino-customer-service':['各平台客服回應時間實測','真實案例','一般5-30分鐘內會補入帳'],
+    }.items():
+        source=(ROOT/'articles'/f'{slug}.html').read_text()
+        for claim in claims:
+            if claim in source:errors.append(f'{slug}: unsupported claim returned: {claim}')
     directory=(ROOT/'reviews/index.html').read_text()
     if re.search(r'class="(?:overall-rating|review-scores|rank-badge)"',directory):errors.append('reviews/index.html: unsupported ranking UI returned')
     for raw in re.findall(r'<script\b[^>]*type=[\"\']application/ld\+json[\"\'][^>]*>(.*?)</script>',directory,re.S|re.I):
