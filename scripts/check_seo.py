@@ -87,6 +87,8 @@ def main():
     for slug,claims in {
         'casino-withdrawal-fast':['FUN1399娛樂城','50家以上','平均出金時間：','分散大額提款'],
         'casino-customer-service':['各平台客服回應時間實測','真實案例','一般5-30分鐘內會補入帳'],
+        'casino-dcard-2026':['FUN1399娛樂城','31筆','獲得87個讚','不要說博弈','小陳'],
+        'rtp-compare':['我們實測了6大娛樂城平台','96.2%','長期投資型玩家','提升長期遊戲的勝率'],
     }.items():
         source=(ROOT/'articles'/f'{slug}.html').read_text()
         for claim in claims:
