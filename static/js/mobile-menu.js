@@ -37,7 +37,7 @@
             '<a href="/promotions/2026-03"><span class="m-icon">🎁</span>優惠情報</a>' +
             '<a href="/about"><span class="m-icon">ℹ️</span>關於我們</a>' +
             '<div class="mobile-nav-divider"></div>' +
-            '<a href="https://fun1399.ofa177.net/" target="_blank" rel="noopener" class="m-cta-play"><span class="m-icon">🎮</span>立即遊玩</a>' +
+            '<a href="https://fun1399.ofa177.net/" target="_blank" rel="noopener sponsored noreferrer" class="m-cta-play"><span class="m-icon">🎮</span>立即遊玩</a>' +
             '<a href="https://lin.ee/Mc1pb7z" target="_blank" class="m-cta-line"><span class="m-icon">💬</span>專人服務</a>' +
         '</div>';
     document.body.appendChild(menu);

@@ -75,6 +75,8 @@
 
 ## Deploy 步驟（確認後）
 
+發布前先依 [SEO 維護與發布驗收](SEO-MAINTENANCE.md) 執行技術與人工檢查；不能僅以範本、FAQ 或 CTA 數量判定通過。
+
 1. `cp build/articles/NEW-ARTICLE.html articles/`
 2. 更新 `articles/index.html`
 3. 更新 `index.html`（最新文章區）

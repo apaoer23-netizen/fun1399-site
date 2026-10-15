@@ -8,7 +8,7 @@
     container.className = 'float-btn-container';
     container.setAttribute('aria-label', '快速操作');
     container.innerHTML = 
-        '<a href="https://fun1399.ofa177.net/" class="float-play" target="_blank" rel="noopener" aria-label="立即遊玩">' +
+        '<a href="https://fun1399.ofa177.net/" class="float-play" target="_blank" rel="noopener sponsored noreferrer" aria-label="立即遊玩">' +
         '<span class="float-icon">🎮</span>' +
         '<span class="float-text">立即遊玩</span>' +
         '</a>' +
