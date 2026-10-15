@@ -63,6 +63,19 @@ def main():
         for claim in ['12,458','台灣最大','業界最快','出金保證']:
             if claim in text:errors.append(f'{special}: unsupported claim {claim}')
         if 'href="/disclosure"' not in text or 'href="/review-methodology"' not in text:errors.append(f'{special}: policy navigation missing')
+    about=(ROOT/'about.html').read_text()
+    for claim in ['10K+','24小時內回覆','24 小時內完成修正','所有評測都經過實際測試','台灣最專業']:
+        if claim in about:errors.append(f'about.html: unsupported site-wide claim {claim}')
+    directory=(ROOT/'reviews/index.html').read_text()
+    if re.search(r'class="(?:overall-rating|review-scores|rank-badge)"',directory):errors.append('reviews/index.html: unsupported ranking UI returned')
+    for raw in re.findall(r'<script\b[^>]*type=[\"\']application/ld\+json[\"\'][^>]*>(.*?)</script>',directory,re.S|re.I):
+        data=json.loads(raw)
+        for node in data.get('@graph',[]):
+            if node.get('@type')=='CollectionPage':
+                listing=node.get('mainEntity',{});items=listing.get('itemListElement',[])
+                if listing.get('numberOfItems')!=len(items) or len(items)!=6:errors.append('reviews/index.html: collection count mismatch')
+                for item in items:
+                    if f'href="{urlsplit(item.get("url", "")).path}"' not in directory:errors.append('reviews/index.html: schema entry not linked in visible page')
     result={'checks':dict(stats),'errors':errors,'warnings':list(dict.fromkeys(warnings))}
     print(json.dumps(result,ensure_ascii=False,indent=2));return 1 if errors else 0
 if __name__=='__main__':raise SystemExit(main())
